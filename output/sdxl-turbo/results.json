@@ -1,0 +1,49 @@
+{
+  "model": "sdxl-turbo",
+  "tasks": {
+    "fox_night": {
+      "positive": "a fox at night, neon lights",
+      "negative": "blurry, watermark",
+      "params": {
+        "steps": 4
+      },
+      "results": [
+        {
+          "seed": 3540229689,
+          "auto": {
+            "gen_time_s": 53.62657060008496,
+            "vram_peak_mb": 7948.341070175171
+          },
+          "manual": {
+            "quality": null,
+            "artifacts": null,
+            "adherence": null,
+            "preservation": null
+          }
+        }
+      ]
+    },
+    "fox_fire": {
+      "positive": "a fox near a campfire",
+      "negative": "blurry, watermark",
+      "params": {
+        "steps": 6
+      },
+      "results": [
+        {
+          "seed": 70493428,
+          "auto": {
+            "gen_time_s": 52.12893770006485,
+            "vram_peak_mb": 7890.311023712158
+          },
+          "manual": {
+            "quality": null,
+            "artifacts": null,
+            "adherence": null,
+            "preservation": null
+          }
+        }
+      ]
+    }
+  }
+}

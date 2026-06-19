@@ -1,0 +1,325 @@
+{
+  "9": {
+    "inputs": {
+      "filename_prefix": "Firered_image_edit_1.1",
+      "images": [
+        "192:190",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Сохранить изображение"
+    }
+  },
+  "143": {
+    "inputs": {
+      "image": "future_portrait.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Загрузить изображение"
+    }
+  },
+  "192:172": {
+    "inputs": {
+      "shift": 3.1,
+      "model": [
+        "192:173",
+        0
+      ]
+    },
+    "class_type": "ModelSamplingAuraFlow",
+    "_meta": {
+      "title": "Выборка модели AuraFlow"
+    }
+  },
+  "192:173": {
+    "inputs": {
+      "switch": [
+        "192:186",
+        0
+      ],
+      "on_false": [
+        "192:184",
+        0
+      ],
+      "on_true": [
+        "192:183",
+        0
+      ]
+    },
+    "class_type": "ComfySwitchNode",
+    "_meta": {
+      "title": "Switch (Model)"
+    }
+  },
+  "192:174": {
+    "inputs": {
+      "value": 40
+    },
+    "class_type": "PrimitiveInt",
+    "_meta": {
+      "title": "Int (Steps)"
+    }
+  },
+  "192:175": {
+    "inputs": {
+      "strength": 1,
+      "pre_cfg": false,
+      "model": [
+        "192:172",
+        0
+      ]
+    },
+    "class_type": "CFGNorm",
+    "_meta": {
+      "title": "CFGNorm"
+    }
+  },
+  "192:176": {
+    "inputs": {
+      "switch": [
+        "192:186",
+        0
+      ],
+      "on_false": [
+        "192:178",
+        0
+      ],
+      "on_true": [
+        "192:179",
+        0
+      ]
+    },
+    "class_type": "ComfySwitchNode",
+    "_meta": {
+      "title": "Switch (CFG)"
+    }
+  },
+  "192:177": {
+    "inputs": {
+      "value": 8
+    },
+    "class_type": "PrimitiveInt",
+    "_meta": {
+      "title": "Float (Steps)"
+    }
+  },
+  "192:178": {
+    "inputs": {
+      "value": 4
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (CFG)"
+    }
+  },
+  "192:179": {
+    "inputs": {
+      "value": 1
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (CFG)"
+    }
+  },
+  "192:180": {
+    "inputs": {
+      "switch": [
+        "192:186",
+        0
+      ],
+      "on_false": [
+        "192:174",
+        0
+      ],
+      "on_true": [
+        "192:177",
+        0
+      ]
+    },
+    "class_type": "ComfySwitchNode",
+    "_meta": {
+      "title": "Switch (Steps)"
+    }
+  },
+  "192:181": {
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Загрузить VAE"
+    }
+  },
+  "192:182": {
+    "inputs": {
+      "clip_name": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Загрузить CLIP"
+    }
+  },
+  "192:183": {
+    "inputs": {
+      "lora_name": "FireRed-Image-Edit-1.0-Lightning-8steps-v1.0.safetensors",
+      "strength_model": 1,
+      "model": [
+        "192:184",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "Загрузчик LoRA (Только модель)"
+    }
+  },
+  "192:184": {
+    "inputs": {
+      "unet_name": "FireRed-Image-Edit-1.1-transformer.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Загрузить модель диффузии"
+    }
+  },
+  "192:185": {
+    "inputs": {
+      "pixels": [
+        "192:191",
+        0
+      ],
+      "vae": [
+        "192:181",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "Кодировать VAE"
+    }
+  },
+  "192:186": {
+    "inputs": {
+      "value": false
+    },
+    "class_type": "PrimitiveBoolean",
+    "_meta": {
+      "title": "Enable Lightning LoRA?"
+    }
+  },
+  "192:187": {
+    "inputs": {
+      "prompt": "A young woman in a layered, ethereal outfit of sheer, frosted white fabric over a matte underlayer, with delicate, glowing fiber-optic threads woven throughout, headpiece is a translucent, frosted glass halo, soft gradient background, diffused studio lighting, photorealistic, dreamlike futurism.\n",
+      "clip": [
+        "192:182",
+        0
+      ],
+      "vae": [
+        "192:181",
+        0
+      ],
+      "image1": [
+        "192:191",
+        0
+      ]
+    },
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "_meta": {
+      "title": "TextEncodeQwenImageEditPlus (Positive)"
+    }
+  },
+  "192:188": {
+    "inputs": {
+      "prompt": "",
+      "clip": [
+        "192:182",
+        0
+      ],
+      "vae": [
+        "192:181",
+        0
+      ],
+      "image1": [
+        "192:191",
+        0
+      ]
+    },
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "_meta": {
+      "title": "TextEncodeQwenImageEditPlus"
+    }
+  },
+  "192:189": {
+    "inputs": {
+      "seed": 43,
+      "steps": [
+        "192:180",
+        0
+      ],
+      "cfg": [
+        "192:176",
+        0
+      ],
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "192:175",
+        0
+      ],
+      "positive": [
+        "192:187",
+        0
+      ],
+      "negative": [
+        "192:188",
+        0
+      ],
+      "latent_image": [
+        "192:185",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "192:190": {
+    "inputs": {
+      "samples": [
+        "192:189",
+        0
+      ],
+      "vae": [
+        "192:181",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "Декодировать VAE"
+    }
+  },
+  "192:191": {
+    "inputs": {
+      "resize_type": "scale total pixels",
+      "resize_type.megapixels": 1,
+      "scale_method": "lanczos",
+      "input": [
+        "143",
+        0
+      ]
+    },
+    "class_type": "ResizeImageMaskNode",
+    "_meta": {
+      "title": "Изменить размер изображения/маски"
+    }
+  }
+}
