@@ -1,199 +1,937 @@
 {
-  "136": {
-    "inputs": {
-      "filename_prefix": "flux.1_kontext_dev",
-      "images": [
-        "192:8",
-        0
-      ]
+    "id": "50d7c4a7-58e8-4400-9cb5-338d5419ef7b",
+    "revision": 0,
+    "last_node_id": 191,
+    "last_link_id": 33,
+    "nodes": [
+        {
+            "id": 136,
+            "type": "SaveImage",
+            "pos": [
+                3051.9849609375,
+                130
+            ],
+            "size": [
+                294.41796875,
+                58
+            ],
+            "flags": {},
+            "order": 13,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "изображения",
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 17
+                },
+                {
+                    "localized_name": "префикс_названия_файла",
+                    "name": "filename_prefix",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "filename_prefix"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.25.1"
+            },
+            "widgets_values": [
+                "flux.1_kontext_dev"
+            ]
+        },
+        {
+            "id": "192:135",
+            "type": "ConditioningZeroOut",
+            "pos": [
+                1009.06640625,
+                286
+            ],
+            "size": [
+                229.5767578125,
+                26
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "условие",
+                    "name": "conditioning",
+                    "type": "CONDITIONING",
+                    "link": 18
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "КОНДИЦИОНИРОВАНИЕ",
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        30
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.25.1",
+                "Node name for S&R": "ConditioningZeroOut"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": "192:8",
+            "type": "VAEDecode",
+            "pos": [
+                2777.5455078125,
+                130
+            ],
+            "size": [
+                174.439453125,
+                46
+            ],
+            "flags": {},
+            "order": 12,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "образцы",
+                    "name": "samples",
+                    "type": "LATENT",
+                    "link": 19
+                },
+                {
+                    "localized_name": "vae",
+                    "name": "vae",
+                    "type": "VAE",
+                    "link": 20
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "ИЗОБРАЖЕНИЕ",
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        17
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.25.1",
+                "Node name for S&R": "VAEDecode"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": "192:124",
+            "type": "VAEEncode",
+            "pos": [
+                1338.6431640625,
+                130
+            ],
+            "size": [
+                160.787109375,
+                46
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "пиксели",
+                    "name": "pixels",
+                    "type": "IMAGE",
+                    "link": 21
+                },
+                {
+                    "localized_name": "vae",
+                    "name": "vae",
+                    "type": "VAE",
+                    "link": 22
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "ЛАТЕНТНЫЙ",
+                    "name": "LATENT",
+                    "type": "LATENT",
+                    "links": [
+                        25,
+                        31
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.25.1",
+                "Node name for S&R": "VAEEncode"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": "192:35",
+            "type": "FluxGuidance",
+            "pos": [
+                1988.5728515625,
+                130
+            ],
+            "size": [
+                287.009765625,
+                58
+            ],
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "условие",
+                    "name": "conditioning",
+                    "type": "CONDITIONING",
+                    "link": 23
+                },
+                {
+                    "localized_name": "руководство",
+                    "name": "guidance",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "guidance"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "КОНДИЦИОНИРОВАНИЕ",
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        29
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.25.1",
+                "Node name for S&R": "FluxGuidance"
+            },
+            "widgets_values": [
+                2.5
+            ]
+        },
+        {
+            "id": "192:177",
+            "type": "ReferenceLatent",
+            "pos": [
+                1599.4302734375,
+                130
+            ],
+            "size": [
+                289.142578125,
+                46
+            ],
+            "flags": {},
+            "order": 9,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "кондиционирование",
+                    "name": "conditioning",
+                    "type": "CONDITIONING",
+                    "link": 24
+                },
+                {
+                    "localized_name": "латент",
+                    "name": "latent",
+                    "shape": 7,
+                    "type": "LATENT",
+                    "link": 25
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "КОНДИЦИОНИРОВАНИЕ",
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        23
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.25.1",
+                "Node name for S&R": "ReferenceLatent"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": "192:146",
+            "type": "ImageStitch",
+            "pos": [
+                509.06640625,
+                130
+            ],
+            "size": [
+                335.580078125,
+                150
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "изображение1",
+                    "name": "image1",
+                    "type": "IMAGE",
+                    "link": 26
+                },
+                {
+                    "localized_name": "изображение2",
+                    "name": "image2",
+                    "shape": 7,
+                    "type": "IMAGE",
+                    "link": null
+                },
+                {
+                    "localized_name": "направление",
+                    "name": "direction",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "direction"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "совпадение размера изображения",
+                    "name": "match_image_size",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "match_image_size"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "ширина отступа",
+                    "name": "spacing_width",
+                    "type": "INT",
+                    "widget": {
+                        "name": "spacing_width"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "цвет отступа",
+                    "name": "spacing_color",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "spacing_color"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "ИЗОБРАЖЕНИЕ",
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        27
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.25.1",
+                "Node name for S&R": "ImageStitch"
+            },
+            "widgets_values": [
+                "right",
+                true,
+                0,
+                "white"
+            ]
+        },
+        {
+            "id": "192:42",
+            "type": "FluxKontextImageScale",
+            "pos": [
+                1009.06640625,
+                130
+            ],
+            "size": [
+                197.935546875,
+                26
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "изображение",
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 27
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "ИЗОБРАЖЕНИЕ",
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        21
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.25.1",
+                "Node name for S&R": "FluxKontextImageScale"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": "192:6",
+            "type": "CLIPTextEncode",
+            "pos": [
+                509.06640625,
+                410
+            ],
+            "size": [
+                400,
+                200
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "clip",
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 32
+                },
+                {
+                    "localized_name": "текст",
+                    "name": "text",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "text"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "КОНДИЦИОНИРОВАНИЕ",
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        18,
+                        24
+                    ]
+                }
+            ],
+            "title": "CLIP Text Encode (Positive Prompt)",
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.25.1",
+                "Node name for S&R": "CLIPTextEncode"
+            },
+            "widgets_values": [
+                "Using this elegant style, create a portrait of a swan wearing a pearl tiara and lace collar, maintaining the same refined quality and soft color tones."
+            ]
+        },
+        {
+            "id": "192:39",
+            "type": "VAELoader",
+            "pos": [
+                100,
+                362
+            ],
+            "size": [
+                270,
+                58
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "название_vae",
+                    "name": "vae_name",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "vae_name"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "VAE",
+                    "name": "VAE",
+                    "type": "VAE",
+                    "links": [
+                        20,
+                        22
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.25.1",
+                "Node name for S&R": "VAELoader"
+            },
+            "widgets_values": [
+                "ae.safetensors"
+            ]
+        },
+        {
+            "id": "192:38",
+            "type": "DualCLIPLoader",
+            "pos": [
+                100,
+                550
+            ],
+            "size": [
+                270,
+                130
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "clip_name1",
+                    "name": "clip_name1",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "clip_name1"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "clip_name2",
+                    "name": "clip_name2",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "clip_name2"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "тип",
+                    "name": "type",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "type"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "устройство",
+                    "name": "device",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "device"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "CLIP",
+                    "name": "CLIP",
+                    "type": "CLIP",
+                    "links": [
+                        32
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.25.1",
+                "Node name for S&R": "DualCLIPLoader"
+            },
+            "widgets_values": [
+                "clip_l.safetensors",
+                "t5xxl_fp16.safetensors",
+                "flux",
+                "default"
+            ]
+        },
+        {
+            "id": "192:31",
+            "type": "KSampler",
+            "pos": [
+                2375.5826171875,
+                130
+            ],
+            "size": [
+                301.962890625,
+                262
+            ],
+            "flags": {},
+            "order": 11,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "модель",
+                    "name": "model",
+                    "type": "MODEL",
+                    "link": 33
+                },
+                {
+                    "localized_name": "положительный",
+                    "name": "positive",
+                    "type": "CONDITIONING",
+                    "link": 29
+                },
+                {
+                    "localized_name": "отрицательный",
+                    "name": "negative",
+                    "type": "CONDITIONING",
+                    "link": 30
+                },
+                {
+                    "localized_name": "латентное_изображение",
+                    "name": "latent_image",
+                    "type": "LATENT",
+                    "link": 31
+                },
+                {
+                    "localized_name": "сид",
+                    "name": "seed",
+                    "type": "INT",
+                    "widget": {
+                        "name": "seed"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "шаги",
+                    "name": "steps",
+                    "type": "INT",
+                    "widget": {
+                        "name": "steps"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "cfg",
+                    "name": "cfg",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "cfg"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "название_сэмплера",
+                    "name": "sampler_name",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "sampler_name"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "scheduler",
+                    "name": "scheduler",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "scheduler"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "шумоподавление",
+                    "name": "denoise",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "denoise"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "ЛАТЕНТНЫЙ",
+                    "name": "LATENT",
+                    "type": "LATENT",
+                    "links": [
+                        19
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.25.1",
+                "Node name for S&R": "KSampler"
+            },
+            "widgets_values": [
+                169405236028824,
+                "randomize",
+                20,
+                1,
+                "euler",
+                "simple",
+                1
+            ]
+        },
+        {
+            "id": 191,
+            "type": "UnetLoaderGGUF",
+            "pos": [
+                104.00676827790956,
+                805.6570890392733
+            ],
+            "size": [
+                270,
+                58
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "unet_name",
+                    "name": "unet_name",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "unet_name"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "МОДЕЛЬ",
+                    "name": "MODEL",
+                    "type": "MODEL",
+                    "links": [
+                        33
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfyui-gguf",
+                "ver": "1.1.10",
+                "Node name for S&R": "UnetLoaderGGUF"
+            },
+            "widgets_values": [
+                "flux1-kontext-dev-Q8_0.gguf"
+            ]
+        },
+        {
+            "id": 190,
+            "type": "LoadImage",
+            "pos": [
+                100,
+                130
+            ],
+            "size": [
+                309.06640625,
+                314
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "изображение",
+                    "name": "image",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "image"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "выберите файл для загрузки",
+                    "name": "upload",
+                    "type": "IMAGEUPLOAD",
+                    "widget": {
+                        "name": "upload"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "ИЗОБРАЖЕНИЕ",
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        26
+                    ]
+                },
+                {
+                    "localized_name": "МАСКА",
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.25.1",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "example.png",
+                "image"
+            ]
+        }
+    ],
+    "links": [
+        [
+            17,
+            "192:8",
+            0,
+            136,
+            0,
+            "IMAGE"
+        ],
+        [
+            18,
+            "192:6",
+            0,
+            "192:135",
+            0,
+            "CONDITIONING"
+        ],
+        [
+            19,
+            "192:31",
+            0,
+            "192:8",
+            0,
+            "LATENT"
+        ],
+        [
+            20,
+            "192:39",
+            0,
+            "192:8",
+            1,
+            "VAE"
+        ],
+        [
+            21,
+            "192:42",
+            0,
+            "192:124",
+            0,
+            "IMAGE"
+        ],
+        [
+            22,
+            "192:39",
+            0,
+            "192:124",
+            1,
+            "VAE"
+        ],
+        [
+            23,
+            "192:177",
+            0,
+            "192:35",
+            0,
+            "CONDITIONING"
+        ],
+        [
+            24,
+            "192:6",
+            0,
+            "192:177",
+            0,
+            "CONDITIONING"
+        ],
+        [
+            25,
+            "192:124",
+            0,
+            "192:177",
+            1,
+            "LATENT"
+        ],
+        [
+            26,
+            190,
+            0,
+            "192:146",
+            0,
+            "IMAGE"
+        ],
+        [
+            27,
+            "192:146",
+            0,
+            "192:42",
+            0,
+            "IMAGE"
+        ],
+        [
+            29,
+            "192:35",
+            0,
+            "192:31",
+            1,
+            "CONDITIONING"
+        ],
+        [
+            30,
+            "192:135",
+            0,
+            "192:31",
+            2,
+            "CONDITIONING"
+        ],
+        [
+            31,
+            "192:124",
+            0,
+            "192:31",
+            3,
+            "LATENT"
+        ],
+        [
+            32,
+            "192:38",
+            0,
+            "192:6",
+            0,
+            "CLIP"
+        ],
+        [
+            33,
+            191,
+            0,
+            "192:31",
+            0,
+            "MODEL"
+        ]
+    ],
+    "groups": [],
+    "config": {},
+    "extra": {
+        "ds": {
+            "scale": 2.357947691000002,
+            "offset": [
+                127.65482676237392,
+                -19.028721044368414
+            ]
+        }
     },
-    "class_type": "SaveImage",
-    "_meta": {
-      "title": "Сохранить изображение"
-    }
-  },
-  "190": {
-    "inputs": {
-      "image": "flux_kontext_dev_basic_input_image.jpg"
-    },
-    "class_type": "LoadImage",
-    "_meta": {
-      "title": "Загрузить изображение"
-    }
-  },
-  "192:39": {
-    "inputs": {
-      "vae_name": "ae.safetensors"
-    },
-    "class_type": "VAELoader",
-    "_meta": {
-      "title": "Загрузить VAE"
-    }
-  },
-  "192:38": {
-    "inputs": {
-      "clip_name1": "clip_l.safetensors",
-      "clip_name2": "t5xxl_fp8_e4m3fn_scaled.safetensors",
-      "type": "flux",
-      "device": "default"
-    },
-    "class_type": "DualCLIPLoader",
-    "_meta": {
-      "title": "Двойной загрузчик CLIP"
-    }
-  },
-  "192:135": {
-    "inputs": {
-      "conditioning": [
-        "192:6",
-        0
-      ]
-    },
-    "class_type": "ConditioningZeroOut",
-    "_meta": {
-      "title": "Обнуление кондиционирования"
-    }
-  },
-  "192:8": {
-    "inputs": {
-      "samples": [
-        "192:31",
-        0
-      ],
-      "vae": [
-        "192:39",
-        0
-      ]
-    },
-    "class_type": "VAEDecode",
-    "_meta": {
-      "title": "Декодировать VAE"
-    }
-  },
-  "192:124": {
-    "inputs": {
-      "pixels": [
-        "192:42",
-        0
-      ],
-      "vae": [
-        "192:39",
-        0
-      ]
-    },
-    "class_type": "VAEEncode",
-    "_meta": {
-      "title": "Кодировать VAE"
-    }
-  },
-  "192:35": {
-    "inputs": {
-      "guidance": 2.5,
-      "conditioning": [
-        "192:177",
-        0
-      ]
-    },
-    "class_type": "FluxGuidance",
-    "_meta": {
-      "title": "Направление Flux"
-    }
-  },
-  "192:37": {
-    "inputs": {
-      "unet_name": "flux1-dev-kontext_fp8_scaled.safetensors",
-      "weight_dtype": "default"
-    },
-    "class_type": "UNETLoader",
-    "_meta": {
-      "title": "Загрузить модель диффузии"
-    }
-  },
-  "192:177": {
-    "inputs": {
-      "conditioning": [
-        "192:6",
-        0
-      ],
-      "latent": [
-        "192:124",
-        0
-      ]
-    },
-    "class_type": "ReferenceLatent",
-    "_meta": {
-      "title": "Эталонный латент"
-    }
-  },
-  "192:146": {
-    "inputs": {
-      "direction": "right",
-      "match_image_size": true,
-      "spacing_width": 0,
-      "spacing_color": "white",
-      "image1": [
-        "190",
-        0
-      ]
-    },
-    "class_type": "ImageStitch",
-    "_meta": {
-      "title": "Сшивание изображений"
-    }
-  },
-  "192:42": {
-    "inputs": {
-      "image": [
-        "192:146",
-        0
-      ]
-    },
-    "class_type": "FluxKontextImageScale",
-    "_meta": {
-      "title": "FluxKontextImageScale"
-    }
-  },
-  "192:31": {
-    "inputs": {
-      "seed": 169405236028824,
-      "steps": 20,
-      "cfg": 1,
-      "sampler_name": "euler",
-      "scheduler": "simple",
-      "denoise": 1,
-      "model": [
-        "192:37",
-        0
-      ],
-      "positive": [
-        "192:35",
-        0
-      ],
-      "negative": [
-        "192:135",
-        0
-      ],
-      "latent_image": [
-        "192:124",
-        0
-      ]
-    },
-    "class_type": "KSampler",
-    "_meta": {
-      "title": "KSampler"
-    }
-  },
-  "192:6": {
-    "inputs": {
-      "text": "Using this elegant style, create a portrait of a swan wearing a pearl tiara and lace collar, maintaining the same refined quality and soft color tones.",
-      "clip": [
-        "192:38",
-        0
-      ]
-    },
-    "class_type": "CLIPTextEncode",
-    "_meta": {
-      "title": "CLIP Text Encode (Positive Prompt)"
-    }
-  }
+    "version": 0.4
 }
