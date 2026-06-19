@@ -15,7 +15,7 @@ from pathlib import Path
 server_address = "127.0.0.1:8188"
 client_id = str(uuid.uuid4())
  
-INPUT_ROOT = Path("inputs")     # inputs/<task>/*.png — входные кадры по задачам
+INPUT_ROOT = Path("input")     # inputs/<task>/*.png — входные кадры по задачам
 OUTPUT_ROOT = Path("output")
  
 # Какие модели гоняем в этот раз (имена = ключи CONFIGS и имена prompts_<model>.json)
