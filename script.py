@@ -1,4 +1,5 @@
 import copy
+import hashlib
 import json
 import logging
 import random
@@ -30,6 +31,11 @@ OUTPUT_ROOT = Path("output")
 # Какие модели гоняем в этот раз (имена = ключи CONFIGS и имена prompts_<model>.json)
 MODELS_TO_RUN = ["qwen-image-edit-2511", "flux1-kontext-dev", "firered-image-edit-1.1",
                  "flux2-klein-9b", "flux2-dev", "longcat-image-edit"]
+
+# Фиксированный seed для A/B-теста промптов: None = случайный каждый раз;
+# любое целое = воспроизводимый seed, СВОЙ для каждой пары (задача, кадр).
+# Тогда разница между прогонами = чистый эффект промпта, а не шума.
+FIXED_SEED = 12345
 
 # Словарь по которому можем менять нужные настройки в воркфлоу
 CONFIGS = {
@@ -184,12 +190,23 @@ def run_and_save(prompt_id: str, dest_dir: Path, stem: str):
     return {"gen_time_s": gen_time, "vram_peak_mb": vram_peak}, saved
 
 
+# Детерминированный seed из ключа (задача/кадр), если включён FIXED_SEED.
+# hashlib, а не hash() — встроенный hash() солится по процессу и невоспроизводим.
+def pick_seed(seed_key: str | None) -> int:
+    if FIXED_SEED is None:
+        return random.randint(0, 2**32 - 1)
+    if seed_key is None:
+        return FIXED_SEED % (2**32)
+    h = hashlib.md5(f"{FIXED_SEED}/{seed_key}".encode()).hexdigest()
+    return int(h, 16) % (2**32)
+
+
 # Собираем словарь значений под подмену
-def build_values(task: dict, image_name: str | None = None) -> dict:
+def build_values(task: dict, image_name: str | None = None, seed_key: str | None = None) -> dict:
     values = {
         "positive": task["positive"],
         "negative": task["negative"],
-        "seed": random.randint(0, 2**32 - 1),
+        "seed": pick_seed(seed_key),
         "steps": task["params"]["steps"],
         "strength": task["params"]["strength"],
     }
@@ -284,7 +301,8 @@ def process_model(model: str, run_dir: Path):
         compare_pairs = []   # (оригинал, результат) для таблички-сравнения
         for ii, image_path in enumerate(inputs, 1):
             image_name = upload_image(image_path) if image_path is not None else None
-            values = build_values(task, image_name)
+            seed_key = f"{task_name}/{image_path.stem}" if image_path is not None else task_name
+            values = build_values(task, image_name, seed_key)
             stem = f"{task_name}_{values['seed']}"
             if image_path is not None:
                 stem = f"{task_name}_{image_path.stem}_{values['seed']}"
