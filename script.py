@@ -1,27 +1,35 @@
 import copy
 import json
+import logging
 import random
 import requests
 import uuid
 import time
 from pathlib import Path
- 
-# Перед прогоном глянь:
-# - в prompts_<model>.json параметр силы зови "strength" (читаем params["strength"])
-# - Qwen 2511 и Flux2-Klein пока двух-картиночные — сделай одно-картиночные, иначе тянут лишний референс
-# - тумблеры Lightning/Turbo в воркфлоу держи false (целимся в Primitive из ветки on_false)
-# - я код не гонял, обкатай сперва на одной модели
- 
+
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)-7s | %(message)s",
+    datefmt="%H:%M:%S",
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler("run.log", encoding="utf-8"),
+    ],
+)
+log = logging.getLogger("runner")
+
+
 server_address = "127.0.0.1:8188"
 client_id = str(uuid.uuid4())
- 
+
 INPUT_ROOT = Path("input")     # inputs/<task>/*.png — входные кадры по задачам
 OUTPUT_ROOT = Path("output")
- 
+
 # Какие модели гоняем в этот раз (имена = ключи CONFIGS и имена prompts_<model>.json)
 MODELS_TO_RUN = ["qwen-image-edit-2511", "flux1-kontext-dev", "firered-image-edit-1.1",
                  "flux2-klein-9b", "flux2-dev", "longcat-image-edit"]
- 
+
 # Словарь по которому можем менять нужные настройки в воркфлоу
 CONFIGS = {
     "flux1-kontext-dev": {
@@ -91,38 +99,43 @@ CONFIGS = {
         },
     },
 }
- 
- 
+
+
 # Запускаем промпт в работу
 def queue_prompt(workflow: dict) -> str:
     p = {"prompt": workflow, "client_id": client_id}
     r = requests.post(f"http://{server_address}/prompt", json=p)
     data = r.json()
     if "prompt_id" not in data:
-        print(json.dumps(data, ensure_ascii=False, indent=2))   # покажет error / node_errors
-        raise SystemExit("ComfyUI отклонил промпт — см. выше")
+        # ComfyUI забраковал промпт — печатаем причину (node_errors) и кидаем ошибку,
+        # которую перехватит main и пойдёт к следующей модели
+        log.error("ComfyUI отклонил промпт:\n%s", json.dumps(data, ensure_ascii=False, indent=2))
+        raise RuntimeError("prompt rejected by ComfyUI")
+    log.debug("queued prompt_id=%s", data["prompt_id"])
     return data["prompt_id"]
- 
- 
+
+
 # Получаем инфу по нашему промпту
 def get_history(prompt_id: str) -> dict:
     return requests.get(f"http://{server_address}/history/{prompt_id}").json()
- 
- 
+
+
 # Получаем vram
 def get_vram() -> dict:
     return requests.get(f"http://{server_address}/system_stats").json()["devices"][0]
- 
- 
+
+
 # Закидываем картинку в инпут комфи, возвращаем имя для LoadImage
 def upload_image(image_path: Path) -> str:
     with open(image_path, "rb") as f:
         files = {"image": (image_path.name, f)}
         data = {"overwrite": "true"}
         resp = requests.post(f"http://{server_address}/upload/image", files=files, data=data)
-    return resp.json()["name"]
- 
- 
+    name = resp.json()["name"]
+    log.debug("upload %s -> %s", image_path.name, name)
+    return name
+
+
 # Подменяем инфу в нодах по карте из конфига
 def inject(workflow_path: str, nodes: dict, values: dict) -> dict:
     with open(workflow_path, encoding="utf-8") as f:
@@ -131,14 +144,14 @@ def inject(workflow_path: str, nodes: dict, values: dict) -> dict:
         if values.get(role) is not None:
             wf[node_id]["inputs"][field] = values[role]
     return wf
- 
- 
+
+
 # Просто ждём конца генерации, ничего не сохраняем (для прогрева)
 def wait_done(prompt_id: str):
     while prompt_id not in get_history(prompt_id):
         time.sleep(0.1)
- 
- 
+
+
 # Ждём генерацию, меряем метрики, сохраняем картинки
 def run_and_save(prompt_id: str, dest_dir: Path, stem: str):
     start = time.perf_counter()
@@ -152,7 +165,7 @@ def run_and_save(prompt_id: str, dest_dir: Path, stem: str):
             break
         time.sleep(0.1)
     gen_time = time.perf_counter() - start
- 
+
     dest_dir.mkdir(parents=True, exist_ok=True)
     saved = []
     for node_id in out[prompt_id]["outputs"]:
@@ -165,10 +178,11 @@ def run_and_save(prompt_id: str, dest_dir: Path, stem: str):
                 with open(dest, "wb") as fp:
                     fp.write(resp.content)
                 saved.append(str(dest))
- 
+                log.debug("saved %s", dest)
+
     return {"gen_time_s": gen_time, "vram_peak_mb": vram_peak}, saved
- 
- 
+
+
 # Собираем словарь значений под подмену
 def build_values(task: dict, image_name: str | None = None) -> dict:
     values = {
@@ -181,16 +195,21 @@ def build_values(task: dict, image_name: str | None = None) -> dict:
     if image_name is not None:
         values["image"] = image_name
     return values
- 
- 
+
+
 # Прогоняем одну модель целиком
 def process_model(model: str):
+    t0 = time.perf_counter()
+    log.info("=== МОДЕЛЬ: %s ===", model)
+
     config = CONFIGS[model]
     with open(f"prompts/prompts_{model}.json", encoding="utf-8") as f:
         prompts_data = json.load(f)
     filled = copy.deepcopy(prompts_data)
     out_dir = OUTPUT_ROOT / model
     has_image = "image" in config["nodes"]
+    n_tasks = len(prompts_data["tasks"])
+    log.info("воркфлоу: %s | задач: %d | edit-режим: %s", config["workflow"], n_tasks, has_image)
 
     # Грузим модель в врам, результат выбрасываем (Без этого у нас время будет не точно замеряться)
     first_name = next(iter(prompts_data["tasks"]))
@@ -199,25 +218,36 @@ def process_model(model: str):
     if has_image:
         sample = next(iter((INPUT_ROOT / first_name).glob("*")))
         warm_img = upload_image(sample)
+    log.info("прогрев — грузим модель в VRAM (результат выбрасываем)...")
     warm_wf = inject(config["workflow"], config["nodes"], build_values(first_task, warm_img))
     wait_done(queue_prompt(warm_wf))
+    log.info("прогрев готов (%.0fs)", time.perf_counter() - t0)
 
     # Проходимся по задачам, гоняем и пишем результат
-    for task_name, task in prompts_data["tasks"].items():
+    for ti, (task_name, task) in enumerate(prompts_data["tasks"].items(), 1):
         # edit-модель крутит по картинкам из inputs/<task>
         inputs = sorted((INPUT_ROOT / task_name).glob("*")) if has_image else [None]
- 
-        for image_path in inputs:
+        log.info("[задача %d/%d] '%s' — картинок: %d", ti, n_tasks, task_name, len(inputs))
+
+        for ii, image_path in enumerate(inputs, 1):
             image_name = upload_image(image_path) if image_path is not None else None
             values = build_values(task, image_name)
             stem = f"{task_name}_{values['seed']}"
             if image_path is not None:
                 stem = f"{task_name}_{image_path.stem}_{values['seed']}"
- 
+
             workflow = inject(config["workflow"], config["nodes"], values)
             prompt_id = queue_prompt(workflow)
             metrics, outputs = run_and_save(prompt_id, out_dir / task_name, stem)
- 
+
+            log.info("   img %d/%d %-22s | seed=%d | %.1fs | VRAM %.0f MB | файлов: %d",
+                     ii, len(inputs),
+                     image_path.name if image_path is not None else "(text2img)",
+                     values["seed"], metrics["gen_time_s"], metrics["vram_peak_mb"], len(outputs))
+            if metrics["gen_time_s"] < 1.0:
+                log.warning("   ВНИМАНИЕ: время %.2fs подозрительно мало — похоже на кэш-хит ComfyUI",
+                            metrics["gen_time_s"])
+
             filled["tasks"][task_name]["results"].append({
                 "input": str(image_path) if image_path else None,
                 "seed": values["seed"],
@@ -225,12 +255,25 @@ def process_model(model: str):
                 "auto": metrics,
                 "manual": {"quality": None, "artifacts": None, "adherence": None, "preservation": None},
             })
- 
+
     out_dir.mkdir(parents=True, exist_ok=True)
-    with open(out_dir / "results.json", "w", encoding="utf-8") as f:
+    res_path = out_dir / "results.json"
+    with open(res_path, "w", encoding="utf-8") as f:
         json.dump(filled, f, ensure_ascii=False, indent=2)
- 
- 
+    log.info("=== %s ГОТОВО за %.0fs | результаты: %s ===", model, time.perf_counter() - t0, res_path)
+
+
 if __name__ == "__main__":
+    log.info("СТАРТ прогона. Модели (%d): %s", len(MODELS_TO_RUN), ", ".join(MODELS_TO_RUN))
+    t_all = time.perf_counter()
+    ok, failed = [], []
     for model in MODELS_TO_RUN:
-        process_model(model)
+        try:
+            process_model(model)
+            ok.append(model)
+        except Exception:
+            # полный трейс в лог, но прогон не роняем — идём к следующей модели
+            log.exception("МОДЕЛЬ %s УПАЛА — пропускаю, иду дальше", model)
+            failed.append(model)
+    log.info("ВСЁ. Общее время: %.0fs | успешно: %s | упало: %s",
+             time.perf_counter() - t_all, ok or "—", failed or "—")
