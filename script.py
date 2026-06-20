@@ -229,6 +229,8 @@ def process_model(model: str):
         inputs = sorted((INPUT_ROOT / task_name).glob("*")) if has_image else [None]
         log.info("[задача %d/%d] '%s' — картинок: %d", ti, n_tasks, task_name, len(inputs))
 
+        # копим метрики по всем картинкам задачи, потом усредняем
+        times, vrams, all_outputs = [], [], []
         for ii, image_path in enumerate(inputs, 1):
             image_name = upload_image(image_path) if image_path is not None else None
             values = build_values(task, image_name)
@@ -248,13 +250,24 @@ def process_model(model: str):
                 log.warning("   ВНИМАНИЕ: время %.2fs подозрительно мало — похоже на кэш-хит ComfyUI",
                             metrics["gen_time_s"])
 
-            filled["tasks"][task_name]["results"].append({
-                "input": str(image_path) if image_path else None,
-                "seed": values["seed"],
-                "output": outputs,
-                "auto": metrics,
-                "manual": {"quality": None, "artifacts": None, "adherence": None, "preservation": None},
-            })
+            times.append(metrics["gen_time_s"])
+            vrams.append(metrics["vram_peak_mb"])
+            all_outputs.extend(outputs)
+
+        n = len(times)
+        avg_time = sum(times) / n if n else 0.0
+        avg_vram = sum(vrams) / n if n else 0.0
+        filled["tasks"][task_name]["results"] = {
+            "n_images": n,
+            "avg": {
+                "gen_time_s": round(avg_time, 2),
+                "vram_peak_mb": round(avg_vram, 1),
+            },
+            "outputs": all_outputs,
+            "manual": {"quality": None, "artifacts": None, "adherence": None, "preservation": None},
+        }
+        log.info("[задача %d/%d] '%s' ИТОГ — среднее: %.1fs | VRAM %.0f MB | картинок: %d",
+                 ti, n_tasks, task_name, avg_time, avg_vram, n)
 
     out_dir.mkdir(parents=True, exist_ok=True)
     res_path = out_dir / "results.json"
