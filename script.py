@@ -2,6 +2,7 @@ import copy
 import json
 import logging
 import random
+import shutil
 import requests
 import uuid
 import time
@@ -197,8 +198,23 @@ def build_values(task: dict, image_name: str | None = None) -> dict:
     return values
 
 
+# Заводим папку под новый прогон (output/1, output/2, ...) + кладём копию промптов
+def make_run_dir() -> Path:
+    OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
+    used = [int(p.name) for p in OUTPUT_ROOT.iterdir() if p.is_dir() and p.name.isdigit()]
+    run_dir = OUTPUT_ROOT / str(max(used, default=0) + 1)
+    run_dir.mkdir()
+    prompts_copy = run_dir / "prompts"
+    prompts_copy.mkdir()
+    for model in MODELS_TO_RUN:
+        src = Path(f"prompts/prompts_{model}.json")
+        if src.exists():
+            shutil.copy2(src, prompts_copy / src.name)
+    return run_dir
+
+
 # Прогоняем одну модель целиком
-def process_model(model: str):
+def process_model(model: str, run_dir: Path):
     t0 = time.perf_counter()
     log.info("=== МОДЕЛЬ: %s ===", model)
 
@@ -206,7 +222,7 @@ def process_model(model: str):
     with open(f"prompts/prompts_{model}.json", encoding="utf-8") as f:
         prompts_data = json.load(f)
     filled = copy.deepcopy(prompts_data)
-    out_dir = OUTPUT_ROOT / model
+    out_dir = run_dir / model
     has_image = "image" in config["nodes"]
     n_tasks = len(prompts_data["tasks"])
     log.info("воркфлоу: %s | задач: %d | edit-режим: %s", config["workflow"], n_tasks, has_image)
@@ -277,15 +293,18 @@ def process_model(model: str):
 
 
 if __name__ == "__main__":
-    log.info("СТАРТ прогона. Модели (%d): %s", len(MODELS_TO_RUN), ", ".join(MODELS_TO_RUN))
+    run_dir = make_run_dir()
+    log.info("СТАРТ прогона #%s -> %s. Модели (%d): %s",
+             run_dir.name, run_dir, len(MODELS_TO_RUN), ", ".join(MODELS_TO_RUN))
     t_all = time.perf_counter()
     ok, failed = [], []
     for model in MODELS_TO_RUN:
         try:
-            process_model(model)
+            process_model(model, run_dir)
             ok.append(model)
         except Exception:
             # полный трейс в лог, но прогон не роняем — идём к следующей модели
             log.exception("МОДЕЛЬ %s УПАЛА — пропускаю, иду дальше", model)
             failed.append(model)
-    log.info("ВСЁ. Общее время: %.0fs | успешно: %s | упало: %s", time.perf_counter() - t_all, ok or "—", failed or "—")
+    log.info("ВСЁ. Прогон #%s за %.0fs | успешно: %s | упало: %s",
+             run_dir.name, time.perf_counter() - t_all, ok or "—", failed or "—")
