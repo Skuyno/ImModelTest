@@ -150,20 +150,6 @@
       "title": "Switch (Steps)"
     }
   },
-  "192:183": {
-    "inputs": {
-      "lora_name": null,
-      "strength_model": 1,
-      "model": [
-        "144",
-        0
-      ]
-    },
-    "class_type": "LoraLoaderModelOnly",
-    "_meta": {
-      "title": "Загрузчик LoRA (Только модель)"
-    }
-  },
   "192:185": {
     "inputs": {
       "pixels": [
@@ -233,7 +219,7 @@
         0
       ],
       "on_true": [
-        "192:183",
+        "144",
         0
       ]
     },

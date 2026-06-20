@@ -143,20 +143,6 @@
       "title": "Switch(steps)"
     }
   },
-  "68:89": {
-    "inputs": {
-      "lora_name": null,
-      "strength_model": 1,
-      "model": [
-        "47",
-        0
-      ]
-    },
-    "class_type": "LoraLoaderModelOnly",
-    "_meta": {
-      "title": "Загрузчик LoRA (Только модель)"
-    }
-  },
   "68:72": {
     "inputs": {
       "image": [
@@ -209,7 +195,7 @@
         0
       ],
       "on_true": [
-        "68:89",
+        "47",
         0
       ]
     },

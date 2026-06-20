@@ -258,20 +258,6 @@
       "title": "FluxKontextMultiReferenceLatentMethod"
     }
   },
-  "170:153": {
-    "inputs": {
-      "lora_name": null,
-      "strength_model": 1,
-      "model": [
-        "170:152",
-        0
-      ]
-    },
-    "class_type": "LoraLoaderModelOnly",
-    "_meta": {
-      "title": "Загрузчик LoRA (Только модель)"
-    }
-  },
   "170:163": {
     "inputs": {
       "switch": [
@@ -283,7 +269,7 @@
         0
       ],
       "on_true": [
-        "170:153",
+        "170:152",
         0
       ]
     },
