@@ -1,0 +1,185 @@
+{
+  "model": "longcat-image-edit",
+  "tasks": {
+    "deblur": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "sharp focus, crisp details, clear edges, deblurred, high definition, fine texture, photorealistic",
+      "negative": "blur, motion blur, out of focus, soft, hazy, noise, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 48.64,
+          "vram_peak_mb": 21466.5
+        },
+        "outputs": [
+          "output/1/longcat-image-edit/deblur/deblur_crop_ (1)_3850859795_0.png",
+          "output/1/longcat-image-edit/deblur/deblur_crop_ (10)_2692303707_0.png",
+          "output/1/longcat-image-edit/deblur/deblur_crop_ (11)_4208323253_0.png",
+          "output/1/longcat-image-edit/deblur/deblur_crop_ (2)_387937111_0.png",
+          "output/1/longcat-image-edit/deblur/deblur_crop_ (4)_3551753166_0.png",
+          "output/1/longcat-image-edit/deblur/deblur_crop_ (6)_2075945028_0.png",
+          "output/1/longcat-image-edit/deblur/deblur_crop_ (7)_1919928286_0.png",
+          "output/1/longcat-image-edit/deblur/deblur_crop_ (9)_3165894363_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "relight_day": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "daytime, bright daylight, clear blue sky, natural sunlight, soft natural shadows, well-lit scene, photorealistic",
+      "negative": "nighttime, dark sky, street lights, neon glow, artificial lighting, added objects, extra people, distortion",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 48.74,
+          "vram_peak_mb": 21599.9
+        },
+        "outputs": [
+          "output/1/longcat-image-edit/relight_day/relight_day_crop_ (11)_3323571512_0.png",
+          "output/1/longcat-image-edit/relight_day/relight_day_crop_ (12)_3512663272_0.png",
+          "output/1/longcat-image-edit/relight_day/relight_day_crop_ (2)_999649812_0.png",
+          "output/1/longcat-image-edit/relight_day/relight_day_crop_ (3)_1938661374_0.png",
+          "output/1/longcat-image-edit/relight_day/relight_day_crop_ (5)_1937781659_0.png",
+          "output/1/longcat-image-edit/relight_day/relight_day_crop_ (6)_525338134_0.png",
+          "output/1/longcat-image-edit/relight_day/relight_day_crop_ (7)_383616973_0.png",
+          "output/1/longcat-image-edit/relight_day/relight_day_crop_ (8)_3922011283_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "object_insert_fire": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "fire on the ground, realistic flames, warm firelight, light smoke, glowing embers, photorealistic",
+      "negative": "extra fires, no fire, changed people, added objects, unrealistic flames, distortion",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 48.91,
+          "vram_peak_mb": 21435.2
+        },
+        "outputs": [
+          "output/1/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (1)_1741046719_0.png",
+          "output/1/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (10)_2400046821_0.png",
+          "output/1/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (11)_4154018480_0.png",
+          "output/1/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (12)_3526877612_0.png",
+          "output/1/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (4)_2621167037_0.png",
+          "output/1/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (5)_1974733449_0.png",
+          "output/1/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (6)_1049478017_0.png",
+          "output/1/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (7)_847545359_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "normalize": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "clean photo, neutral natural colors, balanced exposure, color corrected, even sharpness, photorealistic",
+      "negative": "color cast, overexposed, underexposed, stylized filter, artifacts, distortion",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 48.56,
+          "vram_peak_mb": 21516.6
+        },
+        "outputs": [
+          "output/1/longcat-image-edit/normalize/normalize_crop_ (1)_2565411156_0.png",
+          "output/1/longcat-image-edit/normalize/normalize_crop_ (10)_760190066_0.png",
+          "output/1/longcat-image-edit/normalize/normalize_crop_ (12)_3936103733_0.png",
+          "output/1/longcat-image-edit/normalize/normalize_crop_ (3)_2726347684_0.png",
+          "output/1/longcat-image-edit/normalize/normalize_crop_ (4)_3050243122_0.png",
+          "output/1/longcat-image-edit/normalize/normalize_crop_ (5)_1489143807_0.png",
+          "output/1/longcat-image-edit/normalize/normalize_crop_ (6)_2176825521_0.png",
+          "output/1/longcat-image-edit/normalize/normalize_crop_ (7)_4081048089_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "change_clothing": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "different outfit, new clothing, dark winter coat, jeans, changed clothes, photorealistic",
+      "negative": "same outfit, changed face, changed pose, changed body, changed background, added people, distortion",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 48.76,
+          "vram_peak_mb": 21366.3
+        },
+        "outputs": [
+          "output/1/longcat-image-edit/change_clothing/change_clothing_crop_ (1)_2230714368_0.png",
+          "output/1/longcat-image-edit/change_clothing/change_clothing_crop_ (10)_465620156_0.png",
+          "output/1/longcat-image-edit/change_clothing/change_clothing_crop_ (2)_1793942217_0.png",
+          "output/1/longcat-image-edit/change_clothing/change_clothing_crop_ (3)_1497675543_0.png",
+          "output/1/longcat-image-edit/change_clothing/change_clothing_crop_ (5)_2035772278_0.png",
+          "output/1/longcat-image-edit/change_clothing/change_clothing_crop_ (6)_3055551587_0.png",
+          "output/1/longcat-image-edit/change_clothing/change_clothing_crop_ (7)_198824726_0.png",
+          "output/1/longcat-image-edit/change_clothing/change_clothing_crop_ (8)_2331756945_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    }
+  }
+}

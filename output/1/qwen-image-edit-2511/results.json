@@ -1,0 +1,185 @@
+{
+  "model": "qwen-image-edit-2511",
+  "tasks": {
+    "deblur": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "sharp focus, crisp details, clear edges, deblurred, high definition, fine texture, photorealistic",
+      "negative": "blur, motion blur, out of focus, soft, hazy, noise, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 12.81,
+          "vram_peak_mb": 22517.3
+        },
+        "outputs": [
+          "output/1/qwen-image-edit-2511/deblur/deblur_crop_ (1)_1639928245_0.png",
+          "output/1/qwen-image-edit-2511/deblur/deblur_crop_ (10)_865324395_0.png",
+          "output/1/qwen-image-edit-2511/deblur/deblur_crop_ (11)_238182251_0.png",
+          "output/1/qwen-image-edit-2511/deblur/deblur_crop_ (2)_53021777_0.png",
+          "output/1/qwen-image-edit-2511/deblur/deblur_crop_ (4)_3440925573_0.png",
+          "output/1/qwen-image-edit-2511/deblur/deblur_crop_ (6)_1831010220_0.png",
+          "output/1/qwen-image-edit-2511/deblur/deblur_crop_ (7)_1132096939_0.png",
+          "output/1/qwen-image-edit-2511/deblur/deblur_crop_ (9)_3714372505_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "relight_day": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "daytime, bright daylight, clear blue sky, natural sunlight, soft natural shadows, well-lit scene, photorealistic",
+      "negative": "nighttime, dark sky, street lights, neon glow, artificial lighting, added objects, extra people, distortion",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 11.44,
+          "vram_peak_mb": 22506.9
+        },
+        "outputs": [
+          "output/1/qwen-image-edit-2511/relight_day/relight_day_crop_ (11)_2536474253_0.png",
+          "output/1/qwen-image-edit-2511/relight_day/relight_day_crop_ (12)_463824015_0.png",
+          "output/1/qwen-image-edit-2511/relight_day/relight_day_crop_ (2)_1241905055_0.png",
+          "output/1/qwen-image-edit-2511/relight_day/relight_day_crop_ (3)_4053834472_0.png",
+          "output/1/qwen-image-edit-2511/relight_day/relight_day_crop_ (5)_513928276_0.png",
+          "output/1/qwen-image-edit-2511/relight_day/relight_day_crop_ (6)_747725561_0.png",
+          "output/1/qwen-image-edit-2511/relight_day/relight_day_crop_ (7)_4132338147_0.png",
+          "output/1/qwen-image-edit-2511/relight_day/relight_day_crop_ (8)_1553220142_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "object_insert_fire": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "fire on the ground, realistic flames, warm firelight, light smoke, glowing embers, photorealistic",
+      "negative": "extra fires, no fire, changed people, added objects, unrealistic flames, distortion",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 11.35,
+          "vram_peak_mb": 22512.0
+        },
+        "outputs": [
+          "output/1/qwen-image-edit-2511/object_insert_fire/object_insert_fire_crop_ (1)_1499562450_0.png",
+          "output/1/qwen-image-edit-2511/object_insert_fire/object_insert_fire_crop_ (10)_2943235617_0.png",
+          "output/1/qwen-image-edit-2511/object_insert_fire/object_insert_fire_crop_ (11)_1657446618_0.png",
+          "output/1/qwen-image-edit-2511/object_insert_fire/object_insert_fire_crop_ (12)_3670509369_0.png",
+          "output/1/qwen-image-edit-2511/object_insert_fire/object_insert_fire_crop_ (4)_461509483_0.png",
+          "output/1/qwen-image-edit-2511/object_insert_fire/object_insert_fire_crop_ (5)_2648822089_0.png",
+          "output/1/qwen-image-edit-2511/object_insert_fire/object_insert_fire_crop_ (6)_1700770468_0.png",
+          "output/1/qwen-image-edit-2511/object_insert_fire/object_insert_fire_crop_ (7)_1685445749_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "normalize": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "clean photo, neutral natural colors, balanced exposure, color corrected, even sharpness, photorealistic",
+      "negative": "color cast, overexposed, underexposed, stylized filter, artifacts, distortion",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 11.46,
+          "vram_peak_mb": 22506.9
+        },
+        "outputs": [
+          "output/1/qwen-image-edit-2511/normalize/normalize_crop_ (1)_298308290_0.png",
+          "output/1/qwen-image-edit-2511/normalize/normalize_crop_ (10)_1981627522_0.png",
+          "output/1/qwen-image-edit-2511/normalize/normalize_crop_ (12)_3722981269_0.png",
+          "output/1/qwen-image-edit-2511/normalize/normalize_crop_ (3)_2006404212_0.png",
+          "output/1/qwen-image-edit-2511/normalize/normalize_crop_ (4)_2362971692_0.png",
+          "output/1/qwen-image-edit-2511/normalize/normalize_crop_ (5)_3693037508_0.png",
+          "output/1/qwen-image-edit-2511/normalize/normalize_crop_ (6)_1000617362_0.png",
+          "output/1/qwen-image-edit-2511/normalize/normalize_crop_ (7)_1988108871_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "change_clothing": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "different outfit, new clothing, dark winter coat, jeans, changed clothes, photorealistic",
+      "negative": "same outfit, changed face, changed pose, changed body, changed background, added people, distortion",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 11.43,
+          "vram_peak_mb": 22506.9
+        },
+        "outputs": [
+          "output/1/qwen-image-edit-2511/change_clothing/change_clothing_crop_ (1)_3865206885_0.png",
+          "output/1/qwen-image-edit-2511/change_clothing/change_clothing_crop_ (10)_1261449589_0.png",
+          "output/1/qwen-image-edit-2511/change_clothing/change_clothing_crop_ (2)_3086381832_0.png",
+          "output/1/qwen-image-edit-2511/change_clothing/change_clothing_crop_ (3)_3521620373_0.png",
+          "output/1/qwen-image-edit-2511/change_clothing/change_clothing_crop_ (5)_453405911_0.png",
+          "output/1/qwen-image-edit-2511/change_clothing/change_clothing_crop_ (6)_756146506_0.png",
+          "output/1/qwen-image-edit-2511/change_clothing/change_clothing_crop_ (7)_1973646351_0.png",
+          "output/1/qwen-image-edit-2511/change_clothing/change_clothing_crop_ (8)_3201089917_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    }
+  }
+}

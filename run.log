@@ -1,0 +1,794 @@
+03:29:29 | INFO    | СТАРТ прогона. Модели (6): qwen-image-edit-2511, flux1-kontext-dev, firered-image-edit-1.1, flux2-klein-9b, flux2-dev, longcat-image-edit
+03:29:29 | INFO    | === МОДЕЛЬ: qwen-image-edit-2511 ===
+03:29:29 | INFO    | воркфлоу: workflows/image_qwen_image_edit_2511.json | задач: 5 | edit-режим: True
+03:29:29 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+03:30:09 | INFO    | прогрев готов (40s)
+03:30:09 | INFO    | [задача 1/5] 'deblur' — картинок: 12
+03:30:42 | INFO    |    img 1/12 crop_ (1).jpg          | seed=908606586 | 33.5s | VRAM 20795 MB | файлов: 1
+03:31:14 | INFO    |    img 2/12 crop_ (10).jpg         | seed=1831190914 | 31.7s | VRAM 20795 MB | файлов: 1
+03:31:49 | INFO    |    img 3/12 crop_ (11).jpg         | seed=360068745 | 34.5s | VRAM 20797 MB | файлов: 1
+03:32:22 | INFO    |    img 4/12 crop_ (12).jpg         | seed=2133570884 | 33.7s | VRAM 20827 MB | файлов: 1
+03:32:57 | INFO    |    img 5/12 crop_ (2).jpg          | seed=847460807 | 34.2s | VRAM 20827 MB | файлов: 1
+03:33:28 | INFO    |    img 6/12 crop_ (3).jpg          | seed=3871899560 | 31.8s | VRAM 20806 MB | файлов: 1
+03:34:01 | INFO    |    img 7/12 crop_ (4).jpg          | seed=2718065584 | 32.6s | VRAM 20827 MB | файлов: 1
+03:34:32 | INFO    |    img 8/12 crop_ (5).jpg          | seed=1495429971 | 31.2s | VRAM 20827 MB | файлов: 1
+03:35:01 | INFO    |    img 9/12 crop_ (6).jpg          | seed=457000200 | 29.0s | VRAM 20827 MB | файлов: 1
+03:35:30 | INFO    |    img 10/12 crop_ (7).jpg          | seed=1335739555 | 29.0s | VRAM 20827 MB | файлов: 1
+03:35:59 | INFO    |    img 11/12 crop_ (8).jpg          | seed=3150363218 | 29.2s | VRAM 20795 MB | файлов: 1
+03:36:31 | INFO    |    img 12/12 crop_ (9).jpg          | seed=4280778132 | 31.6s | VRAM 20795 MB | файлов: 1
+03:36:31 | INFO    | [задача 2/5] 'relight_night' — картинок: 12
+03:36:59 | INFO    |    img 1/12 crop_ (1).jpg          | seed=2008007751 | 28.0s | VRAM 20827 MB | файлов: 1
+03:37:28 | INFO    |    img 2/12 crop_ (10).jpg         | seed=427302569 | 29.1s | VRAM 20827 MB | файлов: 1
+03:37:59 | INFO    |    img 3/12 crop_ (11).JPG         | seed=3869405709 | 31.1s | VRAM 20827 MB | файлов: 1
+03:38:34 | INFO    |    img 4/12 crop_ (12).JPG         | seed=3499312294 | 35.2s | VRAM 20795 MB | файлов: 1
+03:39:07 | INFO    |    img 5/12 crop_ (2).jpg          | seed=3207459222 | 32.2s | VRAM 20795 MB | файлов: 1
+03:39:36 | INFO    |    img 6/12 crop_ (3).jpg          | seed=1863348215 | 28.9s | VRAM 20827 MB | файлов: 1
+03:40:06 | INFO    |    img 7/12 crop_ (4).jpg          | seed=2075316456 | 30.0s | VRAM 20827 MB | файлов: 1
+03:40:36 | INFO    |    img 8/12 crop_ (5).jpg          | seed=2131130139 | 30.0s | VRAM 20827 MB | файлов: 1
+03:41:06 | INFO    |    img 9/12 crop_ (6).jpg          | seed=561495564 | 30.1s | VRAM 20795 MB | файлов: 1
+03:41:35 | INFO    |    img 10/12 crop_ (7).jpg          | seed=2932193692 | 29.8s | VRAM 20795 MB | файлов: 1
+03:42:15 | INFO    |    img 11/12 crop_ (8).jpg          | seed=738877007 | 39.7s | VRAM 20827 MB | файлов: 1
+03:42:45 | INFO    |    img 12/12 crop_ (9).JPG          | seed=1838712497 | 30.1s | VRAM 20827 MB | файлов: 1
+03:42:45 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 12
+03:43:18 | INFO    |    img 1/12 crop_ (1).jpg          | seed=3393183879 | 32.4s | VRAM 20826 MB | файлов: 1
+03:43:48 | INFO    |    img 2/12 crop_ (10).jpg         | seed=2056359631 | 30.4s | VRAM 20826 MB | файлов: 1
+03:44:16 | INFO    |    img 3/12 crop_ (11).jpg         | seed=3722014785 | 27.8s | VRAM 20826 MB | файлов: 1
+03:44:46 | INFO    |    img 4/12 crop_ (12).jpg         | seed=944751632 | 29.9s | VRAM 20826 MB | файлов: 1
+03:45:16 | INFO    |    img 5/12 crop_ (2).jpg          | seed=2626590298 | 30.2s | VRAM 20794 MB | файлов: 1
+03:45:46 | INFO    |    img 6/12 crop_ (3).jpg          | seed=2710615146 | 30.4s | VRAM 20794 MB | файлов: 1
+03:46:16 | INFO    |    img 7/12 crop_ (4).jpg          | seed=4011934659 | 30.0s | VRAM 20826 MB | файлов: 1
+03:46:48 | INFO    |    img 8/12 crop_ (5).jpg          | seed=3679691129 | 31.5s | VRAM 20826 MB | файлов: 1
+03:47:17 | INFO    |    img 9/12 crop_ (6).jpg          | seed=2437341123 | 28.7s | VRAM 20826 MB | файлов: 1
+03:47:49 | INFO    |    img 10/12 crop_ (7).jpg          | seed=3545068755 | 32.2s | VRAM 20797 MB | файлов: 1
+03:48:16 | INFO    |    img 11/12 crop_ (8).jpg          | seed=1534357671 | 27.2s | VRAM 20826 MB | файлов: 1
+03:48:47 | INFO    |    img 12/12 crop_ (9).jpg          | seed=2230519413 | 31.2s | VRAM 20826 MB | файлов: 1
+03:48:47 | INFO    | [задача 4/5] 'normalize' — картинок: 12
+03:49:16 | INFO    |    img 1/12 crop_ (1).jpg          | seed=3126561262 | 28.4s | VRAM 20827 MB | файлов: 1
+03:49:43 | INFO    |    img 2/12 crop_ (10).jpg         | seed=905660959 | 27.6s | VRAM 20795 MB | файлов: 1
+03:50:15 | INFO    |    img 3/12 crop_ (11).jpg         | seed=2786544048 | 32.1s | VRAM 20795 MB | файлов: 1
+03:50:44 | INFO    |    img 4/12 crop_ (12).jpg         | seed=2568688008 | 28.8s | VRAM 20827 MB | файлов: 1
+03:51:17 | INFO    |    img 5/12 crop_ (2).jpg          | seed=3592710269 | 32.5s | VRAM 20795 MB | файлов: 1
+03:51:47 | INFO    |    img 6/12 crop_ (3).jpg          | seed=812879959 | 30.4s | VRAM 20795 MB | файлов: 1
+03:52:15 | INFO    |    img 7/12 crop_ (4).jpg          | seed=3188272364 | 28.3s | VRAM 20795 MB | файлов: 1
+03:52:46 | INFO    |    img 8/12 crop_ (5).jpg          | seed=4218325243 | 30.7s | VRAM 20827 MB | файлов: 1
+03:53:15 | INFO    |    img 9/12 crop_ (6).jpg          | seed=1816842461 | 29.4s | VRAM 20795 MB | файлов: 1
+03:53:46 | INFO    |    img 10/12 crop_ (7).jpg          | seed=3643143292 | 30.5s | VRAM 20827 MB | файлов: 1
+03:54:18 | INFO    |    img 11/12 crop_ (8).jpg          | seed=771105157 | 32.0s | VRAM 20827 MB | файлов: 1
+03:54:48 | INFO    |    img 12/12 crop_ (9).jpg          | seed=400918426 | 29.6s | VRAM 20827 MB | файлов: 1
+03:54:48 | INFO    | [задача 5/5] 'change_clothing' — картинок: 12
+03:55:17 | INFO    |    img 1/12 crop_ (1).jpg          | seed=33232441 | 29.6s | VRAM 20827 MB | файлов: 1
+03:55:45 | INFO    |    img 2/12 crop_ (10).jpg         | seed=1138387636 | 27.9s | VRAM 20827 MB | файлов: 1
+03:56:16 | INFO    |    img 3/12 crop_ (11).jpg         | seed=473033013 | 30.6s | VRAM 20795 MB | файлов: 1
+03:56:46 | INFO    |    img 4/12 crop_ (12).jpg         | seed=2659370718 | 30.1s | VRAM 20797 MB | файлов: 1
+03:57:15 | INFO    |    img 5/12 crop_ (2).jpg          | seed=892394715 | 29.4s | VRAM 20827 MB | файлов: 1
+03:57:46 | INFO    |    img 6/12 crop_ (3).jpg          | seed=3848762016 | 30.3s | VRAM 20795 MB | файлов: 1
+03:58:15 | INFO    |    img 7/12 crop_ (4).jpg          | seed=4089899629 | 29.2s | VRAM 20827 MB | файлов: 1
+03:58:44 | INFO    |    img 8/12 crop_ (5).jpg          | seed=2515619190 | 29.1s | VRAM 20827 MB | файлов: 1
+03:59:13 | INFO    |    img 9/12 crop_ (6).jpg          | seed=4089217602 | 28.7s | VRAM 21022 MB | файлов: 1
+03:59:41 | INFO    |    img 10/12 crop_ (7).jpg          | seed=2856582802 | 27.9s | VRAM 20827 MB | файлов: 1
+04:00:10 | INFO    |    img 11/12 crop_ (8).jpg          | seed=4082434663 | 29.0s | VRAM 20827 MB | файлов: 1
+04:00:38 | INFO    |    img 12/12 crop_ (9).jpg          | seed=2247273791 | 28.4s | VRAM 20827 MB | файлов: 1
+04:00:38 | INFO    | === qwen-image-edit-2511 ГОТОВО за 1869s | результаты: output/qwen-image-edit-2511/results.json ===
+04:00:38 | INFO    | === МОДЕЛЬ: flux1-kontext-dev ===
+04:00:38 | INFO    | воркфлоу: workflows/flux_kontext_dev_basic.json | задач: 5 | edit-режим: True
+04:00:38 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+13:42:05 | INFO    | СТАРТ прогона. Модели (6): qwen-image-edit-2511, flux1-kontext-dev, firered-image-edit-1.1, flux2-klein-9b, flux2-dev, longcat-image-edit
+13:42:05 | INFO    | === МОДЕЛЬ: qwen-image-edit-2511 ===
+13:42:05 | INFO    | воркфлоу: workflows/image_qwen_image_edit_2511.json | задач: 5 | edit-режим: True
+13:42:05 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+13:45:02 | INFO    | прогрев готов (178s)
+13:45:02 | INFO    | [задача 1/5] 'deblur' — картинок: 12
+13:45:16 | INFO    |    img 1/12 crop_ (1).jpg          | seed=1545670794 | 13.3s | VRAM 22372 MB | файлов: 1
+13:45:31 | INFO    |    img 2/12 crop_ (10).jpg         | seed=4128665405 | 15.3s | VRAM 22505 MB | файлов: 1
+13:45:43 | INFO    |    img 3/12 crop_ (11).jpg         | seed=3876660270 | 11.8s | VRAM 22505 MB | файлов: 1
+13:45:55 | INFO    |    img 4/12 crop_ (12).jpg         | seed=926115740 | 12.3s | VRAM 22505 MB | файлов: 1
+13:46:07 | INFO    |    img 5/12 crop_ (2).jpg          | seed=1116433971 | 11.7s | VRAM 22505 MB | файлов: 1
+13:46:19 | INFO    |    img 6/12 crop_ (3).jpg          | seed=1106766920 | 11.7s | VRAM 22505 MB | файлов: 1
+13:46:31 | INFO    |    img 7/12 crop_ (4).jpg          | seed=4083533067 | 11.7s | VRAM 22505 MB | файлов: 1
+13:46:42 | INFO    |    img 8/12 crop_ (5).jpg          | seed=3093306762 | 11.6s | VRAM 22513 MB | файлов: 1
+13:46:54 | INFO    |    img 9/12 crop_ (6).jpg          | seed=927652115 | 11.6s | VRAM 22505 MB | файлов: 1
+13:47:05 | INFO    |    img 10/12 crop_ (7).jpg          | seed=439761097 | 11.5s | VRAM 22505 MB | файлов: 1
+13:47:17 | INFO    |    img 11/12 crop_ (8).jpg          | seed=2758093257 | 11.5s | VRAM 22505 MB | файлов: 1
+13:47:29 | INFO    |    img 12/12 crop_ (9).jpg          | seed=1807390646 | 11.6s | VRAM 22505 MB | файлов: 1
+13:47:29 | INFO    | [задача 2/5] 'relight_night' — картинок: 12
+13:47:40 | INFO    |    img 1/12 crop_ (1).jpg          | seed=265087759 | 11.6s | VRAM 22505 MB | файлов: 1
+13:47:52 | INFO    |    img 2/12 crop_ (10).jpg         | seed=3172058864 | 11.7s | VRAM 22505 MB | файлов: 1
+13:48:04 | INFO    |    img 3/12 crop_ (11).JPG         | seed=595954162 | 11.6s | VRAM 22505 MB | файлов: 1
+13:48:15 | INFO    |    img 4/12 crop_ (12).JPG         | seed=2133603804 | 11.6s | VRAM 22505 MB | файлов: 1
+13:48:27 | INFO    |    img 5/12 crop_ (2).jpg          | seed=190920578 | 11.5s | VRAM 22505 MB | файлов: 1
+13:48:38 | INFO    |    img 6/12 crop_ (3).jpg          | seed=2327890525 | 11.5s | VRAM 22505 MB | файлов: 1
+13:48:50 | INFO    |    img 7/12 crop_ (4).jpg          | seed=1404338311 | 11.5s | VRAM 22505 MB | файлов: 1
+13:49:01 | INFO    |    img 8/12 crop_ (5).jpg          | seed=2317094365 | 11.4s | VRAM 22505 MB | файлов: 1
+13:49:13 | INFO    |    img 9/12 crop_ (6).jpg          | seed=3125666707 | 11.5s | VRAM 22505 MB | файлов: 1
+13:49:25 | INFO    |    img 10/12 crop_ (7).jpg          | seed=1716047809 | 11.5s | VRAM 22505 MB | файлов: 1
+13:49:36 | INFO    |    img 11/12 crop_ (8).jpg          | seed=1119584555 | 11.4s | VRAM 22505 MB | файлов: 1
+13:49:48 | INFO    |    img 12/12 crop_ (9).JPG          | seed=2770747836 | 11.7s | VRAM 22543 MB | файлов: 1
+13:49:48 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 12
+13:50:00 | INFO    |    img 1/12 crop_ (1).jpg          | seed=2875833233 | 11.6s | VRAM 22505 MB | файлов: 1
+13:50:11 | INFO    |    img 2/12 crop_ (10).jpg         | seed=3820901756 | 11.5s | VRAM 22505 MB | файлов: 1
+13:50:23 | INFO    |    img 3/12 crop_ (11).jpg         | seed=3750753240 | 11.6s | VRAM 22505 MB | файлов: 1
+13:50:34 | INFO    |    img 4/12 crop_ (12).jpg         | seed=3664171181 | 11.5s | VRAM 22505 MB | файлов: 1
+13:50:46 | INFO    |    img 5/12 crop_ (2).jpg          | seed=519167891 | 11.5s | VRAM 22641 MB | файлов: 1
+13:50:57 | INFO    |    img 6/12 crop_ (3).jpg          | seed=3058963816 | 11.5s | VRAM 22510 MB | файлов: 1
+13:51:09 | INFO    |    img 7/12 crop_ (4).jpg          | seed=1121660582 | 11.5s | VRAM 22505 MB | файлов: 1
+13:51:20 | INFO    |    img 8/12 crop_ (5).jpg          | seed=2855110152 | 11.5s | VRAM 22505 MB | файлов: 1
+13:51:32 | INFO    |    img 9/12 crop_ (6).jpg          | seed=310728461 | 11.5s | VRAM 22505 MB | файлов: 1
+13:51:44 | INFO    |    img 10/12 crop_ (7).jpg          | seed=4114907295 | 12.1s | VRAM 22505 MB | файлов: 1
+13:51:55 | INFO    |    img 11/12 crop_ (8).jpg          | seed=2405782963 | 11.5s | VRAM 22505 MB | файлов: 1
+13:52:07 | INFO    |    img 12/12 crop_ (9).jpg          | seed=1228925146 | 11.5s | VRAM 22505 MB | файлов: 1
+13:52:07 | INFO    | [задача 4/5] 'normalize' — картинок: 12
+13:52:19 | INFO    |    img 1/12 crop_ (1).jpg          | seed=2455047706 | 11.5s | VRAM 22505 MB | файлов: 1
+13:52:30 | INFO    |    img 2/12 crop_ (10).jpg         | seed=1897022834 | 11.6s | VRAM 22505 MB | файлов: 1
+13:52:42 | INFO    |    img 3/12 crop_ (11).jpg         | seed=2022073859 | 11.5s | VRAM 22505 MB | файлов: 1
+13:52:53 | INFO    |    img 4/12 crop_ (12).jpg         | seed=408794500 | 11.5s | VRAM 22505 MB | файлов: 1
+13:53:05 | INFO    |    img 5/12 crop_ (2).jpg          | seed=3925232483 | 11.4s | VRAM 22505 MB | файлов: 1
+13:53:16 | INFO    |    img 6/12 crop_ (3).jpg          | seed=1037335160 | 11.4s | VRAM 22505 MB | файлов: 1
+13:53:27 | INFO    |    img 7/12 crop_ (4).jpg          | seed=823946224 | 11.4s | VRAM 22553 MB | файлов: 1
+13:53:39 | INFO    |    img 8/12 crop_ (5).jpg          | seed=2799094830 | 11.5s | VRAM 22505 MB | файлов: 1
+13:53:51 | INFO    |    img 9/12 crop_ (6).jpg          | seed=344091102 | 11.6s | VRAM 22505 MB | файлов: 1
+13:54:02 | INFO    |    img 10/12 crop_ (7).jpg          | seed=3625821694 | 11.6s | VRAM 22505 MB | файлов: 1
+13:54:14 | INFO    |    img 11/12 crop_ (8).jpg          | seed=3512581170 | 11.4s | VRAM 22505 MB | файлов: 1
+13:54:25 | INFO    |    img 12/12 crop_ (9).jpg          | seed=2455093134 | 11.5s | VRAM 22505 MB | файлов: 1
+13:54:25 | INFO    | [задача 5/5] 'change_clothing' — картинок: 12
+13:54:37 | INFO    |    img 1/12 crop_ (1).jpg          | seed=1738469008 | 11.4s | VRAM 22505 MB | файлов: 1
+13:54:48 | INFO    |    img 2/12 crop_ (10).jpg         | seed=2193433101 | 11.5s | VRAM 22505 MB | файлов: 1
+13:55:00 | INFO    |    img 3/12 crop_ (11).jpg         | seed=3210232376 | 11.6s | VRAM 22505 MB | файлов: 1
+13:55:11 | INFO    |    img 4/12 crop_ (12).jpg         | seed=183477760 | 11.5s | VRAM 22505 MB | файлов: 1
+13:55:23 | INFO    |    img 5/12 crop_ (2).jpg          | seed=994694537 | 11.5s | VRAM 22505 MB | файлов: 1
+13:55:35 | INFO    |    img 6/12 crop_ (3).jpg          | seed=3884818730 | 11.5s | VRAM 22505 MB | файлов: 1
+13:55:46 | INFO    |    img 7/12 crop_ (4).jpg          | seed=3601242753 | 11.6s | VRAM 22505 MB | файлов: 1
+13:55:58 | INFO    |    img 8/12 crop_ (5).jpg          | seed=2034291149 | 11.6s | VRAM 22505 MB | файлов: 1
+13:56:09 | INFO    |    img 9/12 crop_ (6).jpg          | seed=2900626811 | 11.6s | VRAM 22505 MB | файлов: 1
+13:56:21 | INFO    |    img 10/12 crop_ (7).jpg          | seed=854678185 | 11.6s | VRAM 22505 MB | файлов: 1
+13:56:33 | INFO    |    img 11/12 crop_ (8).jpg          | seed=1696558957 | 11.6s | VRAM 22738 MB | файлов: 1
+13:56:45 | INFO    |    img 12/12 crop_ (9).jpg          | seed=604608438 | 11.6s | VRAM 22505 MB | файлов: 1
+13:56:45 | INFO    | === qwen-image-edit-2511 ГОТОВО за 880s | результаты: output/qwen-image-edit-2511/results.json ===
+13:56:45 | INFO    | === МОДЕЛЬ: flux1-kontext-dev ===
+13:56:45 | INFO    | воркфлоу: workflows/flux_kontext_dev_basic.json | задач: 5 | edit-режим: True
+13:56:45 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+14:04:47 | INFO    | СТАРТ прогона. Модели (6): qwen-image-edit-2511, flux1-kontext-dev, firered-image-edit-1.1, flux2-klein-9b, flux2-dev, longcat-image-edit
+14:04:47 | INFO    | === МОДЕЛЬ: qwen-image-edit-2511 ===
+14:04:47 | INFO    | воркфлоу: workflows/image_qwen_image_edit_2511.json | задач: 5 | edit-режим: True
+14:04:47 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+14:06:01 | INFO    | прогрев готов (73s)
+14:06:01 | INFO    | [задача 1/5] 'deblur' — картинок: 12
+14:06:24 | INFO    |    img 1/12 crop_ (1).jpg          | seed=511211937 | 23.9s | VRAM 22411 MB | файлов: 1
+14:06:36 | INFO    |    img 2/12 crop_ (10).jpg         | seed=1889887323 | 11.6s | VRAM 22507 MB | файлов: 1
+14:06:48 | INFO    |    img 3/12 crop_ (11).jpg         | seed=950265843 | 11.9s | VRAM 22507 MB | файлов: 1
+14:07:00 | INFO    |    img 4/12 crop_ (12).jpg         | seed=1759206809 | 11.7s | VRAM 22507 MB | файлов: 1
+14:07:11 | INFO    |    img 5/12 crop_ (2).jpg          | seed=2278650584 | 11.5s | VRAM 22507 MB | файлов: 1
+14:07:23 | INFO    |    img 6/12 crop_ (3).jpg          | seed=54309839 | 11.4s | VRAM 22507 MB | файлов: 1
+14:07:34 | INFO    |    img 7/12 crop_ (4).jpg          | seed=2093723273 | 11.4s | VRAM 22507 MB | файлов: 1
+14:07:45 | INFO    |    img 8/12 crop_ (5).jpg          | seed=1731336337 | 11.4s | VRAM 22507 MB | файлов: 1
+14:07:57 | INFO    |    img 9/12 crop_ (6).jpg          | seed=1809236952 | 11.5s | VRAM 22507 MB | файлов: 1
+14:08:08 | INFO    |    img 10/12 crop_ (7).jpg          | seed=3184434137 | 11.3s | VRAM 22507 MB | файлов: 1
+14:08:20 | INFO    |    img 11/12 crop_ (8).jpg          | seed=2020591195 | 11.3s | VRAM 22507 MB | файлов: 1
+14:08:31 | INFO    |    img 12/12 crop_ (9).jpg          | seed=2359457980 | 11.2s | VRAM 22507 MB | файлов: 1
+14:08:31 | INFO    | [задача 2/5] 'relight_day' — картинок: 0
+14:08:31 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 12
+14:08:42 | INFO    |    img 1/12 crop_ (1).jpg          | seed=1292048342 | 11.4s | VRAM 22507 MB | файлов: 1
+14:08:54 | INFO    |    img 2/12 crop_ (10).jpg         | seed=1721965487 | 11.4s | VRAM 22507 MB | файлов: 1
+14:09:05 | INFO    |    img 3/12 crop_ (11).jpg         | seed=4068695170 | 11.5s | VRAM 22507 MB | файлов: 1
+14:09:17 | INFO    |    img 4/12 crop_ (12).jpg         | seed=2347368104 | 11.3s | VRAM 22507 MB | файлов: 1
+14:09:28 | INFO    |    img 5/12 crop_ (2).jpg          | seed=2912600298 | 11.2s | VRAM 22507 MB | файлов: 1
+14:09:39 | INFO    |    img 6/12 crop_ (3).jpg          | seed=2435065693 | 11.3s | VRAM 22507 MB | файлов: 1
+14:09:50 | INFO    |    img 7/12 crop_ (4).jpg          | seed=1449163415 | 11.3s | VRAM 22643 MB | файлов: 1
+14:10:02 | INFO    |    img 8/12 crop_ (5).jpg          | seed=685593194 | 11.2s | VRAM 22507 MB | файлов: 1
+14:10:13 | INFO    |    img 9/12 crop_ (6).jpg          | seed=3901909290 | 11.3s | VRAM 22507 MB | файлов: 1
+14:10:24 | INFO    |    img 10/12 crop_ (7).jpg          | seed=2187972169 | 11.2s | VRAM 22507 MB | файлов: 1
+14:10:36 | INFO    |    img 11/12 crop_ (8).jpg          | seed=2279308635 | 11.4s | VRAM 22507 MB | файлов: 1
+14:10:47 | INFO    |    img 12/12 crop_ (9).jpg          | seed=1966014586 | 11.2s | VRAM 22507 MB | файлов: 1
+14:10:47 | INFO    | [задача 4/5] 'normalize' — картинок: 12
+14:10:59 | INFO    |    img 1/12 crop_ (1).jpg          | seed=2560194619 | 11.3s | VRAM 22507 MB | файлов: 1
+14:11:10 | INFO    |    img 2/12 crop_ (10).jpg         | seed=335475784 | 11.2s | VRAM 22507 MB | файлов: 1
+14:11:21 | INFO    |    img 3/12 crop_ (11).jpg         | seed=510669601 | 11.2s | VRAM 22507 MB | файлов: 1
+14:11:32 | INFO    |    img 4/12 crop_ (12).jpg         | seed=49974979 | 11.2s | VRAM 22545 MB | файлов: 1
+14:11:44 | INFO    |    img 5/12 crop_ (2).jpg          | seed=2425192436 | 11.2s | VRAM 22507 MB | файлов: 1
+14:11:55 | INFO    |    img 6/12 crop_ (3).jpg          | seed=2822557757 | 11.2s | VRAM 22507 MB | файлов: 1
+14:12:06 | INFO    |    img 7/12 crop_ (4).jpg          | seed=2455758397 | 11.3s | VRAM 22507 MB | файлов: 1
+14:12:18 | INFO    |    img 8/12 crop_ (5).jpg          | seed=133016144 | 11.3s | VRAM 22507 MB | файлов: 1
+14:12:29 | INFO    |    img 9/12 crop_ (6).jpg          | seed=3241649881 | 11.3s | VRAM 22507 MB | файлов: 1
+14:12:40 | INFO    |    img 10/12 crop_ (7).jpg          | seed=892924112 | 11.3s | VRAM 22507 MB | файлов: 1
+14:12:51 | INFO    |    img 11/12 crop_ (8).jpg          | seed=831587204 | 11.4s | VRAM 22507 MB | файлов: 1
+14:13:03 | INFO    |    img 12/12 crop_ (9).jpg          | seed=2394391436 | 11.3s | VRAM 22507 MB | файлов: 1
+14:13:03 | INFO    | [задача 5/5] 'change_clothing' — картинок: 12
+14:13:14 | INFO    |    img 1/12 crop_ (1).jpg          | seed=3632617397 | 11.3s | VRAM 22507 MB | файлов: 1
+14:13:26 | INFO    |    img 2/12 crop_ (10).jpg         | seed=3300252893 | 11.4s | VRAM 22507 MB | файлов: 1
+14:13:37 | INFO    |    img 3/12 crop_ (11).jpg         | seed=2693770653 | 11.2s | VRAM 22507 MB | файлов: 1
+14:13:48 | INFO    |    img 4/12 crop_ (12).jpg         | seed=412921137 | 11.3s | VRAM 22507 MB | файлов: 1
+14:14:00 | INFO    |    img 5/12 crop_ (2).jpg          | seed=3968862970 | 11.3s | VRAM 22507 MB | файлов: 1
+14:14:11 | INFO    |    img 6/12 crop_ (3).jpg          | seed=770420471 | 11.4s | VRAM 22507 MB | файлов: 1
+14:14:22 | INFO    |    img 7/12 crop_ (4).jpg          | seed=2483490027 | 11.4s | VRAM 22507 MB | файлов: 1
+14:14:34 | INFO    |    img 8/12 crop_ (5).jpg          | seed=2151662366 | 11.8s | VRAM 22513 MB | файлов: 1
+14:14:46 | INFO    |    img 9/12 crop_ (6).jpg          | seed=882813966 | 11.5s | VRAM 22507 MB | файлов: 1
+14:14:57 | INFO    |    img 10/12 crop_ (7).jpg          | seed=2487450030 | 11.3s | VRAM 22507 MB | файлов: 1
+14:15:08 | INFO    |    img 11/12 crop_ (8).jpg          | seed=1677800194 | 11.2s | VRAM 22507 MB | файлов: 1
+14:15:20 | INFO    |    img 12/12 crop_ (9).jpg          | seed=4161057351 | 11.2s | VRAM 22507 MB | файлов: 1
+14:15:20 | INFO    | === qwen-image-edit-2511 ГОТОВО за 632s | результаты: output/qwen-image-edit-2511/results.json ===
+14:15:20 | INFO    | === МОДЕЛЬ: flux1-kontext-dev ===
+14:15:20 | INFO    | воркфлоу: workflows/flux_kontext_dev_basic.json | задач: 5 | edit-режим: True
+14:15:20 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+14:17:14 | INFO    | прогрев готов (114s)
+14:17:14 | INFO    | [задача 1/5] 'deblur' — картинок: 12
+14:17:49 | INFO    |    img 1/12 crop_ (1).jpg          | seed=2068310465 | 35.5s | VRAM 20177 MB | файлов: 1
+14:18:24 | INFO    |    img 2/12 crop_ (10).jpg         | seed=166632924 | 35.4s | VRAM 20177 MB | файлов: 1
+14:19:00 | INFO    |    img 3/12 crop_ (11).jpg         | seed=1597827857 | 35.4s | VRAM 20177 MB | файлов: 1
+14:19:35 | INFO    |    img 4/12 crop_ (12).jpg         | seed=53656278 | 35.4s | VRAM 20177 MB | файлов: 1
+14:20:11 | INFO    |    img 5/12 crop_ (2).jpg          | seed=1217825269 | 35.4s | VRAM 20146 MB | файлов: 1
+14:20:46 | INFO    |    img 6/12 crop_ (3).jpg          | seed=4117748839 | 35.4s | VRAM 20177 MB | файлов: 1
+14:21:21 | INFO    |    img 7/12 crop_ (4).jpg          | seed=1303393451 | 35.4s | VRAM 20177 MB | файлов: 1
+14:21:57 | INFO    |    img 8/12 crop_ (5).jpg          | seed=3311736204 | 35.4s | VRAM 20177 MB | файлов: 1
+14:22:32 | INFO    |    img 9/12 crop_ (6).jpg          | seed=2580963291 | 35.4s | VRAM 20177 MB | файлов: 1
+14:23:08 | INFO    |    img 10/12 crop_ (7).jpg          | seed=4278272652 | 35.4s | VRAM 20466 MB | файлов: 1
+14:23:43 | INFO    |    img 11/12 crop_ (8).jpg          | seed=1312621933 | 35.4s | VRAM 20177 MB | файлов: 1
+14:24:18 | INFO    |    img 12/12 crop_ (9).jpg          | seed=1305357915 | 35.4s | VRAM 20177 MB | файлов: 1
+14:24:18 | INFO    | [задача 2/5] 'relight_day' — картинок: 0
+14:24:18 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 12
+14:25:02 | INFO    |    img 1/12 crop_ (1).jpg          | seed=1409242007 | 44.0s | VRAM 22146 MB | файлов: 1
+14:25:38 | INFO    |    img 2/12 crop_ (10).jpg         | seed=2825933393 | 35.4s | VRAM 21361 MB | файлов: 1
+14:26:13 | INFO    |    img 3/12 crop_ (11).jpg         | seed=670929465 | 35.3s | VRAM 21361 MB | файлов: 1
+14:26:49 | INFO    |    img 4/12 crop_ (12).jpg         | seed=2361955683 | 35.4s | VRAM 21361 MB | файлов: 1
+14:27:24 | INFO    |    img 5/12 crop_ (2).jpg          | seed=4055186694 | 35.4s | VRAM 21330 MB | файлов: 1
+14:29:47 | INFO    | СТАРТ прогона. Модели (6): qwen-image-edit-2511, flux1-kontext-dev, firered-image-edit-1.1, flux2-klein-9b, flux2-dev, longcat-image-edit
+14:29:47 | INFO    | === МОДЕЛЬ: qwen-image-edit-2511 ===
+14:29:47 | INFO    | воркфлоу: workflows/image_qwen_image_edit_2511.json | задач: 5 | edit-режим: True
+14:29:47 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+14:31:21 | INFO    | прогрев готов (94s)
+14:31:21 | INFO    | [задача 1/5] 'deblur' — картинок: 12
+14:31:34 | INFO    |    img 1/12 crop_ (1).jpg          | seed=158005702 | 13.3s | VRAM 22374 MB | файлов: 1
+14:31:46 | INFO    |    img 2/12 crop_ (10).jpg         | seed=991519593 | 11.5s | VRAM 22507 MB | файлов: 1
+14:31:57 | INFO    |    img 3/12 crop_ (11).jpg         | seed=4099285564 | 11.7s | VRAM 22507 MB | файлов: 1
+14:32:09 | INFO    |    img 4/12 crop_ (12).jpg         | seed=1897428594 | 11.4s | VRAM 22507 MB | файлов: 1
+14:32:20 | INFO    |    img 5/12 crop_ (2).jpg          | seed=2674065186 | 11.4s | VRAM 22507 MB | файлов: 1
+14:32:31 | INFO    |    img 6/12 crop_ (3).jpg          | seed=1882682452 | 11.3s | VRAM 22507 MB | файлов: 1
+14:32:43 | INFO    |    img 7/12 crop_ (4).jpg          | seed=3731245559 | 11.3s | VRAM 22507 MB | файлов: 1
+14:32:54 | INFO    |    img 8/12 crop_ (5).jpg          | seed=3272790808 | 11.2s | VRAM 22507 MB | файлов: 1
+14:33:05 | INFO    |    img 9/12 crop_ (6).jpg          | seed=239263477 | 11.3s | VRAM 22507 MB | файлов: 1
+14:33:17 | INFO    |    img 10/12 crop_ (7).jpg          | seed=4215065884 | 11.2s | VRAM 22507 MB | файлов: 1
+14:33:28 | INFO    |    img 11/12 crop_ (8).jpg          | seed=1331643960 | 11.4s | VRAM 22507 MB | файлов: 1
+14:33:39 | INFO    |    img 12/12 crop_ (9).jpg          | seed=3622433784 | 11.3s | VRAM 22507 MB | файлов: 1
+14:33:39 | INFO    | [задача 2/5] 'relight_day' — картинок: 12
+14:33:51 | INFO    |    img 1/12 crop_ (1).jpg          | seed=3329490716 | 11.6s | VRAM 22507 MB | файлов: 1
+14:34:02 | INFO    |    img 2/12 crop_ (10).jpg         | seed=1524083640 | 11.4s | VRAM 22507 MB | файлов: 1
+14:34:14 | INFO    |    img 3/12 crop_ (11).JPG         | seed=1408773535 | 11.3s | VRAM 22507 MB | файлов: 1
+14:34:25 | INFO    |    img 4/12 crop_ (12).JPG         | seed=1347496335 | 11.4s | VRAM 22507 MB | файлов: 1
+14:34:36 | INFO    |    img 5/12 crop_ (2).jpg          | seed=3302573572 | 11.5s | VRAM 22507 MB | файлов: 1
+14:34:48 | INFO    |    img 6/12 crop_ (3).jpg          | seed=851953261 | 11.6s | VRAM 22507 MB | файлов: 1
+14:35:00 | INFO    |    img 7/12 crop_ (4).jpg          | seed=2607293317 | 11.4s | VRAM 22507 MB | файлов: 1
+14:35:11 | INFO    |    img 8/12 crop_ (5).jpg          | seed=4061677031 | 11.3s | VRAM 22507 MB | файлов: 1
+14:35:22 | INFO    |    img 9/12 crop_ (6).jpg          | seed=574704770 | 11.4s | VRAM 22507 MB | файлов: 1
+14:35:34 | INFO    |    img 10/12 crop_ (7).jpg          | seed=618633173 | 11.4s | VRAM 22507 MB | файлов: 1
+14:35:45 | INFO    |    img 11/12 crop_ (8).jpg          | seed=1989340027 | 11.7s | VRAM 22513 MB | файлов: 1
+14:35:57 | INFO    |    img 12/12 crop_ (9).JPG          | seed=1833065912 | 11.8s | VRAM 22612 MB | файлов: 1
+14:35:57 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 12
+14:36:09 | INFO    |    img 1/12 crop_ (1).jpg          | seed=16107207 | 11.6s | VRAM 22507 MB | файлов: 1
+14:36:20 | INFO    |    img 2/12 crop_ (10).jpg         | seed=974783403 | 11.3s | VRAM 22507 MB | файлов: 1
+14:36:31 | INFO    |    img 3/12 crop_ (11).jpg         | seed=3140372874 | 11.2s | VRAM 22507 MB | файлов: 1
+14:36:43 | INFO    |    img 4/12 crop_ (12).jpg         | seed=2927652942 | 11.3s | VRAM 22507 MB | файлов: 1
+14:36:54 | INFO    |    img 5/12 crop_ (2).jpg          | seed=2267231505 | 11.3s | VRAM 22507 MB | файлов: 1
+14:37:05 | INFO    |    img 6/12 crop_ (3).jpg          | seed=865630695 | 11.3s | VRAM 22632 MB | файлов: 1
+14:37:17 | INFO    |    img 7/12 crop_ (4).jpg          | seed=677307930 | 11.3s | VRAM 22507 MB | файлов: 1
+14:37:28 | INFO    |    img 8/12 crop_ (5).jpg          | seed=2326884355 | 11.3s | VRAM 22507 MB | файлов: 1
+14:37:39 | INFO    |    img 9/12 crop_ (6).jpg          | seed=176454474 | 11.2s | VRAM 22507 MB | файлов: 1
+14:37:50 | INFO    |    img 10/12 crop_ (7).jpg          | seed=4240212195 | 11.3s | VRAM 22507 MB | файлов: 1
+14:38:02 | INFO    |    img 11/12 crop_ (8).jpg          | seed=3983445961 | 11.3s | VRAM 22507 MB | файлов: 1
+14:38:13 | INFO    |    img 12/12 crop_ (9).jpg          | seed=1595500055 | 11.4s | VRAM 22507 MB | файлов: 1
+14:38:13 | INFO    | [задача 4/5] 'normalize' — картинок: 12
+14:38:25 | INFO    |    img 1/12 crop_ (1).jpg          | seed=793513013 | 11.4s | VRAM 22507 MB | файлов: 1
+14:38:36 | INFO    |    img 2/12 crop_ (10).jpg         | seed=750544306 | 11.3s | VRAM 22507 MB | файлов: 1
+14:38:47 | INFO    |    img 3/12 crop_ (11).jpg         | seed=1435109254 | 11.3s | VRAM 22507 MB | файлов: 1
+14:38:58 | INFO    |    img 4/12 crop_ (12).jpg         | seed=3258495349 | 11.3s | VRAM 22507 MB | файлов: 1
+14:39:10 | INFO    |    img 5/12 crop_ (2).jpg          | seed=4050208691 | 11.2s | VRAM 22507 MB | файлов: 1
+14:39:21 | INFO    |    img 6/12 crop_ (3).jpg          | seed=54547575 | 11.3s | VRAM 22507 MB | файлов: 1
+14:39:32 | INFO    |    img 7/12 crop_ (4).jpg          | seed=828550250 | 11.3s | VRAM 22507 MB | файлов: 1
+14:39:43 | INFO    |    img 8/12 crop_ (5).jpg          | seed=1767728766 | 11.2s | VRAM 22527 MB | файлов: 1
+14:39:55 | INFO    |    img 9/12 crop_ (6).jpg          | seed=3680497710 | 11.2s | VRAM 22507 MB | файлов: 1
+14:40:06 | INFO    |    img 10/12 crop_ (7).jpg          | seed=602343895 | 11.2s | VRAM 22507 MB | файлов: 1
+14:40:17 | INFO    |    img 11/12 crop_ (8).jpg          | seed=2415549947 | 11.4s | VRAM 22507 MB | файлов: 1
+14:40:29 | INFO    |    img 12/12 crop_ (9).jpg          | seed=2383366599 | 11.2s | VRAM 22507 MB | файлов: 1
+14:40:29 | INFO    | [задача 5/5] 'change_clothing' — картинок: 12
+14:40:40 | INFO    |    img 1/12 crop_ (1).jpg          | seed=1839916362 | 11.8s | VRAM 22507 MB | файлов: 1
+14:40:52 | INFO    |    img 2/12 crop_ (10).jpg         | seed=1512759458 | 11.4s | VRAM 22507 MB | файлов: 1
+14:41:03 | INFO    |    img 3/12 crop_ (11).jpg         | seed=2061391404 | 11.3s | VRAM 22507 MB | файлов: 1
+14:41:15 | INFO    |    img 4/12 crop_ (12).jpg         | seed=3321991151 | 11.2s | VRAM 22507 MB | файлов: 1
+14:41:26 | INFO    |    img 5/12 crop_ (2).jpg          | seed=4120020322 | 11.3s | VRAM 22719 MB | файлов: 1
+14:41:37 | INFO    |    img 6/12 crop_ (3).jpg          | seed=1332034468 | 11.3s | VRAM 22507 MB | файлов: 1
+14:41:48 | INFO    |    img 7/12 crop_ (4).jpg          | seed=3043961478 | 11.2s | VRAM 22648 MB | файлов: 1
+14:42:00 | INFO    |    img 8/12 crop_ (5).jpg          | seed=1012616523 | 11.2s | VRAM 22507 MB | файлов: 1
+14:42:11 | INFO    |    img 9/12 crop_ (6).jpg          | seed=2619138348 | 11.2s | VRAM 22507 MB | файлов: 1
+14:42:22 | INFO    |    img 10/12 crop_ (7).jpg          | seed=1193078533 | 11.2s | VRAM 22507 MB | файлов: 1
+14:42:33 | INFO    |    img 11/12 crop_ (8).jpg          | seed=3811840202 | 11.3s | VRAM 22507 MB | файлов: 1
+14:42:45 | INFO    |    img 12/12 crop_ (9).jpg          | seed=3681475490 | 11.2s | VRAM 22513 MB | файлов: 1
+14:42:45 | INFO    | === qwen-image-edit-2511 ГОТОВО за 778s | результаты: output/qwen-image-edit-2511/results.json ===
+14:42:45 | INFO    | === МОДЕЛЬ: flux1-kontext-dev ===
+14:42:45 | INFO    | воркфлоу: workflows/flux_kontext_dev_basic.json | задач: 5 | edit-режим: True
+14:42:45 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+14:44:19 | INFO    | прогрев готов (95s)
+14:44:19 | INFO    | [задача 1/5] 'deblur' — картинок: 12
+14:44:55 | INFO    |    img 1/12 crop_ (1).jpg          | seed=38177139 | 35.6s | VRAM 20177 MB | файлов: 1
+14:45:31 | INFO    |    img 2/12 crop_ (10).jpg         | seed=2212246112 | 35.4s | VRAM 20177 MB | файлов: 1
+14:46:06 | INFO    |    img 3/12 crop_ (11).jpg         | seed=2818644467 | 35.4s | VRAM 20177 MB | файлов: 1
+14:46:41 | INFO    |    img 4/12 crop_ (12).jpg         | seed=4030544375 | 35.4s | VRAM 20177 MB | файлов: 1
+14:47:17 | INFO    |    img 5/12 crop_ (2).jpg          | seed=335426876 | 35.4s | VRAM 20146 MB | файлов: 1
+14:47:52 | INFO    |    img 6/12 crop_ (3).jpg          | seed=4155966995 | 35.4s | VRAM 20177 MB | файлов: 1
+14:48:28 | INFO    |    img 7/12 crop_ (4).jpg          | seed=1433095477 | 35.4s | VRAM 20146 MB | файлов: 1
+14:49:03 | INFO    |    img 8/12 crop_ (5).jpg          | seed=3422704977 | 35.4s | VRAM 20177 MB | файлов: 1
+14:49:38 | INFO    |    img 9/12 crop_ (6).jpg          | seed=2550391008 | 35.4s | VRAM 20177 MB | файлов: 1
+14:50:14 | INFO    |    img 10/12 crop_ (7).jpg          | seed=3348339480 | 35.4s | VRAM 20177 MB | файлов: 1
+14:50:49 | INFO    |    img 11/12 crop_ (8).jpg          | seed=1329935250 | 35.4s | VRAM 20146 MB | файлов: 1
+14:51:25 | INFO    |    img 12/12 crop_ (9).jpg          | seed=751630001 | 35.4s | VRAM 20146 MB | файлов: 1
+14:51:25 | INFO    | [задача 2/5] 'relight_day' — картинок: 12
+14:52:08 | INFO    |    img 1/12 crop_ (1).jpg          | seed=4225354241 | 42.9s | VRAM 22145 MB | файлов: 1
+14:52:43 | INFO    |    img 2/12 crop_ (10).jpg         | seed=3739071003 | 35.4s | VRAM 21330 MB | файлов: 1
+14:53:18 | INFO    |    img 3/12 crop_ (11).JPG         | seed=4133807047 | 35.4s | VRAM 21361 MB | файлов: 1
+14:53:54 | INFO    |    img 4/12 crop_ (12).JPG         | seed=1212062227 | 35.4s | VRAM 21361 MB | файлов: 1
+14:54:29 | INFO    |    img 5/12 crop_ (2).jpg          | seed=3073113598 | 35.4s | VRAM 21361 MB | файлов: 1
+15:04:20 | INFO    | СТАРТ прогона. Модели (6): qwen-image-edit-2511, flux1-kontext-dev, firered-image-edit-1.1, flux2-klein-9b, flux2-dev, longcat-image-edit
+15:04:20 | INFO    | === МОДЕЛЬ: qwen-image-edit-2511 ===
+15:04:20 | INFO    | воркфлоу: workflows/image_qwen_image_edit_2511.json | задач: 5 | edit-режим: True
+15:04:20 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+15:05:30 | INFO    | прогрев готов (69s)
+15:05:30 | INFO    | [задача 1/5] 'deblur' — картинок: 12
+15:06:00 | INFO    |    img 1/12 crop_ (1).jpg          | seed=3397050971 | 30.5s | VRAM 22411 MB | файлов: 1
+15:06:12 | INFO    |    img 2/12 crop_ (10).jpg         | seed=1298711494 | 11.7s | VRAM 22507 MB | файлов: 1
+15:06:23 | INFO    |    img 3/12 crop_ (11).jpg         | seed=2685208167 | 11.3s | VRAM 22507 MB | файлов: 1
+15:06:35 | INFO    |    img 4/12 crop_ (12).jpg         | seed=498012093 | 11.4s | VRAM 22507 MB | файлов: 1
+15:06:46 | INFO    |    img 5/12 crop_ (2).jpg          | seed=4243228669 | 11.5s | VRAM 22507 MB | файлов: 1
+15:06:58 | INFO    |    img 6/12 crop_ (3).jpg          | seed=711161333 | 11.5s | VRAM 22507 MB | файлов: 1
+15:07:09 | INFO    |    img 7/12 crop_ (4).jpg          | seed=4224430201 | 11.6s | VRAM 22507 MB | файлов: 1
+15:07:21 | INFO    |    img 8/12 crop_ (5).jpg          | seed=1585931110 | 11.4s | VRAM 22507 MB | файлов: 1
+15:07:32 | INFO    |    img 9/12 crop_ (6).jpg          | seed=3634131708 | 11.6s | VRAM 22507 MB | файлов: 1
+15:07:44 | INFO    |    img 10/12 crop_ (7).jpg          | seed=1105978007 | 11.6s | VRAM 22507 MB | файлов: 1
+15:07:55 | INFO    |    img 11/12 crop_ (8).jpg          | seed=2322921740 | 11.6s | VRAM 22507 MB | файлов: 1
+15:08:07 | INFO    |    img 12/12 crop_ (9).jpg          | seed=1278991580 | 11.4s | VRAM 22507 MB | файлов: 1
+15:08:07 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 13.1s | VRAM 22499 MB | картинок: 12
+15:08:07 | INFO    | [задача 2/5] 'relight_day' — картинок: 12
+15:08:18 | INFO    |    img 1/12 crop_ (1).jpg          | seed=2473891472 | 11.4s | VRAM 22507 MB | файлов: 1
+15:08:30 | INFO    |    img 2/12 crop_ (10).jpg         | seed=2992391664 | 11.5s | VRAM 22507 MB | файлов: 1
+15:08:41 | INFO    |    img 3/12 crop_ (11).JPG         | seed=1129134834 | 11.5s | VRAM 22507 MB | файлов: 1
+15:08:54 | INFO    |    img 4/12 crop_ (12).JPG         | seed=3351963023 | 11.4s | VRAM 22507 MB | файлов: 1
+15:09:05 | INFO    |    img 5/12 crop_ (2).jpg          | seed=804549475 | 11.4s | VRAM 22507 MB | файлов: 1
+15:09:17 | INFO    |    img 6/12 crop_ (3).jpg          | seed=4249228161 | 11.4s | VRAM 22507 MB | файлов: 1
+15:09:28 | INFO    |    img 7/12 crop_ (4).jpg          | seed=2821478628 | 11.3s | VRAM 22507 MB | файлов: 1
+15:09:40 | INFO    |    img 8/12 crop_ (5).jpg          | seed=3588242440 | 11.4s | VRAM 22507 MB | файлов: 1
+15:09:51 | INFO    |    img 9/12 crop_ (6).jpg          | seed=2425030175 | 11.4s | VRAM 22507 MB | файлов: 1
+15:10:02 | INFO    |    img 10/12 crop_ (7).jpg          | seed=3712567269 | 11.3s | VRAM 22507 MB | файлов: 1
+15:10:14 | INFO    |    img 11/12 crop_ (8).jpg          | seed=4158979068 | 11.4s | VRAM 22507 MB | файлов: 1
+15:10:25 | INFO    |    img 12/12 crop_ (9).JPG          | seed=1007094660 | 11.3s | VRAM 22507 MB | файлов: 1
+15:10:25 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 11.4s | VRAM 22507 MB | картинок: 12
+15:10:25 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 12
+15:10:36 | INFO    |    img 1/12 crop_ (1).jpg          | seed=1412807810 | 11.3s | VRAM 22507 MB | файлов: 1
+15:10:48 | INFO    |    img 2/12 crop_ (10).jpg         | seed=644333654 | 11.3s | VRAM 22527 MB | файлов: 1
+15:10:59 | INFO    |    img 3/12 crop_ (11).jpg         | seed=64473606 | 11.4s | VRAM 22507 MB | файлов: 1
+15:11:11 | INFO    |    img 4/12 crop_ (12).jpg         | seed=1797596464 | 11.4s | VRAM 22507 MB | файлов: 1
+15:11:22 | INFO    |    img 5/12 crop_ (2).jpg          | seed=2472637499 | 11.3s | VRAM 22507 MB | файлов: 1
+15:11:33 | INFO    |    img 6/12 crop_ (3).jpg          | seed=3321290600 | 11.4s | VRAM 22771 MB | файлов: 1
+15:11:45 | INFO    |    img 7/12 crop_ (4).jpg          | seed=2359314293 | 11.3s | VRAM 22507 MB | файлов: 1
+15:11:56 | INFO    |    img 8/12 crop_ (5).jpg          | seed=656685017 | 11.3s | VRAM 22507 MB | файлов: 1
+15:12:07 | INFO    |    img 9/12 crop_ (6).jpg          | seed=148629279 | 11.4s | VRAM 22507 MB | файлов: 1
+15:12:19 | INFO    |    img 10/12 crop_ (7).jpg          | seed=2123196601 | 11.4s | VRAM 22507 MB | файлов: 1
+15:12:30 | INFO    |    img 11/12 crop_ (8).jpg          | seed=2251326628 | 11.3s | VRAM 22507 MB | файлов: 1
+15:12:42 | INFO    |    img 12/12 crop_ (9).jpg          | seed=2431042387 | 11.4s | VRAM 22507 MB | файлов: 1
+15:12:42 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 11.4s | VRAM 22531 MB | картинок: 12
+15:12:42 | INFO    | [задача 4/5] 'normalize' — картинок: 12
+15:12:53 | INFO    |    img 1/12 crop_ (1).jpg          | seed=1267271088 | 11.4s | VRAM 22507 MB | файлов: 1
+15:13:04 | INFO    |    img 2/12 crop_ (10).jpg         | seed=498376262 | 11.3s | VRAM 22633 MB | файлов: 1
+15:13:16 | INFO    |    img 3/12 crop_ (11).jpg         | seed=2784437457 | 11.4s | VRAM 22507 MB | файлов: 1
+15:13:27 | INFO    |    img 4/12 crop_ (12).jpg         | seed=1583127883 | 11.4s | VRAM 22507 MB | файлов: 1
+15:13:39 | INFO    |    img 5/12 crop_ (2).jpg          | seed=2842252651 | 11.5s | VRAM 22507 MB | файлов: 1
+15:13:50 | INFO    |    img 6/12 crop_ (3).jpg          | seed=3652914179 | 11.3s | VRAM 22507 MB | файлов: 1
+15:14:01 | INFO    |    img 7/12 crop_ (4).jpg          | seed=27606713 | 11.2s | VRAM 22507 MB | файлов: 1
+15:14:12 | INFO    |    img 8/12 crop_ (5).jpg          | seed=1738886554 | 11.3s | VRAM 22507 MB | файлов: 1
+15:14:24 | INFO    |    img 9/12 crop_ (6).jpg          | seed=2092558954 | 11.3s | VRAM 22507 MB | файлов: 1
+15:14:35 | INFO    |    img 10/12 crop_ (7).jpg          | seed=3881140994 | 11.3s | VRAM 22507 MB | файлов: 1
+15:14:46 | INFO    |    img 11/12 crop_ (8).jpg          | seed=4104679440 | 11.3s | VRAM 22507 MB | файлов: 1
+15:14:58 | INFO    |    img 12/12 crop_ (9).jpg          | seed=538232263 | 11.2s | VRAM 22507 MB | файлов: 1
+15:14:58 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 11.3s | VRAM 22517 MB | картинок: 12
+15:14:58 | INFO    | [задача 5/5] 'change_clothing' — картинок: 12
+15:15:09 | INFO    |    img 1/12 crop_ (1).jpg          | seed=3393996384 | 11.2s | VRAM 22513 MB | файлов: 1
+15:15:20 | INFO    |    img 2/12 crop_ (10).jpg         | seed=2237981175 | 11.4s | VRAM 22527 MB | файлов: 1
+15:15:32 | INFO    |    img 3/12 crop_ (11).jpg         | seed=3941396913 | 11.3s | VRAM 22507 MB | файлов: 1
+15:15:43 | INFO    |    img 4/12 crop_ (12).jpg         | seed=4283831843 | 11.3s | VRAM 22507 MB | файлов: 1
+15:15:54 | INFO    |    img 5/12 crop_ (2).jpg          | seed=4149930564 | 11.3s | VRAM 22507 MB | файлов: 1
+15:16:06 | INFO    |    img 6/12 crop_ (3).jpg          | seed=1459165242 | 11.3s | VRAM 22612 MB | файлов: 1
+15:16:17 | INFO    |    img 7/12 crop_ (4).jpg          | seed=2459228844 | 11.3s | VRAM 22507 MB | файлов: 1
+15:16:28 | INFO    |    img 8/12 crop_ (5).jpg          | seed=202662883 | 11.3s | VRAM 22507 MB | файлов: 1
+15:16:40 | INFO    |    img 9/12 crop_ (6).jpg          | seed=2747565921 | 11.4s | VRAM 22507 MB | файлов: 1
+15:16:51 | INFO    |    img 10/12 crop_ (7).jpg          | seed=3733886174 | 11.3s | VRAM 22507 MB | файлов: 1
+15:17:02 | INFO    |    img 11/12 crop_ (8).jpg          | seed=3105803398 | 11.2s | VRAM 22507 MB | файлов: 1
+15:17:14 | INFO    |    img 12/12 crop_ (9).jpg          | seed=2817839148 | 11.3s | VRAM 22507 MB | файлов: 1
+15:17:14 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 11.3s | VRAM 22518 MB | картинок: 12
+15:17:14 | INFO    | === qwen-image-edit-2511 ГОТОВО за 774s | результаты: output/qwen-image-edit-2511/results.json ===
+15:17:14 | INFO    | === МОДЕЛЬ: flux1-kontext-dev ===
+15:17:14 | INFO    | воркфлоу: workflows/flux_kontext_dev_basic.json | задач: 5 | edit-режим: True
+15:17:14 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+15:19:06 | INFO    | прогрев готов (112s)
+15:19:06 | INFO    | [задача 1/5] 'deblur' — картинок: 12
+15:19:41 | INFO    |    img 1/12 crop_ (1).jpg          | seed=1253556540 | 35.4s | VRAM 20177 MB | файлов: 1
+15:20:17 | INFO    |    img 2/12 crop_ (10).jpg         | seed=3631906577 | 35.4s | VRAM 20177 MB | файлов: 1
+15:20:52 | INFO    |    img 3/12 crop_ (11).jpg         | seed=2228846994 | 35.4s | VRAM 20146 MB | файлов: 1
+15:21:27 | INFO    |    img 4/12 crop_ (12).jpg         | seed=2395210770 | 35.3s | VRAM 20177 MB | файлов: 1
+15:22:03 | INFO    |    img 5/12 crop_ (2).jpg          | seed=3641564844 | 35.4s | VRAM 20177 MB | файлов: 1
+15:22:38 | INFO    |    img 6/12 crop_ (3).jpg          | seed=4085725723 | 35.3s | VRAM 20177 MB | файлов: 1
+15:23:14 | INFO    |    img 7/12 crop_ (4).jpg          | seed=1297167963 | 35.4s | VRAM 20177 MB | файлов: 1
+15:23:49 | INFO    |    img 8/12 crop_ (5).jpg          | seed=3534844950 | 35.3s | VRAM 20177 MB | файлов: 1
+15:24:24 | INFO    |    img 9/12 crop_ (6).jpg          | seed=515366532 | 35.3s | VRAM 20177 MB | файлов: 1
+15:25:00 | INFO    |    img 10/12 crop_ (7).jpg          | seed=889450773 | 35.3s | VRAM 20146 MB | файлов: 1
+15:25:35 | INFO    |    img 11/12 crop_ (8).jpg          | seed=1944563812 | 35.4s | VRAM 20146 MB | файлов: 1
+15:26:11 | INFO    |    img 12/12 crop_ (9).jpg          | seed=3511881688 | 35.4s | VRAM 20177 MB | файлов: 1
+15:26:11 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 35.4s | VRAM 20169 MB | картинок: 12
+15:26:11 | INFO    | [задача 2/5] 'relight_day' — картинок: 12
+15:26:55 | INFO    |    img 1/12 crop_ (1).jpg          | seed=705862294 | 44.1s | VRAM 22148 MB | файлов: 1
+15:27:30 | INFO    |    img 2/12 crop_ (10).jpg         | seed=2225354805 | 35.4s | VRAM 21361 MB | файлов: 1
+15:28:06 | INFO    |    img 3/12 crop_ (11).JPG         | seed=3692566929 | 35.4s | VRAM 21361 MB | файлов: 1
+15:28:41 | INFO    |    img 4/12 crop_ (12).JPG         | seed=2126438160 | 35.4s | VRAM 21330 MB | файлов: 1
+15:29:16 | INFO    |    img 5/12 crop_ (2).jpg          | seed=1078666149 | 35.4s | VRAM 21361 MB | файлов: 1
+15:29:52 | INFO    |    img 6/12 crop_ (3).jpg          | seed=613284882 | 35.4s | VRAM 21330 MB | файлов: 1
+15:30:27 | INFO    |    img 7/12 crop_ (4).jpg          | seed=74052558 | 35.4s | VRAM 21361 MB | файлов: 1
+15:31:03 | INFO    |    img 8/12 crop_ (5).jpg          | seed=211379008 | 35.4s | VRAM 21361 MB | файлов: 1
+15:31:38 | INFO    |    img 9/12 crop_ (6).jpg          | seed=279020436 | 35.4s | VRAM 21361 MB | файлов: 1
+15:32:14 | INFO    |    img 10/12 crop_ (7).jpg          | seed=3655666557 | 35.4s | VRAM 21330 MB | файлов: 1
+15:32:49 | INFO    |    img 11/12 crop_ (8).jpg          | seed=3766109383 | 35.4s | VRAM 21361 MB | файлов: 1
+15:33:24 | INFO    |    img 12/12 crop_ (9).JPG          | seed=2741095155 | 35.4s | VRAM 21361 MB | файлов: 1
+15:33:24 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 36.1s | VRAM 21419 MB | картинок: 12
+15:33:24 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 12
+15:34:00 | INFO    |    img 1/12 crop_ (1).jpg          | seed=761836287 | 35.8s | VRAM 22114 MB | файлов: 1
+15:34:36 | INFO    |    img 2/12 crop_ (10).jpg         | seed=474021506 | 35.4s | VRAM 21361 MB | файлов: 1
+15:35:11 | INFO    |    img 3/12 crop_ (11).jpg         | seed=3789402247 | 35.3s | VRAM 21361 MB | файлов: 1
+15:35:46 | INFO    |    img 4/12 crop_ (12).jpg         | seed=552588622 | 35.4s | VRAM 21330 MB | файлов: 1
+15:36:22 | INFO    |    img 5/12 crop_ (2).jpg          | seed=3264675694 | 35.4s | VRAM 21361 MB | файлов: 1
+15:36:57 | INFO    |    img 6/12 crop_ (3).jpg          | seed=2667529627 | 35.4s | VRAM 21361 MB | файлов: 1
+15:37:33 | INFO    |    img 7/12 crop_ (4).jpg          | seed=3901860518 | 35.4s | VRAM 21361 MB | файлов: 1
+15:38:08 | INFO    |    img 8/12 crop_ (5).jpg          | seed=3946558521 | 35.4s | VRAM 21361 MB | файлов: 1
+15:38:44 | INFO    |    img 9/12 crop_ (6).jpg          | seed=203018518 | 35.4s | VRAM 21361 MB | файлов: 1
+15:39:19 | INFO    |    img 10/12 crop_ (7).jpg          | seed=1717643163 | 35.4s | VRAM 21361 MB | файлов: 1
+15:39:54 | INFO    |    img 11/12 crop_ (8).jpg          | seed=3905161490 | 35.4s | VRAM 21361 MB | файлов: 1
+15:40:30 | INFO    |    img 12/12 crop_ (9).jpg          | seed=619185386 | 35.4s | VRAM 21330 MB | файлов: 1
+15:40:30 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 35.4s | VRAM 21419 MB | картинок: 12
+15:40:30 | INFO    | [задача 4/5] 'normalize' — картинок: 12
+15:41:06 | INFO    |    img 1/12 crop_ (1).jpg          | seed=1883702252 | 35.8s | VRAM 22050 MB | файлов: 1
+15:41:41 | INFO    |    img 2/12 crop_ (10).jpg         | seed=345549727 | 35.4s | VRAM 21361 MB | файлов: 1
+15:42:17 | INFO    |    img 3/12 crop_ (11).jpg         | seed=1143334005 | 35.4s | VRAM 21361 MB | файлов: 1
+15:42:52 | INFO    |    img 4/12 crop_ (12).jpg         | seed=2190862075 | 35.4s | VRAM 21361 MB | файлов: 1
+15:43:28 | INFO    |    img 5/12 crop_ (2).jpg          | seed=966408993 | 35.4s | VRAM 21361 MB | файлов: 1
+15:44:03 | INFO    |    img 6/12 crop_ (3).jpg          | seed=3261848803 | 35.4s | VRAM 21361 MB | файлов: 1
+15:44:38 | INFO    |    img 7/12 crop_ (4).jpg          | seed=3094577034 | 35.4s | VRAM 21361 MB | файлов: 1
+15:45:14 | INFO    |    img 8/12 crop_ (5).jpg          | seed=2651177321 | 35.4s | VRAM 21361 MB | файлов: 1
+15:45:49 | INFO    |    img 9/12 crop_ (6).jpg          | seed=3933057649 | 35.4s | VRAM 21650 MB | файлов: 1
+15:46:25 | INFO    |    img 10/12 crop_ (7).jpg          | seed=1333830075 | 35.4s | VRAM 21906 MB | файлов: 1
+15:58:21 | INFO    | СТАРТ прогона #1 -> output/1. Модели (6): qwen-image-edit-2511, flux1-kontext-dev, firered-image-edit-1.1, flux2-klein-9b, flux2-dev, longcat-image-edit
+15:58:21 | INFO    | === МОДЕЛЬ: qwen-image-edit-2511 ===
+15:58:21 | INFO    | воркфлоу: workflows/image_qwen_image_edit_2511.json | задач: 5 | edit-режим: True
+15:58:21 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+15:58:59 | INFO    | СТАРТ прогона #1 -> output/1. Модели (6): qwen-image-edit-2511, flux1-kontext-dev, firered-image-edit-1.1, flux2-klein-9b, flux2-dev, longcat-image-edit
+15:58:59 | INFO    | === МОДЕЛЬ: qwen-image-edit-2511 ===
+15:58:59 | INFO    | воркфлоу: workflows/image_qwen_image_edit_2511.json | задач: 5 | edit-режим: True
+15:58:59 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+15:59:26 | INFO    | прогрев готов (27s)
+15:59:26 | INFO    | [задача 1/5] 'deblur' — картинок: 8
+15:59:47 | INFO    |    img 1/8 crop_ (1).jpg          | seed=1639928245 | 21.5s | VRAM 22411 MB | файлов: 1
+15:59:59 | INFO    |    img 2/8 crop_ (10).jpg         | seed=865324395 | 11.6s | VRAM 22507 MB | файлов: 1
+16:00:10 | INFO    |    img 3/8 crop_ (11).jpg         | seed=238182251 | 11.4s | VRAM 22648 MB | файлов: 1
+16:00:22 | INFO    |    img 4/8 crop_ (2).jpg          | seed=53021777 | 11.5s | VRAM 22507 MB | файлов: 1
+16:00:33 | INFO    |    img 5/8 crop_ (4).jpg          | seed=3440925573 | 11.3s | VRAM 22507 MB | файлов: 1
+16:00:45 | INFO    |    img 6/8 crop_ (6).jpg          | seed=1831010220 | 11.4s | VRAM 22545 MB | файлов: 1
+16:00:57 | INFO    |    img 7/8 crop_ (7).jpg          | seed=1132096939 | 12.0s | VRAM 22507 MB | файлов: 1
+16:01:08 | INFO    |    img 8/8 crop_ (9).jpg          | seed=3714372505 | 11.7s | VRAM 22507 MB | файлов: 1
+16:01:08 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 12.8s | VRAM 22517 MB | картинок: 8
+16:01:08 | INFO    | [задача 2/5] 'relight_day' — картинок: 8
+16:01:20 | INFO    |    img 1/8 crop_ (11).JPG         | seed=2536474253 | 11.5s | VRAM 22507 MB | файлов: 1
+16:01:31 | INFO    |    img 2/8 crop_ (12).JPG         | seed=463824015 | 11.3s | VRAM 22507 MB | файлов: 1
+16:01:43 | INFO    |    img 3/8 crop_ (2).jpg          | seed=1241905055 | 11.4s | VRAM 22507 MB | файлов: 1
+16:01:54 | INFO    |    img 4/8 crop_ (3).jpg          | seed=4053834472 | 11.4s | VRAM 22507 MB | файлов: 1
+16:02:06 | INFO    |    img 5/8 crop_ (5).jpg          | seed=513928276 | 11.4s | VRAM 22507 MB | файлов: 1
+16:02:17 | INFO    |    img 6/8 crop_ (6).jpg          | seed=747725561 | 11.7s | VRAM 22507 MB | файлов: 1
+16:02:29 | INFO    |    img 7/8 crop_ (7).jpg          | seed=4132338147 | 11.6s | VRAM 22507 MB | файлов: 1
+16:02:40 | INFO    |    img 8/8 crop_ (8).jpg          | seed=1553220142 | 11.3s | VRAM 22507 MB | файлов: 1
+16:02:40 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 11.4s | VRAM 22507 MB | картинок: 8
+16:02:40 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 8
+16:02:51 | INFO    |    img 1/8 crop_ (1).jpg          | seed=1499562450 | 11.3s | VRAM 22507 MB | файлов: 1
+16:03:03 | INFO    |    img 2/8 crop_ (10).jpg         | seed=2943235617 | 11.3s | VRAM 22507 MB | файлов: 1
+16:03:14 | INFO    |    img 3/8 crop_ (11).jpg         | seed=1657446618 | 11.3s | VRAM 22507 MB | файлов: 1
+16:03:25 | INFO    |    img 4/8 crop_ (12).jpg         | seed=3670509369 | 11.4s | VRAM 22547 MB | файлов: 1
+16:03:37 | INFO    |    img 5/8 crop_ (4).jpg          | seed=461509483 | 11.5s | VRAM 22507 MB | файлов: 1
+16:03:48 | INFO    |    img 6/8 crop_ (5).jpg          | seed=2648822089 | 11.3s | VRAM 22507 MB | файлов: 1
+16:04:00 | INFO    |    img 7/8 crop_ (6).jpg          | seed=1700770468 | 11.5s | VRAM 22507 MB | файлов: 1
+16:04:11 | INFO    |    img 8/8 crop_ (7).jpg          | seed=1685445749 | 11.3s | VRAM 22507 MB | файлов: 1
+16:04:11 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 11.3s | VRAM 22512 MB | картинок: 8
+16:04:11 | INFO    | [задача 4/5] 'normalize' — картинок: 8
+16:04:22 | INFO    |    img 1/8 crop_ (1).jpg          | seed=298308290 | 11.5s | VRAM 22507 MB | файлов: 1
+16:04:34 | INFO    |    img 2/8 crop_ (10).jpg         | seed=1981627522 | 11.5s | VRAM 22507 MB | файлов: 1
+16:04:45 | INFO    |    img 3/8 crop_ (12).jpg         | seed=3722981269 | 11.4s | VRAM 22507 MB | файлов: 1
+16:04:57 | INFO    |    img 4/8 crop_ (3).jpg          | seed=2006404212 | 11.5s | VRAM 22507 MB | файлов: 1
+16:05:08 | INFO    |    img 5/8 crop_ (4).jpg          | seed=2362971692 | 11.5s | VRAM 22507 MB | файлов: 1
+16:05:20 | INFO    |    img 6/8 crop_ (5).jpg          | seed=3693037508 | 11.5s | VRAM 22507 MB | файлов: 1
+16:05:31 | INFO    |    img 7/8 crop_ (6).jpg          | seed=1000617362 | 11.4s | VRAM 22507 MB | файлов: 1
+16:05:43 | INFO    |    img 8/8 crop_ (7).jpg          | seed=1988108871 | 11.4s | VRAM 22507 MB | файлов: 1
+16:05:43 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 11.5s | VRAM 22507 MB | картинок: 8
+16:05:43 | INFO    | [задача 5/5] 'change_clothing' — картинок: 8
+16:05:54 | INFO    |    img 1/8 crop_ (1).jpg          | seed=3865206885 | 11.4s | VRAM 22507 MB | файлов: 1
+16:06:06 | INFO    |    img 2/8 crop_ (10).jpg         | seed=1261449589 | 11.4s | VRAM 22507 MB | файлов: 1
+16:06:17 | INFO    |    img 3/8 crop_ (2).jpg          | seed=3086381832 | 11.4s | VRAM 22507 MB | файлов: 1
+16:06:28 | INFO    |    img 4/8 crop_ (3).jpg          | seed=3521620373 | 11.3s | VRAM 22507 MB | файлов: 1
+16:06:40 | INFO    |    img 5/8 crop_ (5).jpg          | seed=453405911 | 11.6s | VRAM 22507 MB | файлов: 1
+16:06:51 | INFO    |    img 6/8 crop_ (6).jpg          | seed=756146506 | 11.4s | VRAM 22507 MB | файлов: 1
+16:07:03 | INFO    |    img 7/8 crop_ (7).jpg          | seed=1973646351 | 11.4s | VRAM 22507 MB | файлов: 1
+16:07:14 | INFO    |    img 8/8 crop_ (8).jpg          | seed=3201089917 | 11.5s | VRAM 22507 MB | файлов: 1
+16:07:14 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 11.4s | VRAM 22507 MB | картинок: 8
+16:07:14 | INFO    | === qwen-image-edit-2511 ГОТОВО за 496s | результаты: output/1/qwen-image-edit-2511/results.json ===
+16:07:14 | INFO    | === МОДЕЛЬ: flux1-kontext-dev ===
+16:07:14 | INFO    | воркфлоу: workflows/flux_kontext_dev_basic.json | задач: 5 | edit-режим: True
+16:07:14 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+16:08:43 | INFO    | прогрев готов (89s)
+16:08:43 | INFO    | [задача 1/5] 'deblur' — картинок: 8
+16:09:18 | INFO    |    img 1/8 crop_ (1).jpg          | seed=531466372 | 35.4s | VRAM 20177 MB | файлов: 1
+16:09:54 | INFO    |    img 2/8 crop_ (10).jpg         | seed=1365388088 | 35.4s | VRAM 20177 MB | файлов: 1
+16:10:29 | INFO    |    img 3/8 crop_ (11).jpg         | seed=2842526041 | 35.4s | VRAM 20177 MB | файлов: 1
+16:11:04 | INFO    |    img 4/8 crop_ (2).jpg          | seed=2817030053 | 35.4s | VRAM 20177 MB | файлов: 1
+16:11:40 | INFO    |    img 5/8 crop_ (4).jpg          | seed=591525432 | 35.4s | VRAM 20177 MB | файлов: 1
+16:12:15 | INFO    |    img 6/8 crop_ (6).jpg          | seed=713789617 | 35.5s | VRAM 20177 MB | файлов: 1
+16:12:51 | INFO    |    img 7/8 crop_ (7).jpg          | seed=863475095 | 35.4s | VRAM 20146 MB | файлов: 1
+16:13:26 | INFO    |    img 8/8 crop_ (9).jpg          | seed=299775475 | 35.4s | VRAM 20177 MB | файлов: 1
+16:13:26 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 35.4s | VRAM 20173 MB | картинок: 8
+16:13:26 | INFO    | [задача 2/5] 'relight_day' — картинок: 8
+16:14:06 | INFO    |    img 1/8 crop_ (11).JPG         | seed=4248892887 | 40.3s | VRAM 22146 MB | файлов: 1
+16:14:42 | INFO    |    img 2/8 crop_ (12).JPG         | seed=4256823831 | 35.4s | VRAM 21361 MB | файлов: 1
+16:15:17 | INFO    |    img 3/8 crop_ (2).jpg          | seed=747973142 | 35.4s | VRAM 21361 MB | файлов: 1
+16:15:53 | INFO    |    img 4/8 crop_ (3).jpg          | seed=1557937029 | 35.4s | VRAM 21361 MB | файлов: 1
+16:16:28 | INFO    |    img 5/8 crop_ (5).jpg          | seed=3692636579 | 35.4s | VRAM 21361 MB | файлов: 1
+16:17:04 | INFO    |    img 6/8 crop_ (6).jpg          | seed=3510239482 | 35.4s | VRAM 21330 MB | файлов: 1
+16:17:39 | INFO    |    img 7/8 crop_ (7).jpg          | seed=4192607368 | 35.4s | VRAM 21361 MB | файлов: 1
+16:18:14 | INFO    |    img 8/8 crop_ (8).jpg          | seed=1184913026 | 35.4s | VRAM 21361 MB | файлов: 1
+16:18:14 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 36.0s | VRAM 21455 MB | картинок: 8
+16:18:14 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 8
+16:18:50 | INFO    |    img 1/8 crop_ (1).jpg          | seed=3940623279 | 35.8s | VRAM 22114 MB | файлов: 1
+16:19:25 | INFO    |    img 2/8 crop_ (10).jpg         | seed=1631055933 | 35.3s | VRAM 21361 MB | файлов: 1
+16:20:01 | INFO    |    img 3/8 crop_ (11).jpg         | seed=2910542618 | 35.3s | VRAM 21361 MB | файлов: 1
+16:20:36 | INFO    |    img 4/8 crop_ (12).jpg         | seed=3067314386 | 35.4s | VRAM 21361 MB | файлов: 1
+16:21:11 | INFO    |    img 5/8 crop_ (4).jpg          | seed=770324325 | 35.3s | VRAM 21361 MB | файлов: 1
+16:21:47 | INFO    |    img 6/8 crop_ (5).jpg          | seed=1252352676 | 35.4s | VRAM 21361 MB | файлов: 1
+16:22:22 | INFO    |    img 7/8 crop_ (6).jpg          | seed=669439620 | 35.4s | VRAM 21361 MB | файлов: 1
+16:22:58 | INFO    |    img 8/8 crop_ (7).jpg          | seed=2870955577 | 35.5s | VRAM 21361 MB | файлов: 1
+16:22:58 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 35.4s | VRAM 21455 MB | картинок: 8
+16:22:58 | INFO    | [задача 4/5] 'normalize' — картинок: 8
+16:23:34 | INFO    |    img 1/8 crop_ (1).jpg          | seed=2319768571 | 36.0s | VRAM 22145 MB | файлов: 1
+16:24:09 | INFO    |    img 2/8 crop_ (10).jpg         | seed=1136069328 | 35.4s | VRAM 21361 MB | файлов: 1
+16:24:45 | INFO    |    img 3/8 crop_ (12).jpg         | seed=3387865967 | 35.4s | VRAM 21361 MB | файлов: 1
+16:25:20 | INFO    |    img 4/8 crop_ (3).jpg          | seed=1121410124 | 35.4s | VRAM 21361 MB | файлов: 1
+16:25:55 | INFO    |    img 5/8 crop_ (4).jpg          | seed=425035133 | 35.4s | VRAM 21361 MB | файлов: 1
+16:26:31 | INFO    |    img 6/8 crop_ (5).jpg          | seed=3978121357 | 35.6s | VRAM 21361 MB | файлов: 1
+16:27:06 | INFO    |    img 7/8 crop_ (6).jpg          | seed=3621162926 | 35.4s | VRAM 21361 MB | файлов: 1
+16:27:42 | INFO    |    img 8/8 crop_ (7).jpg          | seed=3206042227 | 35.4s | VRAM 21361 MB | файлов: 1
+16:27:42 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 35.5s | VRAM 21459 MB | картинок: 8
+16:27:42 | INFO    | [задача 5/5] 'change_clothing' — картинок: 8
+16:28:18 | INFO    |    img 1/8 crop_ (1).jpg          | seed=283733079 | 36.1s | VRAM 22149 MB | файлов: 1
+16:28:53 | INFO    |    img 2/8 crop_ (10).jpg         | seed=2003851516 | 35.5s | VRAM 21361 MB | файлов: 1
+16:29:29 | INFO    |    img 3/8 crop_ (2).jpg          | seed=3840741848 | 35.5s | VRAM 21361 MB | файлов: 1
+16:30:04 | INFO    |    img 4/8 crop_ (3).jpg          | seed=573338625 | 35.3s | VRAM 21361 MB | файлов: 1
+16:30:40 | INFO    |    img 5/8 crop_ (5).jpg          | seed=293099497 | 35.4s | VRAM 21361 MB | файлов: 1
+16:31:15 | INFO    |    img 6/8 crop_ (6).jpg          | seed=3661790916 | 35.4s | VRAM 21330 MB | файлов: 1
+16:31:50 | INFO    |    img 7/8 crop_ (7).jpg          | seed=1169075875 | 35.4s | VRAM 21361 MB | файлов: 1
+16:32:26 | INFO    |    img 8/8 crop_ (8).jpg          | seed=976839229 | 35.4s | VRAM 21330 MB | файлов: 1
+16:32:26 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 35.5s | VRAM 21452 MB | картинок: 8
+16:32:26 | INFO    | === flux1-kontext-dev ГОТОВО за 1512s | результаты: output/1/flux1-kontext-dev/results.json ===
+16:32:26 | INFO    | === МОДЕЛЬ: firered-image-edit-1.1 ===
+16:32:26 | INFO    | воркфлоу: workflows/image_firered_image_edit1_1.json | задач: 5 | edit-режим: True
+16:32:26 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+16:34:47 | INFO    | прогрев готов (141s)
+16:34:47 | INFO    | [задача 1/5] 'deblur' — картинок: 8
+16:35:10 | INFO    |    img 1/8 crop_ (1).jpg          | seed=2470989128 | 22.3s | VRAM 22377 MB | файлов: 1
+16:35:29 | INFO    |    img 2/8 crop_ (10).jpg         | seed=1913349094 | 19.4s | VRAM 22503 MB | файлов: 1
+16:35:48 | INFO    |    img 3/8 crop_ (11).jpg         | seed=1938806546 | 19.0s | VRAM 22503 MB | файлов: 1
+16:36:07 | INFO    |    img 4/8 crop_ (2).jpg          | seed=149250077 | 18.9s | VRAM 22503 MB | файлов: 1
+16:36:26 | INFO    |    img 5/8 crop_ (4).jpg          | seed=981861442 | 19.2s | VRAM 22503 MB | файлов: 1
+16:36:45 | INFO    |    img 6/8 crop_ (6).jpg          | seed=2136912848 | 19.1s | VRAM 22503 MB | файлов: 1
+16:37:05 | INFO    |    img 7/8 crop_ (7).jpg          | seed=2630027907 | 19.2s | VRAM 22503 MB | файлов: 1
+16:37:23 | INFO    |    img 8/8 crop_ (9).jpg          | seed=3037957977 | 18.9s | VRAM 22503 MB | файлов: 1
+16:37:23 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 19.5s | VRAM 22487 MB | картинок: 8
+16:37:23 | INFO    | [задача 2/5] 'relight_day' — картинок: 8
+16:37:42 | INFO    |    img 1/8 crop_ (11).JPG         | seed=1364163051 | 19.0s | VRAM 22503 MB | файлов: 1
+16:38:01 | INFO    |    img 2/8 crop_ (12).JPG         | seed=3388538858 | 19.0s | VRAM 22503 MB | файлов: 1
+16:38:21 | INFO    |    img 3/8 crop_ (2).jpg          | seed=3204486003 | 19.0s | VRAM 22503 MB | файлов: 1
+16:38:40 | INFO    |    img 4/8 crop_ (3).jpg          | seed=216704738 | 19.0s | VRAM 22503 MB | файлов: 1
+16:38:59 | INFO    |    img 5/8 crop_ (5).jpg          | seed=1732710197 | 19.2s | VRAM 22503 MB | файлов: 1
+16:39:18 | INFO    |    img 6/8 crop_ (6).jpg          | seed=1117128116 | 19.0s | VRAM 22503 MB | файлов: 1
+16:39:37 | INFO    |    img 7/8 crop_ (7).jpg          | seed=3503773104 | 19.1s | VRAM 22503 MB | файлов: 1
+16:39:56 | INFO    |    img 8/8 crop_ (8).jpg          | seed=709617336 | 19.1s | VRAM 22511 MB | файлов: 1
+16:39:56 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 19.1s | VRAM 22504 MB | картинок: 8
+16:39:56 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 8
+16:40:15 | INFO    |    img 1/8 crop_ (1).jpg          | seed=3395312353 | 19.0s | VRAM 22503 MB | файлов: 1
+16:40:34 | INFO    |    img 2/8 crop_ (10).jpg         | seed=2244087420 | 19.1s | VRAM 22503 MB | файлов: 1
+16:40:53 | INFO    |    img 3/8 crop_ (11).jpg         | seed=4014890151 | 18.9s | VRAM 22503 MB | файлов: 1
+16:41:12 | INFO    |    img 4/8 crop_ (12).jpg         | seed=3158125760 | 19.0s | VRAM 22447 MB | файлов: 1
+16:41:31 | INFO    |    img 5/8 crop_ (4).jpg          | seed=1626593849 | 18.9s | VRAM 22503 MB | файлов: 1
+16:41:50 | INFO    |    img 6/8 crop_ (5).jpg          | seed=890928527 | 18.9s | VRAM 22503 MB | файлов: 1
+16:42:09 | INFO    |    img 7/8 crop_ (6).jpg          | seed=3541295245 | 18.9s | VRAM 22503 MB | файлов: 1
+16:42:28 | INFO    |    img 8/8 crop_ (7).jpg          | seed=1161789116 | 19.2s | VRAM 22503 MB | файлов: 1
+16:42:28 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 19.0s | VRAM 22496 MB | картинок: 8
+16:42:28 | INFO    | [задача 4/5] 'normalize' — картинок: 8
+16:42:47 | INFO    |    img 1/8 crop_ (1).jpg          | seed=3297829039 | 19.0s | VRAM 22503 MB | файлов: 1
+16:43:06 | INFO    |    img 2/8 crop_ (10).jpg         | seed=3058797822 | 19.3s | VRAM 22503 MB | файлов: 1
+16:43:26 | INFO    |    img 3/8 crop_ (12).jpg         | seed=21750995 | 19.3s | VRAM 22503 MB | файлов: 1
+16:43:45 | INFO    |    img 4/8 crop_ (3).jpg          | seed=692336389 | 19.0s | VRAM 22503 MB | файлов: 1
+16:44:04 | INFO    |    img 5/8 crop_ (4).jpg          | seed=3326627142 | 18.9s | VRAM 22503 MB | файлов: 1
+16:44:22 | INFO    |    img 6/8 crop_ (5).jpg          | seed=2484969540 | 18.9s | VRAM 22503 MB | файлов: 1
+16:44:42 | INFO    |    img 7/8 crop_ (6).jpg          | seed=3005115495 | 19.6s | VRAM 22503 MB | файлов: 1
+16:45:01 | INFO    |    img 8/8 crop_ (7).jpg          | seed=27873295 | 19.2s | VRAM 22509 MB | файлов: 1
+16:45:01 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 19.1s | VRAM 22504 MB | картинок: 8
+16:45:01 | INFO    | [задача 5/5] 'change_clothing' — картинок: 8
+16:45:20 | INFO    |    img 1/8 crop_ (1).jpg          | seed=679235589 | 18.8s | VRAM 22503 MB | файлов: 1
+16:45:39 | INFO    |    img 2/8 crop_ (10).jpg         | seed=2195011650 | 18.8s | VRAM 22503 MB | файлов: 1
+16:45:58 | INFO    |    img 3/8 crop_ (2).jpg          | seed=944154045 | 18.8s | VRAM 22608 MB | файлов: 1
+16:46:17 | INFO    |    img 4/8 crop_ (3).jpg          | seed=3244631512 | 18.9s | VRAM 22544 MB | файлов: 1
+16:46:35 | INFO    |    img 5/8 crop_ (5).jpg          | seed=762293286 | 18.9s | VRAM 22503 MB | файлов: 1
+16:46:54 | INFO    |    img 6/8 crop_ (6).jpg          | seed=3741003709 | 19.0s | VRAM 22520 MB | файлов: 1
+16:47:13 | INFO    |    img 7/8 crop_ (7).jpg          | seed=1705596116 | 18.9s | VRAM 22640 MB | файлов: 1
+16:47:33 | INFO    |    img 8/8 crop_ (8).jpg          | seed=2916148262 | 19.1s | VRAM 22503 MB | файлов: 1
+16:47:33 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 18.9s | VRAM 22540 MB | картинок: 8
+16:47:33 | INFO    | === firered-image-edit-1.1 ГОТОВО за 907s | результаты: output/1/firered-image-edit-1.1/results.json ===
+16:47:33 | INFO    | === МОДЕЛЬ: flux2-klein-9b ===
+16:47:33 | INFO    | воркфлоу: workflows/image_flux2_klein_image_edit_9b_base.json | задач: 5 | edit-режим: True
+16:47:33 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+16:50:32 | INFO    | прогрев готов (179s)
+16:50:32 | INFO    | [задача 1/5] 'deblur' — картинок: 8
+16:51:37 | INFO    |    img 1/8 crop_ (1).jpg          | seed=613038588 | 65.1s | VRAM 18640 MB | файлов: 1
+16:52:42 | INFO    |    img 2/8 crop_ (10).jpg         | seed=1000564466 | 64.8s | VRAM 18640 MB | файлов: 1
+16:53:47 | INFO    |    img 3/8 crop_ (11).jpg         | seed=2451704334 | 64.8s | VRAM 18640 MB | файлов: 1
+16:54:51 | INFO    |    img 4/8 crop_ (2).jpg          | seed=188940520 | 64.7s | VRAM 18640 MB | файлов: 1
+16:55:56 | INFO    |    img 5/8 crop_ (4).jpg          | seed=4041879793 | 64.8s | VRAM 18640 MB | файлов: 1
+16:57:01 | INFO    |    img 6/8 crop_ (6).jpg          | seed=4081883983 | 64.8s | VRAM 18640 MB | файлов: 1
+16:58:06 | INFO    |    img 7/8 crop_ (7).jpg          | seed=1734892688 | 64.8s | VRAM 18640 MB | файлов: 1
+16:59:11 | INFO    |    img 8/8 crop_ (9).jpg          | seed=1301893305 | 64.8s | VRAM 18368 MB | файлов: 1
+16:59:11 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 64.8s | VRAM 18606 MB | картинок: 8
+16:59:11 | INFO    | [задача 2/5] 'relight_day' — картинок: 8
+17:00:23 | INFO    |    img 1/8 crop_ (11).JPG         | seed=1595196184 | 72.9s | VRAM 19664 MB | файлов: 1
+17:01:28 | INFO    |    img 2/8 crop_ (12).JPG         | seed=2940641818 | 64.8s | VRAM 19664 MB | файлов: 1
+17:02:33 | INFO    |    img 3/8 crop_ (2).jpg          | seed=2236502987 | 64.8s | VRAM 19664 MB | файлов: 1
+17:03:38 | INFO    |    img 4/8 crop_ (3).jpg          | seed=1490499081 | 64.8s | VRAM 19664 MB | файлов: 1
+17:04:43 | INFO    |    img 5/8 crop_ (5).jpg          | seed=3736297667 | 64.8s | VRAM 19664 MB | файлов: 1
+17:05:47 | INFO    |    img 6/8 crop_ (6).jpg          | seed=1124596844 | 64.8s | VRAM 19664 MB | файлов: 1
+17:06:52 | INFO    |    img 7/8 crop_ (7).jpg          | seed=4129384074 | 64.8s | VRAM 19392 MB | файлов: 1
+17:07:57 | INFO    |    img 8/8 crop_ (8).jpg          | seed=3939040029 | 64.8s | VRAM 19528 MB | файлов: 1
+17:07:57 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 65.8s | VRAM 19613 MB | картинок: 8
+17:07:57 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 8
+17:09:03 | INFO    |    img 1/8 crop_ (1).jpg          | seed=2662458990 | 65.7s | VRAM 19664 MB | файлов: 1
+17:10:08 | INFO    |    img 2/8 crop_ (10).jpg         | seed=1371163548 | 64.7s | VRAM 19664 MB | файлов: 1
+17:11:12 | INFO    |    img 3/8 crop_ (11).jpg         | seed=1277885196 | 65.0s | VRAM 19664 MB | файлов: 1
+17:12:17 | INFO    |    img 4/8 crop_ (12).jpg         | seed=3617278771 | 64.8s | VRAM 19664 MB | файлов: 1
+17:13:22 | INFO    |    img 5/8 crop_ (4).jpg          | seed=2049541579 | 64.9s | VRAM 19664 MB | файлов: 1
+17:14:27 | INFO    |    img 6/8 crop_ (5).jpg          | seed=449202733 | 64.7s | VRAM 19664 MB | файлов: 1
+17:15:32 | INFO    |    img 7/8 crop_ (6).jpg          | seed=3426328025 | 64.8s | VRAM 19664 MB | файлов: 1
+17:16:37 | INFO    |    img 8/8 crop_ (7).jpg          | seed=1406058814 | 64.8s | VRAM 19664 MB | файлов: 1
+17:16:37 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 64.9s | VRAM 19664 MB | картинок: 8
+17:16:37 | INFO    | [задача 4/5] 'normalize' — картинок: 8
+17:17:42 | INFO    |    img 1/8 crop_ (1).jpg          | seed=4030367405 | 65.8s | VRAM 19664 MB | файлов: 1
+17:18:47 | INFO    |    img 2/8 crop_ (10).jpg         | seed=3907480960 | 64.8s | VRAM 19664 MB | файлов: 1
+17:19:52 | INFO    |    img 3/8 crop_ (12).jpg         | seed=2756567066 | 64.8s | VRAM 19528 MB | файлов: 1
+17:20:57 | INFO    |    img 4/8 crop_ (3).jpg          | seed=2692972741 | 64.9s | VRAM 19664 MB | файлов: 1
+17:22:02 | INFO    |    img 5/8 crop_ (4).jpg          | seed=1974711938 | 64.8s | VRAM 19256 MB | файлов: 1
+17:23:07 | INFO    |    img 6/8 crop_ (5).jpg          | seed=1059964457 | 64.8s | VRAM 19664 MB | файлов: 1
+17:24:11 | INFO    |    img 7/8 crop_ (6).jpg          | seed=1184252920 | 64.8s | VRAM 19528 MB | файлов: 1
+17:25:16 | INFO    |    img 8/8 crop_ (7).jpg          | seed=4033168854 | 64.8s | VRAM 19664 MB | файлов: 1
+17:25:16 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 65.0s | VRAM 19579 MB | картинок: 8
+17:25:16 | INFO    | [задача 5/5] 'change_clothing' — картинок: 8
+17:26:22 | INFO    |    img 1/8 crop_ (1).jpg          | seed=3800931169 | 65.8s | VRAM 19664 MB | файлов: 1
+17:27:27 | INFO    |    img 2/8 crop_ (10).jpg         | seed=1440755998 | 64.8s | VRAM 19528 MB | файлов: 1
+17:28:32 | INFO    |    img 3/8 crop_ (2).jpg          | seed=3846641188 | 64.9s | VRAM 19664 MB | файлов: 1
+17:29:37 | INFO    |    img 4/8 crop_ (3).jpg          | seed=3974980649 | 64.8s | VRAM 19528 MB | файлов: 1
+17:30:42 | INFO    |    img 5/8 crop_ (5).jpg          | seed=4241724437 | 64.8s | VRAM 19280 MB | файлов: 1
+17:31:46 | INFO    |    img 6/8 crop_ (6).jpg          | seed=4083464493 | 64.8s | VRAM 19664 MB | файлов: 1
+17:32:51 | INFO    |    img 7/8 crop_ (7).jpg          | seed=2513600396 | 64.9s | VRAM 19664 MB | файлов: 1
+17:33:56 | INFO    |    img 8/8 crop_ (8).jpg          | seed=842622632 | 64.9s | VRAM 19528 MB | файлов: 1
+17:33:56 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 65.0s | VRAM 19565 MB | картинок: 8
+17:33:56 | INFO    | === flux2-klein-9b ГОТОВО за 2784s | результаты: output/1/flux2-klein-9b/results.json ===
+17:33:56 | INFO    | === МОДЕЛЬ: flux2-dev ===
+17:33:56 | INFO    | воркфлоу: workflows/image_flux2.json | задач: 5 | edit-режим: True
+17:33:56 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+17:38:38 | INFO    | прогрев готов (282s)
+17:38:38 | INFO    | [задача 1/5] 'deblur' — картинок: 8
+17:39:17 | INFO    |    img 1/8 crop_ (1).jpg          | seed=2855836263 | 38.8s | VRAM 20424 MB | файлов: 1
+17:39:56 | INFO    |    img 2/8 crop_ (10).jpg         | seed=3790289860 | 38.8s | VRAM 20650 MB | файлов: 1
+17:40:34 | INFO    |    img 3/8 crop_ (11).jpg         | seed=1374763659 | 38.7s | VRAM 20535 MB | файлов: 1
+17:41:13 | INFO    |    img 4/8 crop_ (2).jpg          | seed=2890169642 | 38.7s | VRAM 20650 MB | файлов: 1
+17:41:52 | INFO    |    img 5/8 crop_ (4).jpg          | seed=2917401004 | 38.7s | VRAM 20430 MB | файлов: 1
+17:42:31 | INFO    |    img 6/8 crop_ (6).jpg          | seed=1182143718 | 38.8s | VRAM 20499 MB | файлов: 1
+17:43:10 | INFO    |    img 7/8 crop_ (7).jpg          | seed=3058582193 | 38.8s | VRAM 20650 MB | файлов: 1
+17:43:48 | INFO    |    img 8/8 crop_ (9).jpg          | seed=4232685753 | 38.7s | VRAM 20397 MB | файлов: 1
+17:43:48 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 38.8s | VRAM 20530 MB | картинок: 8
+17:43:48 | INFO    | [задача 2/5] 'relight_day' — картинок: 8
+17:45:37 | INFO    |    img 1/8 crop_ (11).JPG         | seed=2656698635 | 108.9s | VRAM 20773 MB | файлов: 1
+17:46:16 | INFO    |    img 2/8 crop_ (12).JPG         | seed=2928430206 | 38.7s | VRAM 20430 MB | файлов: 1
+17:46:55 | INFO    |    img 3/8 crop_ (2).jpg          | seed=3503146784 | 38.7s | VRAM 20259 MB | файлов: 1
+17:47:33 | INFO    |    img 4/8 crop_ (3).jpg          | seed=3239127546 | 38.7s | VRAM 20391 MB | файлов: 1
+17:48:12 | INFO    |    img 5/8 crop_ (5).jpg          | seed=1263225255 | 38.7s | VRAM 20499 MB | файлов: 1
+17:48:51 | INFO    |    img 6/8 crop_ (6).jpg          | seed=1273123811 | 38.7s | VRAM 20650 MB | файлов: 1
+17:49:30 | INFO    |    img 7/8 crop_ (7).jpg          | seed=2859569162 | 38.8s | VRAM 20644 MB | файлов: 1
+17:50:08 | INFO    |    img 8/8 crop_ (8).jpg          | seed=850797226 | 38.7s | VRAM 20499 MB | файлов: 1
+17:50:08 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 47.5s | VRAM 20518 MB | картинок: 8
+17:50:08 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 8
+17:51:37 | INFO    |    img 1/8 crop_ (1).jpg          | seed=1201026874 | 88.2s | VRAM 20622 MB | файлов: 1
+17:52:15 | INFO    |    img 2/8 crop_ (10).jpg         | seed=3481769517 | 38.7s | VRAM 20650 MB | файлов: 1
+17:52:54 | INFO    |    img 3/8 crop_ (11).jpg         | seed=3867699023 | 38.7s | VRAM 20650 MB | файлов: 1
+17:53:33 | INFO    |    img 4/8 crop_ (12).jpg         | seed=1508996795 | 38.8s | VRAM 20297 MB | файлов: 1
+17:54:12 | INFO    |    img 5/8 crop_ (4).jpg          | seed=1897097359 | 38.7s | VRAM 20650 MB | файлов: 1
+17:54:51 | INFO    |    img 6/8 crop_ (5).jpg          | seed=3516448098 | 38.7s | VRAM 20589 MB | файлов: 1
+17:55:29 | INFO    |    img 7/8 crop_ (6).jpg          | seed=2886655319 | 38.7s | VRAM 20644 MB | файлов: 1
+17:56:08 | INFO    |    img 8/8 crop_ (7).jpg          | seed=3613120282 | 38.7s | VRAM 20259 MB | файлов: 1
+17:56:08 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 44.9s | VRAM 20545 MB | картинок: 8
+17:56:08 | INFO    | [задача 4/5] 'normalize' — картинок: 8
+17:57:30 | INFO    |    img 1/8 crop_ (1).jpg          | seed=1589883481 | 81.6s | VRAM 20772 MB | файлов: 1
+17:58:08 | INFO    |    img 2/8 crop_ (10).jpg         | seed=3280669446 | 38.7s | VRAM 20650 MB | файлов: 1
+17:58:47 | INFO    |    img 3/8 crop_ (12).jpg         | seed=3434024293 | 39.0s | VRAM 20142 MB | файлов: 1
+17:59:26 | INFO    |    img 4/8 crop_ (3).jpg          | seed=1693684797 | 38.7s | VRAM 20718 MB | файлов: 1
+18:00:05 | INFO    |    img 5/8 crop_ (4).jpg          | seed=826223657 | 38.8s | VRAM 20397 MB | файлов: 1
+18:00:44 | INFO    |    img 6/8 crop_ (5).jpg          | seed=1078610550 | 38.7s | VRAM 20650 MB | файлов: 1
+18:01:22 | INFO    |    img 7/8 crop_ (6).jpg          | seed=3357721544 | 38.8s | VRAM 20650 MB | файлов: 1
+18:02:01 | INFO    |    img 8/8 crop_ (7).jpg          | seed=3453921859 | 39.1s | VRAM 20644 MB | файлов: 1
+18:02:01 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 44.2s | VRAM 20578 MB | картинок: 8
+18:02:01 | INFO    | [задача 5/5] 'change_clothing' — картинок: 8
+18:03:39 | INFO    |    img 1/8 crop_ (1).jpg          | seed=2431019809 | 97.0s | VRAM 20621 MB | файлов: 1
+18:04:17 | INFO    |    img 2/8 crop_ (10).jpg         | seed=936756901 | 38.7s | VRAM 19998 MB | файлов: 1
+18:04:56 | INFO    |    img 3/8 crop_ (2).jpg          | seed=2609824760 | 38.9s | VRAM 20295 MB | файлов: 1
+18:05:35 | INFO    |    img 4/8 crop_ (3).jpg          | seed=2546843058 | 38.8s | VRAM 20295 MB | файлов: 1
+18:06:14 | INFO    |    img 5/8 crop_ (5).jpg          | seed=2583902274 | 38.7s | VRAM 20295 MB | файлов: 1
+18:06:52 | INFO    |    img 6/8 crop_ (6).jpg          | seed=990464586 | 38.7s | VRAM 20535 MB | файлов: 1
+18:07:31 | INFO    |    img 7/8 crop_ (7).jpg          | seed=2100330301 | 38.7s | VRAM 20430 MB | файлов: 1
+18:08:10 | INFO    |    img 8/8 crop_ (8).jpg          | seed=1892630424 | 38.7s | VRAM 20430 MB | файлов: 1
+18:08:10 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 46.0s | VRAM 20363 MB | картинок: 8
+18:08:10 | INFO    | === flux2-dev ГОТОВО за 2054s | результаты: output/1/flux2-dev/results.json ===
+18:08:10 | INFO    | === МОДЕЛЬ: longcat-image-edit ===
+18:08:10 | INFO    | воркфлоу: workflows/image_longcat_image_edit.json | задач: 5 | edit-режим: True
+18:08:10 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+18:10:25 | INFO    | прогрев готов (135s)
+18:10:25 | INFO    | [задача 1/5] 'deblur' — картинок: 8
+18:11:13 | INFO    |    img 1/8 crop_ (1).jpg          | seed=3850859795 | 48.5s | VRAM 21337 MB | файлов: 1
+18:12:02 | INFO    |    img 2/8 crop_ (10).jpg         | seed=2692303707 | 48.5s | VRAM 21369 MB | файлов: 1
+18:12:50 | INFO    |    img 3/8 crop_ (11).jpg         | seed=4208323253 | 48.6s | VRAM 21369 MB | файлов: 1
+18:13:39 | INFO    |    img 4/8 crop_ (2).jpg          | seed=387937111 | 48.5s | VRAM 21369 MB | файлов: 1
+18:14:28 | INFO    |    img 5/8 crop_ (4).jpg          | seed=3551753166 | 48.7s | VRAM 21964 MB | файлов: 1
+18:15:16 | INFO    |    img 6/8 crop_ (6).jpg          | seed=2075945028 | 48.7s | VRAM 21588 MB | файлов: 1
+18:16:05 | INFO    |    img 7/8 crop_ (7).jpg          | seed=1919928286 | 48.9s | VRAM 21369 MB | файлов: 1
+18:16:54 | INFO    |    img 8/8 crop_ (9).jpg          | seed=3165894363 | 48.7s | VRAM 21369 MB | файлов: 1
+18:16:54 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 48.6s | VRAM 21466 MB | картинок: 8
+18:16:54 | INFO    | [задача 2/5] 'relight_day' — картинок: 8
+18:17:43 | INFO    |    img 1/8 crop_ (11).JPG         | seed=3323571512 | 48.6s | VRAM 21846 MB | файлов: 1
+18:18:31 | INFO    |    img 2/8 crop_ (12).JPG         | seed=3512663272 | 48.7s | VRAM 21401 MB | файлов: 1
+18:19:20 | INFO    |    img 3/8 crop_ (2).jpg          | seed=999649812 | 48.6s | VRAM 21369 MB | файлов: 1
+18:20:09 | INFO    |    img 4/8 crop_ (3).jpg          | seed=1938661374 | 48.7s | VRAM 22318 MB | файлов: 1
+18:20:57 | INFO    |    img 5/8 crop_ (5).jpg          | seed=1937781659 | 48.5s | VRAM 21846 MB | файлов: 1
+18:21:46 | INFO    |    img 6/8 crop_ (6).jpg          | seed=525338134 | 48.6s | VRAM 21251 MB | файлов: 1
+18:22:35 | INFO    |    img 7/8 crop_ (7).jpg          | seed=383616973 | 48.8s | VRAM 21369 MB | файлов: 1
+18:23:24 | INFO    |    img 8/8 crop_ (8).jpg          | seed=3922011283 | 49.4s | VRAM 21401 MB | файлов: 1
+18:23:24 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 48.7s | VRAM 21600 MB | картинок: 8
+18:23:24 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 8
+18:24:13 | INFO    |    img 1/8 crop_ (1).jpg          | seed=1741046719 | 49.1s | VRAM 21401 MB | файлов: 1
+18:25:02 | INFO    |    img 2/8 crop_ (10).jpg         | seed=2400046821 | 48.9s | VRAM 21283 MB | файлов: 1
+18:25:51 | INFO    |    img 3/8 crop_ (11).jpg         | seed=4154018480 | 48.6s | VRAM 21377 MB | файлов: 1
+18:26:39 | INFO    |    img 4/8 crop_ (12).jpg         | seed=3526877612 | 48.5s | VRAM 21352 MB | файлов: 1
+18:27:29 | INFO    |    img 5/8 crop_ (4).jpg          | seed=2621167037 | 49.5s | VRAM 21369 MB | файлов: 1
+18:28:18 | INFO    |    img 6/8 crop_ (5).jpg          | seed=1974733449 | 49.3s | VRAM 21369 MB | файлов: 1
+18:29:07 | INFO    |    img 7/8 crop_ (6).jpg          | seed=1049478017 | 48.7s | VRAM 22082 MB | файлов: 1
+18:29:56 | INFO    |    img 8/8 crop_ (7).jpg          | seed=847545359 | 48.7s | VRAM 21251 MB | файлов: 1
+18:29:56 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 48.9s | VRAM 21435 MB | картинок: 8
+18:29:56 | INFO    | [задача 4/5] 'normalize' — картинок: 8
+18:30:44 | INFO    |    img 1/8 crop_ (1).jpg          | seed=2565411156 | 48.5s | VRAM 21260 MB | файлов: 1
+18:31:33 | INFO    |    img 2/8 crop_ (10).jpg         | seed=760190066 | 48.5s | VRAM 21251 MB | файлов: 1
+18:32:21 | INFO    |    img 3/8 crop_ (12).jpg         | seed=3936103733 | 48.7s | VRAM 21251 MB | файлов: 1
+18:33:10 | INFO    |    img 4/8 crop_ (3).jpg          | seed=2726347684 | 48.6s | VRAM 21241 MB | файлов: 1
+18:33:59 | INFO    |    img 5/8 crop_ (4).jpg          | seed=3050243122 | 48.5s | VRAM 21362 MB | файлов: 1
+18:34:47 | INFO    |    img 6/8 crop_ (5).jpg          | seed=1489143807 | 48.6s | VRAM 21369 MB | файлов: 1
+18:35:36 | INFO    |    img 7/8 crop_ (6).jpg          | seed=2176825521 | 48.5s | VRAM 22200 MB | файлов: 1
+18:36:24 | INFO    |    img 8/8 crop_ (7).jpg          | seed=4081048089 | 48.7s | VRAM 22200 MB | файлов: 1
+18:36:24 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 48.6s | VRAM 21517 MB | картинок: 8
+18:36:24 | INFO    | [задача 5/5] 'change_clothing' — картинок: 8
+18:37:13 | INFO    |    img 1/8 crop_ (1).jpg          | seed=2230714368 | 49.0s | VRAM 21369 MB | файлов: 1
+18:38:02 | INFO    |    img 2/8 crop_ (10).jpg         | seed=465620156 | 49.1s | VRAM 21251 MB | файлов: 1
+18:38:51 | INFO    |    img 3/8 crop_ (2).jpg          | seed=1793942217 | 48.9s | VRAM 21610 MB | файлов: 1
+18:39:40 | INFO    |    img 4/8 crop_ (3).jpg          | seed=1497675543 | 48.5s | VRAM 21251 MB | файлов: 1
+18:40:28 | INFO    |    img 5/8 crop_ (5).jpg          | seed=2035772278 | 48.5s | VRAM 21369 MB | файлов: 1
+18:41:17 | INFO    |    img 6/8 crop_ (6).jpg          | seed=3055551587 | 48.7s | VRAM 21369 MB | файлов: 1
+18:42:06 | INFO    |    img 7/8 crop_ (7).jpg          | seed=198824726 | 48.6s | VRAM 21369 MB | файлов: 1
+18:42:55 | INFO    |    img 8/8 crop_ (8).jpg          | seed=2331756945 | 48.6s | VRAM 21345 MB | файлов: 1
+18:42:55 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 48.8s | VRAM 21366 MB | картинок: 8
+18:42:55 | INFO    | === longcat-image-edit ГОТОВО за 2085s | результаты: output/1/longcat-image-edit/results.json ===
+18:42:55 | INFO    | ВСЁ. Прогон #1 за 9836s | успешно: ['qwen-image-edit-2511', 'flux1-kontext-dev', 'firered-image-edit-1.1', 'flux2-klein-9b', 'flux2-dev', 'longcat-image-edit'] | упало: —

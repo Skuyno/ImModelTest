@@ -1,0 +1,185 @@
+{
+  "model": "flux2-dev",
+  "tasks": {
+    "deblur": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "sharp focus, crisp details, clear edges, deblurred, high definition, fine texture, photorealistic",
+      "negative": "blur, motion blur, out of focus, soft, hazy, noise, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 38.76,
+          "vram_peak_mb": 20529.7
+        },
+        "outputs": [
+          "output/1/flux2-dev/deblur/deblur_crop_ (1)_2855836263_0.png",
+          "output/1/flux2-dev/deblur/deblur_crop_ (10)_3790289860_0.png",
+          "output/1/flux2-dev/deblur/deblur_crop_ (11)_1374763659_0.png",
+          "output/1/flux2-dev/deblur/deblur_crop_ (2)_2890169642_0.png",
+          "output/1/flux2-dev/deblur/deblur_crop_ (4)_2917401004_0.png",
+          "output/1/flux2-dev/deblur/deblur_crop_ (6)_1182143718_0.png",
+          "output/1/flux2-dev/deblur/deblur_crop_ (7)_3058582193_0.png",
+          "output/1/flux2-dev/deblur/deblur_crop_ (9)_4232685753_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "relight_day": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "daytime, bright daylight, clear blue sky, natural sunlight, soft natural shadows, well-lit scene, photorealistic",
+      "negative": "nighttime, dark sky, street lights, neon glow, artificial lighting, added objects, extra people, distortion",
+      "params": {
+        "strength": 4.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 47.49,
+          "vram_peak_mb": 20518.5
+        },
+        "outputs": [
+          "output/1/flux2-dev/relight_day/relight_day_crop_ (11)_2656698635_0.png",
+          "output/1/flux2-dev/relight_day/relight_day_crop_ (12)_2928430206_0.png",
+          "output/1/flux2-dev/relight_day/relight_day_crop_ (2)_3503146784_0.png",
+          "output/1/flux2-dev/relight_day/relight_day_crop_ (3)_3239127546_0.png",
+          "output/1/flux2-dev/relight_day/relight_day_crop_ (5)_1263225255_0.png",
+          "output/1/flux2-dev/relight_day/relight_day_crop_ (6)_1273123811_0.png",
+          "output/1/flux2-dev/relight_day/relight_day_crop_ (7)_2859569162_0.png",
+          "output/1/flux2-dev/relight_day/relight_day_crop_ (8)_850797226_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "object_insert_fire": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "fire on the ground, realistic flames, warm firelight, light smoke, glowing embers, photorealistic",
+      "negative": "extra fires, no fire, changed people, added objects, unrealistic flames, distortion",
+      "params": {
+        "strength": 4.5,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 44.9,
+          "vram_peak_mb": 20545.4
+        },
+        "outputs": [
+          "output/1/flux2-dev/object_insert_fire/object_insert_fire_crop_ (1)_1201026874_0.png",
+          "output/1/flux2-dev/object_insert_fire/object_insert_fire_crop_ (10)_3481769517_0.png",
+          "output/1/flux2-dev/object_insert_fire/object_insert_fire_crop_ (11)_3867699023_0.png",
+          "output/1/flux2-dev/object_insert_fire/object_insert_fire_crop_ (12)_1508996795_0.png",
+          "output/1/flux2-dev/object_insert_fire/object_insert_fire_crop_ (4)_1897097359_0.png",
+          "output/1/flux2-dev/object_insert_fire/object_insert_fire_crop_ (5)_3516448098_0.png",
+          "output/1/flux2-dev/object_insert_fire/object_insert_fire_crop_ (6)_2886655319_0.png",
+          "output/1/flux2-dev/object_insert_fire/object_insert_fire_crop_ (7)_3613120282_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "normalize": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "clean photo, neutral natural colors, balanced exposure, color corrected, even sharpness, photorealistic",
+      "negative": "color cast, overexposed, underexposed, stylized filter, artifacts, distortion",
+      "params": {
+        "strength": 4.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 44.17,
+          "vram_peak_mb": 20578.2
+        },
+        "outputs": [
+          "output/1/flux2-dev/normalize/normalize_crop_ (1)_1589883481_0.png",
+          "output/1/flux2-dev/normalize/normalize_crop_ (10)_3280669446_0.png",
+          "output/1/flux2-dev/normalize/normalize_crop_ (12)_3434024293_0.png",
+          "output/1/flux2-dev/normalize/normalize_crop_ (3)_1693684797_0.png",
+          "output/1/flux2-dev/normalize/normalize_crop_ (4)_826223657_0.png",
+          "output/1/flux2-dev/normalize/normalize_crop_ (5)_1078610550_0.png",
+          "output/1/flux2-dev/normalize/normalize_crop_ (6)_3357721544_0.png",
+          "output/1/flux2-dev/normalize/normalize_crop_ (7)_3453921859_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "change_clothing": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "different outfit, new clothing, dark winter coat, jeans, changed clothes, photorealistic",
+      "negative": "same outfit, changed face, changed pose, changed body, changed background, added people, distortion",
+      "params": {
+        "strength": 4.5,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 46.02,
+          "vram_peak_mb": 20362.8
+        },
+        "outputs": [
+          "output/1/flux2-dev/change_clothing/change_clothing_crop_ (1)_2431019809_0.png",
+          "output/1/flux2-dev/change_clothing/change_clothing_crop_ (10)_936756901_0.png",
+          "output/1/flux2-dev/change_clothing/change_clothing_crop_ (2)_2609824760_0.png",
+          "output/1/flux2-dev/change_clothing/change_clothing_crop_ (3)_2546843058_0.png",
+          "output/1/flux2-dev/change_clothing/change_clothing_crop_ (5)_2583902274_0.png",
+          "output/1/flux2-dev/change_clothing/change_clothing_crop_ (6)_990464586_0.png",
+          "output/1/flux2-dev/change_clothing/change_clothing_crop_ (7)_2100330301_0.png",
+          "output/1/flux2-dev/change_clothing/change_clothing_crop_ (8)_1892630424_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    }
+  }
+}

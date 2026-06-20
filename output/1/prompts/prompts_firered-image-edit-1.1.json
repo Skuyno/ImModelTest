@@ -1,0 +1,75 @@
+{
+  "model": "firered-image-edit-1.1",
+  "tasks": {
+    "deblur": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "sharp focus, crisp details, clear edges, deblurred, high definition, fine texture, photorealistic",
+      "negative": "blur, motion blur, out of focus, soft, hazy, noise, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "relight_day": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "daytime, bright daylight, clear blue sky, natural sunlight, soft natural shadows, well-lit scene, photorealistic",
+      "negative": "nighttime, dark sky, street lights, neon glow, artificial lighting, added objects, extra people, distortion",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "object_insert_fire": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "fire on the ground, realistic flames, warm firelight, light smoke, glowing embers, photorealistic",
+      "negative": "extra fires, no fire, changed people, added objects, unrealistic flames, distortion",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "normalize": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "clean photo, neutral natural colors, balanced exposure, color corrected, even sharpness, photorealistic",
+      "negative": "color cast, overexposed, underexposed, stylized filter, artifacts, distortion",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "change_clothing": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "different outfit, new clothing, dark winter coat, jeans, changed clothes, photorealistic",
+      "negative": "same outfit, changed face, changed pose, changed body, changed background, added people, distortion",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    }
+  }
+}

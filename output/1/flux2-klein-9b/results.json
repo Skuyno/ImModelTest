@@ -1,0 +1,185 @@
+{
+  "model": "flux2-klein-9b",
+  "tasks": {
+    "deblur": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "sharp focus, crisp details, clear edges, deblurred, high definition, fine texture, photorealistic",
+      "negative": "blur, motion blur, out of focus, soft, hazy, noise, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 64.82,
+          "vram_peak_mb": 18605.7
+        },
+        "outputs": [
+          "output/1/flux2-klein-9b/deblur/deblur_crop_ (1)_613038588_0.png",
+          "output/1/flux2-klein-9b/deblur/deblur_crop_ (10)_1000564466_0.png",
+          "output/1/flux2-klein-9b/deblur/deblur_crop_ (11)_2451704334_0.png",
+          "output/1/flux2-klein-9b/deblur/deblur_crop_ (2)_188940520_0.png",
+          "output/1/flux2-klein-9b/deblur/deblur_crop_ (4)_4041879793_0.png",
+          "output/1/flux2-klein-9b/deblur/deblur_crop_ (6)_4081883983_0.png",
+          "output/1/flux2-klein-9b/deblur/deblur_crop_ (7)_1734892688_0.png",
+          "output/1/flux2-klein-9b/deblur/deblur_crop_ (9)_1301893305_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "relight_day": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "daytime, bright daylight, clear blue sky, natural sunlight, soft natural shadows, well-lit scene, photorealistic",
+      "negative": "nighttime, dark sky, street lights, neon glow, artificial lighting, added objects, extra people, distortion",
+      "params": {
+        "strength": 4.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 65.79,
+          "vram_peak_mb": 19612.7
+        },
+        "outputs": [
+          "output/1/flux2-klein-9b/relight_day/relight_day_crop_ (11)_1595196184_0.png",
+          "output/1/flux2-klein-9b/relight_day/relight_day_crop_ (12)_2940641818_0.png",
+          "output/1/flux2-klein-9b/relight_day/relight_day_crop_ (2)_2236502987_0.png",
+          "output/1/flux2-klein-9b/relight_day/relight_day_crop_ (3)_1490499081_0.png",
+          "output/1/flux2-klein-9b/relight_day/relight_day_crop_ (5)_3736297667_0.png",
+          "output/1/flux2-klein-9b/relight_day/relight_day_crop_ (6)_1124596844_0.png",
+          "output/1/flux2-klein-9b/relight_day/relight_day_crop_ (7)_4129384074_0.png",
+          "output/1/flux2-klein-9b/relight_day/relight_day_crop_ (8)_3939040029_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "object_insert_fire": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "fire on the ground, realistic flames, warm firelight, light smoke, glowing embers, photorealistic",
+      "negative": "extra fires, no fire, changed people, added objects, unrealistic flames, distortion",
+      "params": {
+        "strength": 4.5,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 64.92,
+          "vram_peak_mb": 19663.7
+        },
+        "outputs": [
+          "output/1/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (1)_2662458990_0.png",
+          "output/1/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (10)_1371163548_0.png",
+          "output/1/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (11)_1277885196_0.png",
+          "output/1/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (12)_3617278771_0.png",
+          "output/1/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (4)_2049541579_0.png",
+          "output/1/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (5)_449202733_0.png",
+          "output/1/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (6)_3426328025_0.png",
+          "output/1/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (7)_1406058814_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "normalize": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "clean photo, neutral natural colors, balanced exposure, color corrected, even sharpness, photorealistic",
+      "negative": "color cast, overexposed, underexposed, stylized filter, artifacts, distortion",
+      "params": {
+        "strength": 4.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 64.95,
+          "vram_peak_mb": 19578.7
+        },
+        "outputs": [
+          "output/1/flux2-klein-9b/normalize/normalize_crop_ (1)_4030367405_0.png",
+          "output/1/flux2-klein-9b/normalize/normalize_crop_ (10)_3907480960_0.png",
+          "output/1/flux2-klein-9b/normalize/normalize_crop_ (12)_2756567066_0.png",
+          "output/1/flux2-klein-9b/normalize/normalize_crop_ (3)_2692972741_0.png",
+          "output/1/flux2-klein-9b/normalize/normalize_crop_ (4)_1974711938_0.png",
+          "output/1/flux2-klein-9b/normalize/normalize_crop_ (5)_1059964457_0.png",
+          "output/1/flux2-klein-9b/normalize/normalize_crop_ (6)_1184252920_0.png",
+          "output/1/flux2-klein-9b/normalize/normalize_crop_ (7)_4033168854_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "change_clothing": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "different outfit, new clothing, dark winter coat, jeans, changed clothes, photorealistic",
+      "negative": "same outfit, changed face, changed pose, changed body, changed background, added people, distortion",
+      "params": {
+        "strength": 4.5,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 64.97,
+          "vram_peak_mb": 19564.7
+        },
+        "outputs": [
+          "output/1/flux2-klein-9b/change_clothing/change_clothing_crop_ (1)_3800931169_0.png",
+          "output/1/flux2-klein-9b/change_clothing/change_clothing_crop_ (10)_1440755998_0.png",
+          "output/1/flux2-klein-9b/change_clothing/change_clothing_crop_ (2)_3846641188_0.png",
+          "output/1/flux2-klein-9b/change_clothing/change_clothing_crop_ (3)_3974980649_0.png",
+          "output/1/flux2-klein-9b/change_clothing/change_clothing_crop_ (5)_4241724437_0.png",
+          "output/1/flux2-klein-9b/change_clothing/change_clothing_crop_ (6)_4083464493_0.png",
+          "output/1/flux2-klein-9b/change_clothing/change_clothing_crop_ (7)_2513600396_0.png",
+          "output/1/flux2-klein-9b/change_clothing/change_clothing_crop_ (8)_842622632_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    }
+  }
+}

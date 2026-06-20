@@ -1,0 +1,185 @@
+{
+  "model": "firered-image-edit-1.1",
+  "tasks": {
+    "deblur": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "sharp focus, crisp details, clear edges, deblurred, high definition, fine texture, photorealistic",
+      "negative": "blur, motion blur, out of focus, soft, hazy, noise, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 19.5,
+          "vram_peak_mb": 22487.2
+        },
+        "outputs": [
+          "output/1/firered-image-edit-1.1/deblur/deblur_crop_ (1)_2470989128_0.png",
+          "output/1/firered-image-edit-1.1/deblur/deblur_crop_ (10)_1913349094_0.png",
+          "output/1/firered-image-edit-1.1/deblur/deblur_crop_ (11)_1938806546_0.png",
+          "output/1/firered-image-edit-1.1/deblur/deblur_crop_ (2)_149250077_0.png",
+          "output/1/firered-image-edit-1.1/deblur/deblur_crop_ (4)_981861442_0.png",
+          "output/1/firered-image-edit-1.1/deblur/deblur_crop_ (6)_2136912848_0.png",
+          "output/1/firered-image-edit-1.1/deblur/deblur_crop_ (7)_2630027907_0.png",
+          "output/1/firered-image-edit-1.1/deblur/deblur_crop_ (9)_3037957977_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "relight_day": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "daytime, bright daylight, clear blue sky, natural sunlight, soft natural shadows, well-lit scene, photorealistic",
+      "negative": "nighttime, dark sky, street lights, neon glow, artificial lighting, added objects, extra people, distortion",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 19.05,
+          "vram_peak_mb": 22503.9
+        },
+        "outputs": [
+          "output/1/firered-image-edit-1.1/relight_day/relight_day_crop_ (11)_1364163051_0.png",
+          "output/1/firered-image-edit-1.1/relight_day/relight_day_crop_ (12)_3388538858_0.png",
+          "output/1/firered-image-edit-1.1/relight_day/relight_day_crop_ (2)_3204486003_0.png",
+          "output/1/firered-image-edit-1.1/relight_day/relight_day_crop_ (3)_216704738_0.png",
+          "output/1/firered-image-edit-1.1/relight_day/relight_day_crop_ (5)_1732710197_0.png",
+          "output/1/firered-image-edit-1.1/relight_day/relight_day_crop_ (6)_1117128116_0.png",
+          "output/1/firered-image-edit-1.1/relight_day/relight_day_crop_ (7)_3503773104_0.png",
+          "output/1/firered-image-edit-1.1/relight_day/relight_day_crop_ (8)_709617336_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "object_insert_fire": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "fire on the ground, realistic flames, warm firelight, light smoke, glowing embers, photorealistic",
+      "negative": "extra fires, no fire, changed people, added objects, unrealistic flames, distortion",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 18.98,
+          "vram_peak_mb": 22496.0
+        },
+        "outputs": [
+          "output/1/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (1)_3395312353_0.png",
+          "output/1/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (10)_2244087420_0.png",
+          "output/1/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (11)_4014890151_0.png",
+          "output/1/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (12)_3158125760_0.png",
+          "output/1/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (4)_1626593849_0.png",
+          "output/1/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (5)_890928527_0.png",
+          "output/1/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (6)_3541295245_0.png",
+          "output/1/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (7)_1161789116_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "normalize": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "clean photo, neutral natural colors, balanced exposure, color corrected, even sharpness, photorealistic",
+      "negative": "color cast, overexposed, underexposed, stylized filter, artifacts, distortion",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 19.14,
+          "vram_peak_mb": 22503.7
+        },
+        "outputs": [
+          "output/1/firered-image-edit-1.1/normalize/normalize_crop_ (1)_3297829039_0.png",
+          "output/1/firered-image-edit-1.1/normalize/normalize_crop_ (10)_3058797822_0.png",
+          "output/1/firered-image-edit-1.1/normalize/normalize_crop_ (12)_21750995_0.png",
+          "output/1/firered-image-edit-1.1/normalize/normalize_crop_ (3)_692336389_0.png",
+          "output/1/firered-image-edit-1.1/normalize/normalize_crop_ (4)_3326627142_0.png",
+          "output/1/firered-image-edit-1.1/normalize/normalize_crop_ (5)_2484969540_0.png",
+          "output/1/firered-image-edit-1.1/normalize/normalize_crop_ (6)_3005115495_0.png",
+          "output/1/firered-image-edit-1.1/normalize/normalize_crop_ (7)_27873295_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "change_clothing": {
+      "version": "v1.0",
+      "style": "sd_tokens",
+      "positive": "different outfit, new clothing, dark winter coat, jeans, changed clothes, photorealistic",
+      "negative": "same outfit, changed face, changed pose, changed body, changed background, added people, distortion",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 8,
+        "avg": {
+          "gen_time_s": 18.89,
+          "vram_peak_mb": 22540.4
+        },
+        "outputs": [
+          "output/1/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (1)_679235589_0.png",
+          "output/1/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (10)_2195011650_0.png",
+          "output/1/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (2)_944154045_0.png",
+          "output/1/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (3)_3244631512_0.png",
+          "output/1/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (5)_762293286_0.png",
+          "output/1/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (6)_3741003709_0.png",
+          "output/1/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (7)_1705596116_0.png",
+          "output/1/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (8)_2916148262_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    }
+  }
+}

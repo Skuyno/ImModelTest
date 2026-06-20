@@ -1,0 +1,4 @@
+03:29:29 | INFO    | СТАРТ прогона. Модели (6): qwen-image-edit-2511, flux1-kontext-dev, firered-image-edit-1.1, flux2-klein-9b, flux2-dev, longcat-image-edit
+03:29:29 | INFO    | === МОДЕЛЬ: qwen-image-edit-2511 ===
+03:29:29 | INFO    | воркфлоу: workflows/image_qwen_image_edit_2511.json | задач: 5 | edit-режим: True
+03:29:29 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
