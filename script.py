@@ -19,8 +19,8 @@ INPUT_ROOT = Path("input")     # inputs/<task>/*.png — входные кадр
 OUTPUT_ROOT = Path("output")
  
 # Какие модели гоняем в этот раз (имена = ключи CONFIGS и имена prompts_<model>.json)
-MODELS_TO_RUN = ["qwen-image-edit-2511", "flux_kontext_dev_basic", "image_firered_image_edit1_1",
-                 "image_flux2_klein_image_edit_9b_base", "image_flux2", "image_longcat_image_edit"]
+MODELS_TO_RUN = ["qwen-image-edit-2511", "flux1-kontext-dev", "firered-image-edit-1.1",
+                 "flux2-klein-9b", "flux2-dev", "longcat-image-edit"]
  
 # Словарь по которому можем менять нужные настройки в воркфлоу
 CONFIGS = {
