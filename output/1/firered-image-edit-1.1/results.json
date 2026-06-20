@@ -30,10 +30,10 @@
           "output/1/firered-image-edit-1.1/deblur/deblur_crop_ (9)_3037957977_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 5,
+          "preservation": 3
         }
       }
     },
@@ -66,10 +66,10 @@
           "output/1/firered-image-edit-1.1/relight_day/relight_day_crop_ (8)_709617336_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 2,
+          "artifacts": 3,
+          "adherence": 5,
+          "preservation": 3
         }
       }
     },
@@ -102,10 +102,10 @@
           "output/1/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (7)_1161789116_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 5,
+          "artifacts": 4,
+          "adherence": 5,
+          "preservation": 4
         }
       }
     },
@@ -138,10 +138,10 @@
           "output/1/firered-image-edit-1.1/normalize/normalize_crop_ (7)_27873295_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 5,
+          "adherence": 3,
+          "preservation": 5
         }
       }
     },
@@ -174,10 +174,10 @@
           "output/1/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (8)_2916148262_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 5,
+          "adherence": 2,
+          "preservation": 5
         }
       }
     }

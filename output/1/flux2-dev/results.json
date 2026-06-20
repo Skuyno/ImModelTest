@@ -30,10 +30,10 @@
           "output/1/flux2-dev/deblur/deblur_crop_ (9)_4232685753_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 4,
+          "preservation": 4
         }
       }
     },
@@ -66,10 +66,10 @@
           "output/1/flux2-dev/relight_day/relight_day_crop_ (8)_850797226_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 5,
+          "preservation": 4
         }
       }
     },
@@ -102,10 +102,10 @@
           "output/1/flux2-dev/object_insert_fire/object_insert_fire_crop_ (7)_3613120282_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 3,
+          "adherence": 4,
+          "preservation": 2
         }
       }
     },
@@ -138,10 +138,10 @@
           "output/1/flux2-dev/normalize/normalize_crop_ (7)_3453921859_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 3,
+          "adherence": 3,
+          "preservation": 2
         }
       }
     },
@@ -174,10 +174,10 @@
           "output/1/flux2-dev/change_clothing/change_clothing_crop_ (8)_1892630424_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 3,
+          "adherence": 4,
+          "preservation": 2
         }
       }
     }

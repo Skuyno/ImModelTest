@@ -30,10 +30,10 @@
           "output/1/longcat-image-edit/deblur/deblur_crop_ (9)_3165894363_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 3,
+          "preservation": 5
         }
       }
     },
@@ -66,10 +66,10 @@
           "output/1/longcat-image-edit/relight_day/relight_day_crop_ (8)_3922011283_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 2,
+          "adherence": 3,
+          "preservation": 3
         }
       }
     },
@@ -102,10 +102,10 @@
           "output/1/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (7)_847545359_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 3,
+          "adherence": 5,
+          "preservation": 4
         }
       }
     },
@@ -138,10 +138,10 @@
           "output/1/longcat-image-edit/normalize/normalize_crop_ (7)_4081048089_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 5,
+          "adherence": 3,
+          "preservation": 5
         }
       }
     },
@@ -174,10 +174,10 @@
           "output/1/longcat-image-edit/change_clothing/change_clothing_crop_ (8)_2331756945_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 3,
+          "adherence": 4,
+          "preservation": 3
         }
       }
     }
