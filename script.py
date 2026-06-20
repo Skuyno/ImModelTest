@@ -275,5 +275,4 @@ if __name__ == "__main__":
             # полный трейс в лог, но прогон не роняем — идём к следующей модели
             log.exception("МОДЕЛЬ %s УПАЛА — пропускаю, иду дальше", model)
             failed.append(model)
-    log.info("ВСЁ. Общее время: %.0fs | успешно: %s | упало: %s",
-             time.perf_counter() - t_all, ok or "—", failed or "—")
+    log.info("ВСЁ. Общее время: %.0fs | успешно: %s | упало: %s", time.perf_counter() - t_all, ok or "—", failed or "—")

@@ -15,11 +15,11 @@
       "notes": "",
       "results": []
     },
-    "relight_night": {
+    "relight_day": {
       "version": "v1.0",
       "style": "sd_tokens",
-      "positive": "nighttime, dark sky, street lights, shop lights, neon glow, artificial lighting, realistic night shadows, photorealistic",
-      "negative": "daylight, bright sunlight, overexposed, added objects, extra people, distortion",
+      "positive": "daytime, bright daylight, clear blue sky, natural sunlight, soft natural shadows, well-lit scene, photorealistic",
+      "negative": "nighttime, dark sky, street lights, neon glow, artificial lighting, added objects, extra people, distortion",
       "params": {
         "strength": 4.0,
         "steps": 30,
