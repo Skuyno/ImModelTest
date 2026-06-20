@@ -96,7 +96,12 @@ CONFIGS = {
 # Запускаем промпт в работу
 def queue_prompt(workflow: dict) -> str:
     p = {"prompt": workflow, "client_id": client_id}
-    return requests.post(f"http://{server_address}/prompt", json=p).json()["prompt_id"]
+    r = requests.post(f"http://{server_address}/prompt", json=p)
+    data = r.json()
+    if "prompt_id" not in data:
+        print(json.dumps(data, ensure_ascii=False, indent=2))   # покажет error / node_errors
+        raise SystemExit("ComfyUI отклонил промпт — см. выше")
+    return data["prompt_id"]
  
  
 # Получаем инфу по нашему промпту
