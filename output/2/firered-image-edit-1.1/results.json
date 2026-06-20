@@ -1,0 +1,155 @@
+{
+  "model": "firered-image-edit-1.1",
+  "tasks": {
+    "deblur": {
+      "version": "v2.0",
+      "style": "instruction",
+      "positive": "Sharpen this image and recover fine detail so it looks like a clear, in-focus photo. Keep the exact same scene: do not add, remove, move or alter any objects, people, text or background. Photorealistic, natural result.",
+      "negative": "blurry, out of focus, soft, hazy, noise, added objects, removed objects, changed people, changed background, repainted scene, distortion, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 20.73,
+          "vram_peak_mb": 21355.8
+        },
+        "outputs": [
+          "output/2/firered-image-edit-1.1/deblur/deblur_crop_ (1)_4015321972_0.png",
+          "output/2/firered-image-edit-1.1/deblur/deblur_crop_ (2)_842009924_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "relight_day": {
+      "version": "v2.0",
+      "style": "instruction",
+      "positive": "Relight this scene to bright midday daylight with a clear sky and soft natural sunlight and shadows. Keep all objects, people, vehicles, signs and structures identical in their original position, shape and number. Only the lighting changes. Photorealistic.",
+      "negative": "night, dark, fog, haze, overexposed, washed out, blown highlights, added objects, extra people, removed objects, changed scene, distortion, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 19.33,
+          "vram_peak_mb": 22502.9
+        },
+        "outputs": [
+          "output/2/firered-image-edit-1.1/relight_day/relight_day_crop_ (2)_169548931_0.png",
+          "output/2/firered-image-edit-1.1/relight_day/relight_day_crop_ (3)_1189767582_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "object_insert_fire": {
+      "version": "v2.0",
+      "style": "instruction",
+      "positive": "Add a single small, contained fire burning on the ground in the lower part of the scene, with realistic flames, warm firelight, light smoke and a few glowing embers. Keep everything else exactly as in the original: all people, objects, building and background must stay unchanged and fully visible. Photorealistic.",
+      "negative": "full-frame fire, fire covering the whole image, giant flames, dark background, black background, scene replaced, changed people, removed people, added objects, multiple fires, unrealistic flames, distortion, artifacts",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 18.97,
+          "vram_peak_mb": 22502.9
+        },
+        "outputs": [
+          "output/2/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (1)_2755711835_0.png",
+          "output/2/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (4)_3637185529_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "normalize": {
+      "version": "v2.0",
+      "style": "instruction",
+      "positive": "Apply only a subtle photographic clean-up: neutral white balance, balanced exposure and natural, accurate colors. Keep the content completely unchanged - same objects, people, background, composition and type of lighting. Photorealistic.",
+      "negative": "color cast, overexposed, underexposed, stylized filter, relit, day-for-night, changed content, added objects, removed objects, changed people, repainted scene, distortion, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 19.12,
+          "vram_peak_mb": 22502.9
+        },
+        "outputs": [
+          "output/2/firered-image-edit-1.1/normalize/normalize_crop_ (1)_3135118993_0.png",
+          "output/2/firered-image-edit-1.1/normalize/normalize_crop_ (3)_3466565865_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "change_clothing": {
+      "version": "v2.0",
+      "style": "instruction",
+      "positive": "Change only the clothing of the person (or people) into a colorful clown costume - a baggy polka-dot suit with a ruffled collar, oversized buttons and big clown shoes. Keep their face, hairstyle, pose, body shape and the entire background exactly the same. Do not add or remove any people and do not change their face. Photorealistic.",
+      "negative": "same outfit unchanged, changed face, face paint, clown makeup, mask, different person, changed pose, changed body, changed background, added people, removed people, blurry, ghosting, motion blur, distortion, artifacts",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 19.05,
+          "vram_peak_mb": 22502.9
+        },
+        "outputs": [
+          "output/2/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (1)_2389298476_0.png",
+          "output/2/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (2)_848718550_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    }
+  }
+}
