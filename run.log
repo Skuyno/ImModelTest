@@ -792,3 +792,4 @@
 18:42:55 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 48.8s | VRAM 21366 MB | картинок: 8
 18:42:55 | INFO    | === longcat-image-edit ГОТОВО за 2085s | результаты: output/1/longcat-image-edit/results.json ===
 18:42:55 | INFO    | ВСЁ. Прогон #1 за 9836s | успешно: ['qwen-image-edit-2511', 'flux1-kontext-dev', 'firered-image-edit-1.1', 'flux2-klein-9b', 'flux2-dev', 'longcat-image-edit'] | упало: —
+20:28:20 | INFO    |    табличка-сравнение: _review\_TEST_new_table.png

@@ -198,6 +198,40 @@ def build_values(task: dict, image_name: str | None = None) -> dict:
     return values
 
 
+# Складываем табличку-сравнение: по строке на картинку, слева оригинал — справа результат.
+# Падать из-за неё нельзя, поэтому всё в try (PIL может быть не установлен).
+def save_compare_grid(pairs: list, dest_path: Path, title: str, size: int = 420):
+    try:
+        from PIL import Image, ImageDraw
+    except Exception as e:
+        log.warning("PIL недоступен — пропускаю табличку-сравнение (%s)", e)
+        return
+    if not pairs:
+        return
+    try:
+        lbl = 20
+        cell_w = size * 2 + 6 + 16     # оригинал | результат + поля
+        cell_h = size + lbl + 12
+        canvas = Image.new("RGB", (cell_w + 8, len(pairs) * cell_h + 28), (245, 245, 245))
+        d = ImageDraw.Draw(canvas)
+        d.text((8, 6), f"{title}   (слева ОРИГИНАЛ — справа РЕЗУЛЬТАТ)", fill=(0, 0, 0))
+        for i, (inp, out) in enumerate(pairs):
+            y0 = 24 + i * cell_h
+            d.text((8, y0), Path(inp).name, fill=(180, 0, 0))
+            yimg = y0 + lbl
+            for j, src in enumerate((inp, out)):
+                try:
+                    im = Image.open(src).convert("RGB").resize((size, size))
+                except Exception:
+                    im = Image.new("RGB", (size, size), (200, 60, 60))
+                canvas.paste(im, (4 + j * (size + 6), yimg))
+        dest_path.parent.mkdir(parents=True, exist_ok=True)
+        canvas.save(dest_path)
+        log.info("   табличка-сравнение: %s", dest_path)
+    except Exception:
+        log.exception("не смог собрать табличку-сравнение для %s", title)
+
+
 # Заводим папку под новый прогон (output/1, output/2, ...) + кладём копию промптов
 def make_run_dir() -> Path:
     OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
@@ -247,6 +281,7 @@ def process_model(model: str, run_dir: Path):
 
         # копим метрики по всем картинкам задачи, потом усредняем
         times, vrams, all_outputs = [], [], []
+        compare_pairs = []   # (оригинал, результат) для таблички-сравнения
         for ii, image_path in enumerate(inputs, 1):
             image_name = upload_image(image_path) if image_path is not None else None
             values = build_values(task, image_name)
@@ -269,6 +304,12 @@ def process_model(model: str, run_dir: Path):
             times.append(metrics["gen_time_s"])
             vrams.append(metrics["vram_peak_mb"])
             all_outputs.extend(outputs)
+            if image_path is not None and outputs:
+                compare_pairs.append((image_path, outputs[0]))
+
+        # табличка-сравнение по задаче: output/<run>/<model>/_compare/<task>.png
+        save_compare_grid(compare_pairs, out_dir / "_compare" / f"{task_name}.png",
+                          f"{model} / {task_name}")
 
         n = len(times)
         avg_time = sum(times) / n if n else 0.0
