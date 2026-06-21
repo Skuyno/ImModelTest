@@ -1515,3 +1515,191 @@
 17:21:07 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 48.0s | VRAM 21251 MB | картинок: 2
 17:21:07 | INFO    | === longcat-image-edit ГОТОВО за 647s | результаты: output/3/longcat-image-edit/results.json ===
 17:21:07 | INFO    | ВСЁ. Прогон #3 за 6450s | успешно: ['qwen-image-edit-2511', 'flux1-kontext-dev', 'firered-image-edit-1.1', 'flux2-klein-9b', 'flux2-dev', 'longcat-image-edit'] | упало: —
+18:40:53 | INFO    | СТАРТ прогона #4 -> output/4. Модели (6): qwen-image-edit-2511, flux1-kontext-dev, firered-image-edit-1.1, flux2-klein-9b, flux2-dev, longcat-image-edit
+18:40:53 | INFO    | === МОДЕЛЬ: qwen-image-edit-2511 ===
+18:40:53 | INFO    | воркфлоу: workflows/image_qwen_image_edit_2511.json | задач: 5 | edit-режим: True
+18:40:53 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+18:44:04 | INFO    | прогрев готов (191s)
+18:44:04 | INFO    | [задача 1/5] 'deblur' — картинок: 2
+18:47:13 | INFO    | СТАРТ прогона #4 -> output/4. Модели (6): qwen-image-edit-2511, flux1-kontext-dev, firered-image-edit-1.1, flux2-klein-9b, flux2-dev, longcat-image-edit
+18:47:13 | INFO    | === МОДЕЛЬ: qwen-image-edit-2511 ===
+18:47:13 | INFO    | воркфлоу: workflows/image_qwen_image_edit_2511.json | задач: 5 | edit-режим: True
+18:47:13 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+18:49:29 | INFO    | прогрев готов (136s)
+18:49:29 | INFO    | [задача 1/5] 'deblur' — картинок: 2
+18:51:30 | INFO    |    img 1/2 crop_ (1).jpg          | seed=4015321972 | 121.3s | VRAM 19962 MB | файлов: 1
+18:53:44 | INFO    |    img 2/2 crop_ (2).jpg          | seed=842009924 | 133.9s | VRAM 20743 MB | файлов: 1
+18:53:45 | INFO    |    табличка-сравнение: output/4/qwen-image-edit-2511/_compare/deblur.png
+18:53:45 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 127.6s | VRAM 20353 MB | картинок: 2
+18:53:45 | INFO    | [задача 2/5] 'relight_day' — картинок: 2
+18:55:54 | INFO    |    img 1/2 crop_ (2).jpg          | seed=169548931 | 129.1s | VRAM 20783 MB | файлов: 1
+18:58:10 | INFO    |    img 2/2 crop_ (3).jpg          | seed=1189767582 | 136.5s | VRAM 20743 MB | файлов: 1
+18:58:11 | INFO    |    табличка-сравнение: output/4/qwen-image-edit-2511/_compare/relight_day.png
+18:58:11 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 132.8s | VRAM 20763 MB | картинок: 2
+18:58:11 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 2
+19:00:23 | INFO    |    img 1/2 crop_ (1).jpg          | seed=2755711835 | 132.1s | VRAM 20750 MB | файлов: 1
+19:02:35 | INFO    |    img 2/2 crop_ (4).jpg          | seed=3637185529 | 132.3s | VRAM 20750 MB | файлов: 1
+19:02:36 | INFO    |    табличка-сравнение: output/4/qwen-image-edit-2511/_compare/object_insert_fire.png
+19:02:36 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 132.2s | VRAM 20750 MB | картинок: 2
+19:02:36 | INFO    | [задача 4/5] 'normalize' — картинок: 2
+19:04:49 | INFO    |    img 1/2 crop_ (1).jpg          | seed=3135118993 | 133.4s | VRAM 20751 MB | файлов: 1
+19:07:06 | INFO    |    img 2/2 crop_ (3).jpg          | seed=3466565865 | 136.6s | VRAM 20751 MB | файлов: 1
+19:07:06 | INFO    |    табличка-сравнение: output/4/qwen-image-edit-2511/_compare/normalize.png
+19:07:06 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 135.0s | VRAM 20751 MB | картинок: 2
+19:07:06 | INFO    | [задача 5/5] 'change_clothing' — картинок: 2
+19:09:22 | INFO    |    img 1/2 crop_ (1).jpg          | seed=2389298476 | 135.8s | VRAM 20783 MB | файлов: 1
+19:11:35 | INFO    |    img 2/2 crop_ (2).jpg          | seed=848718550 | 132.4s | VRAM 20783 MB | файлов: 1
+19:11:35 | INFO    |    табличка-сравнение: output/4/qwen-image-edit-2511/_compare/change_clothing.png
+19:11:35 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 134.1s | VRAM 20783 MB | картинок: 2
+19:11:35 | INFO    | === qwen-image-edit-2511 ГОТОВО за 1462s | результаты: output/4/qwen-image-edit-2511/results.json ===
+19:11:35 | INFO    | === МОДЕЛЬ: flux1-kontext-dev ===
+19:11:35 | INFO    | воркфлоу: workflows/flux_kontext_dev_basic.json | задач: 5 | edit-режим: True
+19:11:35 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+19:13:27 | INFO    | прогрев готов (112s)
+19:13:27 | INFO    | [задача 1/5] 'deblur' — картинок: 2
+19:14:03 | INFO    |    img 1/2 crop_ (1).jpg          | seed=4015321972 | 35.8s | VRAM 18609 MB | файлов: 1
+19:14:39 | INFO    |    img 2/2 crop_ (2).jpg          | seed=842009924 | 36.2s | VRAM 18641 MB | файлов: 1
+19:14:40 | INFO    |    табличка-сравнение: output/4/flux1-kontext-dev/_compare/deblur.png
+19:14:40 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 36.0s | VRAM 18625 MB | картинок: 2
+19:14:40 | INFO    | [задача 2/5] 'relight_day' — картинок: 2
+19:15:24 | INFO    |    img 1/2 crop_ (2).jpg          | seed=169548931 | 43.8s | VRAM 21006 MB | файлов: 1
+19:16:00 | INFO    |    img 2/2 crop_ (3).jpg          | seed=1189767582 | 36.1s | VRAM 19857 MB | файлов: 1
+19:16:00 | INFO    |    табличка-сравнение: output/4/flux1-kontext-dev/_compare/relight_day.png
+19:16:00 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 39.9s | VRAM 20432 MB | картинок: 2
+19:16:00 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 2
+19:16:37 | INFO    |    img 1/2 crop_ (1).jpg          | seed=2755711835 | 37.0s | VRAM 21124 MB | файлов: 1
+19:17:13 | INFO    |    img 2/2 crop_ (4).jpg          | seed=3637185529 | 36.0s | VRAM 19857 MB | файлов: 1
+19:17:13 | INFO    |    табличка-сравнение: output/4/flux1-kontext-dev/_compare/object_insert_fire.png
+19:17:13 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 36.5s | VRAM 20491 MB | картинок: 2
+19:17:13 | INFO    | [задача 4/5] 'normalize' — картинок: 2
+19:17:50 | INFO    |    img 1/2 crop_ (1).jpg          | seed=3135118993 | 36.9s | VRAM 21002 MB | файлов: 1
+19:18:26 | INFO    |    img 2/2 crop_ (3).jpg          | seed=3466565865 | 36.0s | VRAM 19857 MB | файлов: 1
+19:18:27 | INFO    |    табличка-сравнение: output/4/flux1-kontext-dev/_compare/normalize.png
+19:18:27 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 36.4s | VRAM 20430 MB | картинок: 2
+19:18:27 | INFO    | [задача 5/5] 'change_clothing' — картинок: 2
+19:19:04 | INFO    |    img 1/2 crop_ (1).jpg          | seed=2389298476 | 36.9s | VRAM 20993 MB | файлов: 1
+19:19:40 | INFO    |    img 2/2 crop_ (2).jpg          | seed=848718550 | 36.0s | VRAM 19857 MB | файлов: 1
+19:19:40 | INFO    |    табличка-сравнение: output/4/flux1-kontext-dev/_compare/change_clothing.png
+19:19:40 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 36.4s | VRAM 20425 MB | картинок: 2
+19:19:40 | INFO    | === flux1-kontext-dev ГОТОВО за 485s | результаты: output/4/flux1-kontext-dev/results.json ===
+19:19:40 | INFO    | === МОДЕЛЬ: firered-image-edit-1.1 ===
+19:19:40 | INFO    | воркфлоу: workflows/image_firered_image_edit1_1.json | задач: 5 | edit-режим: True
+19:19:40 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+19:22:40 | INFO    | прогрев готов (180s)
+19:22:40 | INFO    | [задача 1/5] 'deblur' — картинок: 2
+19:24:39 | INFO    |    img 1/2 crop_ (1).jpg          | seed=4015321972 | 119.2s | VRAM 18820 MB | файлов: 1
+19:26:53 | INFO    |    img 2/2 crop_ (2).jpg          | seed=842009924 | 134.1s | VRAM 20672 MB | файлов: 1
+19:26:54 | INFO    |    табличка-сравнение: output/4/firered-image-edit-1.1/_compare/deblur.png
+19:26:54 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 126.7s | VRAM 19746 MB | картинок: 2
+19:26:54 | INFO    | [задача 2/5] 'relight_day' — картинок: 2
+19:28:58 | INFO    |    img 1/2 crop_ (2).jpg          | seed=169548931 | 123.8s | VRAM 20749 MB | файлов: 1
+19:31:01 | INFO    |    img 2/2 crop_ (3).jpg          | seed=1189767582 | 123.2s | VRAM 20749 MB | файлов: 1
+19:31:01 | INFO    |    табличка-сравнение: output/4/firered-image-edit-1.1/_compare/relight_day.png
+19:31:01 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 123.5s | VRAM 20749 MB | картинок: 2
+19:31:01 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 2
+19:33:04 | INFO    |    img 1/2 crop_ (1).jpg          | seed=2755711835 | 123.1s | VRAM 20749 MB | файлов: 1
+19:35:08 | INFO    |    img 2/2 crop_ (4).jpg          | seed=3637185529 | 123.2s | VRAM 20749 MB | файлов: 1
+19:35:08 | INFO    |    табличка-сравнение: output/4/firered-image-edit-1.1/_compare/object_insert_fire.png
+19:35:08 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 123.1s | VRAM 20749 MB | картинок: 2
+19:35:08 | INFO    | [задача 4/5] 'normalize' — картинок: 2
+19:37:11 | INFO    |    img 1/2 crop_ (1).jpg          | seed=3135118993 | 122.8s | VRAM 20749 MB | файлов: 1
+19:39:14 | INFO    |    img 2/2 crop_ (3).jpg          | seed=3466565865 | 123.5s | VRAM 20749 MB | файлов: 1
+19:39:15 | INFO    |    табличка-сравнение: output/4/firered-image-edit-1.1/_compare/normalize.png
+19:39:15 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 123.1s | VRAM 20749 MB | картинок: 2
+19:39:15 | INFO    | [задача 5/5] 'change_clothing' — картинок: 2
+19:41:17 | INFO    |    img 1/2 crop_ (1).jpg          | seed=2389298476 | 122.6s | VRAM 20749 MB | файлов: 1
+19:43:20 | INFO    |    img 2/2 crop_ (2).jpg          | seed=848718550 | 122.7s | VRAM 20749 MB | файлов: 1
+19:43:21 | INFO    |    табличка-сравнение: output/4/firered-image-edit-1.1/_compare/change_clothing.png
+19:43:21 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 122.7s | VRAM 20749 MB | картинок: 2
+19:43:21 | INFO    | === firered-image-edit-1.1 ГОТОВО за 1421s | результаты: output/4/firered-image-edit-1.1/results.json ===
+19:43:21 | INFO    | === МОДЕЛЬ: flux2-klein-9b ===
+19:43:21 | INFO    | воркфлоу: workflows/image_flux2_klein_image_edit_9b_base.json | задач: 5 | edit-режим: True
+19:43:21 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+19:45:18 | INFO    | прогрев готов (118s)
+19:45:18 | INFO    | [задача 1/5] 'deblur' — картинок: 2
+19:46:24 | INFO    |    img 1/2 crop_ (1).jpg          | seed=4015321972 | 65.4s | VRAM 17072 MB | файлов: 1
+19:47:29 | INFO    |    img 2/2 crop_ (2).jpg          | seed=842009924 | 65.7s | VRAM 17104 MB | файлов: 1
+19:47:30 | INFO    |    табличка-сравнение: output/4/flux2-klein-9b/_compare/deblur.png
+19:47:30 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 65.6s | VRAM 17088 MB | картинок: 2
+19:47:30 | INFO    | [задача 2/5] 'relight_day' — картинок: 2
+19:48:45 | INFO    |    img 1/2 crop_ (2).jpg          | seed=169548931 | 75.1s | VRAM 18726 MB | файлов: 1
+19:49:50 | INFO    |    img 2/2 crop_ (3).jpg          | seed=1189767582 | 65.4s | VRAM 18160 MB | файлов: 1
+19:49:51 | INFO    |    табличка-сравнение: output/4/flux2-klein-9b/_compare/relight_day.png
+19:49:51 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 70.2s | VRAM 18443 MB | картинок: 2
+19:49:51 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 2
+19:50:57 | INFO    |    img 1/2 crop_ (1).jpg          | seed=2755711835 | 66.5s | VRAM 18596 MB | файлов: 1
+19:52:03 | INFO    |    img 2/2 crop_ (4).jpg          | seed=3637185529 | 65.6s | VRAM 18160 MB | файлов: 1
+19:52:03 | INFO    |    табличка-сравнение: output/4/flux2-klein-9b/_compare/object_insert_fire.png
+19:52:03 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 66.1s | VRAM 18378 MB | картинок: 2
+19:52:03 | INFO    | [задача 4/5] 'normalize' — картинок: 2
+19:53:10 | INFO    |    img 1/2 crop_ (1).jpg          | seed=3135118993 | 66.5s | VRAM 18507 MB | файлов: 1
+19:54:16 | INFO    |    img 2/2 crop_ (3).jpg          | seed=3466565865 | 65.7s | VRAM 18160 MB | файлов: 1
+19:54:16 | INFO    |    табличка-сравнение: output/4/flux2-klein-9b/_compare/normalize.png
+19:54:16 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 66.1s | VRAM 18333 MB | картинок: 2
+19:54:16 | INFO    | [задача 5/5] 'change_clothing' — картинок: 2
+19:55:22 | INFO    |    img 1/2 crop_ (1).jpg          | seed=2389298476 | 66.5s | VRAM 18509 MB | файлов: 1
+19:56:28 | INFO    |    img 2/2 crop_ (2).jpg          | seed=848718550 | 65.6s | VRAM 18160 MB | файлов: 1
+19:56:28 | INFO    |    табличка-сравнение: output/4/flux2-klein-9b/_compare/change_clothing.png
+19:56:28 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 66.1s | VRAM 18334 MB | картинок: 2
+19:56:28 | INFO    | === flux2-klein-9b ГОТОВО за 788s | результаты: output/4/flux2-klein-9b/results.json ===
+19:56:28 | INFO    | === МОДЕЛЬ: flux2-dev ===
+19:56:28 | INFO    | воркфлоу: workflows/image_flux2.json | задач: 5 | edit-режим: True
+19:56:28 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+20:00:20 | INFO    | прогрев готов (231s)
+20:00:20 | INFO    | [задача 1/5] 'deblur' — картинок: 2
+20:02:41 | INFO    |    img 1/2 crop_ (1).jpg          | seed=4015321972 | 140.6s | VRAM 19755 MB | файлов: 1
+20:05:01 | INFO    |    img 2/2 crop_ (2).jpg          | seed=842009924 | 140.7s | VRAM 18957 MB | файлов: 1
+20:05:02 | INFO    |    табличка-сравнение: output/4/flux2-dev/_compare/deblur.png
+20:05:02 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 140.7s | VRAM 19356 MB | картинок: 2
+20:05:02 | INFO    | [задача 2/5] 'relight_day' — картинок: 2
+20:08:01 | INFO    |    img 1/2 crop_ (2).jpg          | seed=169548931 | 179.7s | VRAM 19160 MB | файлов: 1
+20:10:23 | INFO    |    img 2/2 crop_ (3).jpg          | seed=1189767582 | 141.2s | VRAM 19107 MB | файлов: 1
+20:10:23 | INFO    |    табличка-сравнение: output/4/flux2-dev/_compare/relight_day.png
+20:10:23 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 160.4s | VRAM 19134 MB | картинок: 2
+20:10:23 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 2
+20:13:25 | INFO    |    img 1/2 crop_ (1).jpg          | seed=2755711835 | 182.2s | VRAM 19164 MB | файлов: 1
+20:15:46 | INFO    |    img 2/2 crop_ (4).jpg          | seed=3637185529 | 140.9s | VRAM 19083 MB | файлов: 1
+20:15:47 | INFO    |    табличка-сравнение: output/4/flux2-dev/_compare/object_insert_fire.png
+20:15:47 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 161.5s | VRAM 19123 MB | картинок: 2
+20:15:47 | INFO    | [задача 4/5] 'normalize' — картинок: 2
+20:18:55 | INFO    |    img 1/2 crop_ (1).jpg          | seed=3135118993 | 188.4s | VRAM 19128 MB | файлов: 1
+20:21:16 | INFO    |    img 2/2 crop_ (3).jpg          | seed=3466565865 | 140.7s | VRAM 19083 MB | файлов: 1
+20:21:16 | INFO    |    табличка-сравнение: output/4/flux2-dev/_compare/normalize.png
+20:21:16 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 164.5s | VRAM 19106 MB | картинок: 2
+20:21:16 | INFO    | [задача 5/5] 'change_clothing' — картинок: 2
+20:24:14 | INFO    |    img 1/2 crop_ (1).jpg          | seed=2389298476 | 177.7s | VRAM 19169 MB | файлов: 1
+20:26:35 | INFO    |    img 2/2 crop_ (2).jpg          | seed=848718550 | 140.8s | VRAM 19083 MB | файлов: 1
+20:26:35 | INFO    |    табличка-сравнение: output/4/flux2-dev/_compare/change_clothing.png
+20:26:35 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 159.3s | VRAM 19126 MB | картинок: 2
+20:26:35 | INFO    | === flux2-dev ГОТОВО за 1807s | результаты: output/4/flux2-dev/results.json ===
+20:26:35 | INFO    | === МОДЕЛЬ: longcat-image-edit ===
+20:26:35 | INFO    | воркфлоу: workflows/image_longcat_image_edit.json | задач: 5 | edit-режим: True
+20:26:35 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+20:28:13 | INFO    | прогрев готов (98s)
+20:28:13 | INFO    | [задача 1/5] 'deblur' — картинок: 2
+20:28:59 | INFO    |    img 1/2 crop_ (1).jpg          | seed=4015321972 | 45.9s | VRAM 18811 MB | файлов: 1
+20:29:48 | INFO    |    img 2/2 crop_ (2).jpg          | seed=842009924 | 49.1s | VRAM 21186 MB | файлов: 1
+20:29:49 | INFO    |    табличка-сравнение: output/4/longcat-image-edit/_compare/deblur.png
+20:29:49 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 47.5s | VRAM 19998 MB | картинок: 2
+20:29:49 | INFO    | [задача 2/5] 'relight_day' — картинок: 2
+20:30:38 | INFO    |    img 1/2 crop_ (2).jpg          | seed=169548931 | 49.0s | VRAM 22158 MB | файлов: 1
+20:31:27 | INFO    |    img 2/2 crop_ (3).jpg          | seed=1189767582 | 49.1s | VRAM 20975 MB | файлов: 1
+20:31:27 | INFO    |    табличка-сравнение: output/4/longcat-image-edit/_compare/relight_day.png
+20:31:27 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 49.0s | VRAM 21567 MB | картинок: 2
+20:31:27 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 2
+20:32:16 | INFO    |    img 1/2 crop_ (1).jpg          | seed=2755711835 | 49.1s | VRAM 22136 MB | файлов: 1
+20:33:05 | INFO    |    img 2/2 crop_ (4).jpg          | seed=3637185529 | 49.1s | VRAM 21130 MB | файлов: 1
+20:33:06 | INFO    |    табличка-сравнение: output/4/longcat-image-edit/_compare/object_insert_fire.png
+20:33:06 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 49.1s | VRAM 21633 MB | картинок: 2
+20:33:06 | INFO    | [задача 4/5] 'normalize' — картинок: 2
+20:33:55 | INFO    |    img 1/2 crop_ (1).jpg          | seed=3135118993 | 49.0s | VRAM 22158 MB | файлов: 1
+20:34:44 | INFO    |    img 2/2 crop_ (3).jpg          | seed=3466565865 | 49.2s | VRAM 20943 MB | файлов: 1
+20:34:44 | INFO    |    табличка-сравнение: output/4/longcat-image-edit/_compare/normalize.png
+20:34:44 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 49.1s | VRAM 21551 MB | картинок: 2
+20:34:44 | INFO    | [задача 5/5] 'change_clothing' — картинок: 2
+20:35:34 | INFO    |    img 1/2 crop_ (1).jpg          | seed=2389298476 | 49.1s | VRAM 22136 MB | файлов: 1
+20:36:23 | INFO    |    img 2/2 crop_ (2).jpg          | seed=848718550 | 49.1s | VRAM 22072 MB | файлов: 1
+20:36:23 | INFO    |    табличка-сравнение: output/4/longcat-image-edit/_compare/change_clothing.png
+20:36:23 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 49.1s | VRAM 22104 MB | картинок: 2
+20:36:23 | INFO    | === longcat-image-edit ГОТОВО за 588s | результаты: output/4/longcat-image-edit/results.json ===
+20:36:23 | INFO    | ВСЁ. Прогон #4 за 6550s | успешно: ['qwen-image-edit-2511', 'flux1-kontext-dev', 'firered-image-edit-1.1', 'flux2-klein-9b', 'flux2-dev', 'longcat-image-edit'] | упало: —

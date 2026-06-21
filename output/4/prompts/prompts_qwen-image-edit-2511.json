@@ -1,0 +1,75 @@
+{
+  "model": "qwen-image-edit-2511",
+  "tasks": {
+    "deblur": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to clearly and decisively sharpen this exact photo, recovering crisp fine detail and removing softness and haze. You MUST keep every object, person and the background exactly the same. Photorealistic.",
+      "negative": "still blurry, soft, hazy, no change, repainted, changed people, changed background, distortion, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "relight_day": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to fully convert this scene into clear, bright midday daylight - blue sky, real sunlight, natural shadows. It must clearly be full bright daytime. Keep all edges crisp and sharp, and keep every object and person exactly where it is. Photorealistic.",
+      "negative": "dusk, dim, between day and night, night, blur, smear, smudged, motion blur, added objects, removed objects, distortion, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "object_insert_fire": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to add a clearly visible fire that has broken out on a dry, solid surface in the scene, with realistic spreading flames, smoke and embers matching the scene's geometry. You MUST keep the existing terrain, water and background exactly as they are, keeping the shoreline and ground as in the original, and keep all people and objects unchanged. Photorealistic.",
+      "negative": "campfire, fire on water, added shoreline, extended terrain, new ground, changed people, distortion, artifacts",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "normalize": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is a subtle, neutral photographic clean-up only: balanced exposure, natural white balance and accurate, true-to-life colors. You MUST keep all content, objects, people, background and type of lighting exactly the same. The result looks like a real, lightly-corrected photograph.",
+      "negative": "color cast, oversaturated, overexposed, underexposed, stylized filter, changed content, added objects, removed objects, distortion, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "change_clothing": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to dress the same people already in this photo in a full, colorful clown costume (polka-dot suit, ruffled collar, big shoes, clown hat). You MUST keep exactly the same number of people, keep their own faces and poses, keep the background, and update their reflections on shiny surfaces to match the new costume. Photorealistic.",
+      "negative": "added clown, extra person, added people, removed people, clown makeup, face paint, changed face, wrong reflection, missing reflection, changed background, distortion, artifacts",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    }
+  }
+}

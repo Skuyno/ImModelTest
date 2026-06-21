@@ -1,0 +1,155 @@
+{
+  "model": "flux2-dev",
+  "tasks": {
+    "deblur": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to sharpen this exact photo and recover fine detail, keeping natural, neutral, true-to-life colors so it still looks like a real photograph. Keep every object, person and the background exactly as in the input, clearing haze only where it is present. Photorealistic.",
+      "negative": "oversaturated, boosted colors, computer-generated look, repainted, changed people, distortion, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 140.67,
+          "vram_peak_mb": 19356.1
+        },
+        "outputs": [
+          "output/4/flux2-dev/deblur/deblur_crop_ (1)_4015321972_0.png",
+          "output/4/flux2-dev/deblur/deblur_crop_ (2)_842009924_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "relight_day": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to convert this scene into clear, bright midday daylight - blue sky, real sunlight, natural shadows. You MUST keep every object, person, vehicle and the text on signs sharp and unchanged in position and shape; only the lighting and the sky change. Photorealistic.",
+      "negative": "night, dim, warped text, melted signs, blurry signs, added objects, removed objects, changed scene, distortion, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 160.42,
+          "vram_peak_mb": 19133.6
+        },
+        "outputs": [
+          "output/4/flux2-dev/relight_day/relight_day_crop_ (2)_169548931_0.png",
+          "output/4/flux2-dev/relight_day/relight_day_crop_ (3)_1189767582_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "object_insert_fire": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to add a real fire that has broken out on a dry, solid surface that physically exists in this scene (the floor or an object), placed to match the room's geometry and perspective: natural spreading flames with smoke and embers, resting on solid ground. Keep the water, all people, objects and the background unchanged and normally lit. Photorealistic.",
+      "negative": "fire on water, floating fire, wrong perspective, campfire, full-frame fire, changed people, distortion, artifacts",
+      "params": {
+        "strength": 4.5,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 161.52,
+          "vram_peak_mb": 19123.3
+        },
+        "outputs": [
+          "output/4/flux2-dev/object_insert_fire/object_insert_fire_crop_ (1)_2755711835_0.png",
+          "output/4/flux2-dev/object_insert_fire/object_insert_fire_crop_ (4)_3637185529_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "normalize": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is a gentle, neutral photographic clean-up only: balanced exposure, natural white balance and realistic, true-to-life colors. The result MUST look like a real, unedited photograph with natural color. Keep all content, objects, people and the type of lighting exactly the same. Photorealistic.",
+      "negative": "oversaturated, vivid filter, AI render look, stylized, changed content, added objects, removed objects, distortion, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 164.52,
+          "vram_peak_mb": 19105.6
+        },
+        "outputs": [
+          "output/4/flux2-dev/normalize/normalize_crop_ (1)_3135118993_0.png",
+          "output/4/flux2-dev/normalize/normalize_crop_ (3)_3466565865_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "change_clothing": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to dress every person already in this photo - including anyone in a uniform or work clothes - in a full, colorful clown costume (baggy polka-dot suit, ruffled collar, big shoes, clown hat). You MUST keep each person's own real bare face, keep exactly the same number of people, each in their original position and natural pose, and keep the same background. Dress the real people and keep them as themselves. Photorealistic.",
+      "negative": "clown makeup, face paint, static pose, replaced people, new people, added people, removed people, changed background, distortion, artifacts",
+      "params": {
+        "strength": 4.5,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 159.29,
+          "vram_peak_mb": 19125.9
+        },
+        "outputs": [
+          "output/4/flux2-dev/change_clothing/change_clothing_crop_ (1)_2389298476_0.png",
+          "output/4/flux2-dev/change_clothing/change_clothing_crop_ (2)_848718550_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    }
+  }
+}
