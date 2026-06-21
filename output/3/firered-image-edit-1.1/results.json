@@ -12,7 +12,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "На туманной картинке нарисовало много отсебятины, но выглядит достойно. Картинку с заводом задеблюрило очень хорошо. Других артефактов не видел.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -24,10 +24,10 @@
           "output/3/firered-image-edit-1.1/deblur/deblur_crop_ (2)_842009924_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 4,
+          "preservation": 3
         }
       }
     },
@@ -42,7 +42,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Тени вышли хорошо, надписи выглядят нормально. Очень похоже на реальное фото. Артефактов не вижу.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -54,10 +54,10 @@
           "output/3/firered-image-edit-1.1/relight_day/relight_day_crop_ (3)_1189767582_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 5,
+          "artifacts": 5,
+          "adherence": 5,
+          "preservation": 5
         }
       }
     },
@@ -72,7 +72,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Качественный, реалистичный огонь, но на фото с лагуной/аквапарком зачем-то дорисовало берег. Возможно, для задач с огнём стоит убавить strength. Других артефактов не вижу.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -84,10 +84,10 @@
           "output/3/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (4)_3637185529_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 5,
+          "artifacts": 4,
+          "adherence": 5,
+          "preservation": 3
         }
       }
     },
@@ -102,7 +102,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Нареканий нет.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -114,10 +114,10 @@
           "output/3/firered-image-edit-1.1/normalize/normalize_crop_ (3)_3466565865_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 5,
+          "adherence": 5,
+          "preservation": 5
         }
       }
     },
@@ -132,7 +132,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "После отключения LoRA генерит очень хорошо, но всё ещё есть проблемы с распознаванием людей в форме. Артефактов не вижу. Клоуны получились КРУПНЕЕ, чем люди на фото (увеличены в размере, не по количеству). Даже отражение на металле хорошо проработано.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -144,10 +144,10 @@
           "output/3/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (2)_848718550_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 5,
+          "artifacts": 5,
+          "adherence": 4,
+          "preservation": 3
         }
       }
     }

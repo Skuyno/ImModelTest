@@ -2,10 +2,10 @@
   "model": "flux2-dev",
   "tasks": {
     "deblur": {
-      "version": "v3.0",
+      "version": "v4.0",
       "style": "instruction",
-      "positive": "Sharpen this exact photo and recover fine detail so it looks clear and in focus. This is a restoration, not a redraw: keep every object, person, text and background exactly as in the input and in the same place - do not repaint or regenerate the scene. The result must stay aligned with the original. Photorealistic.",
-      "negative": "blurry, out of focus, soft, hazy, noise, repainted, regenerated, redrawn, added objects, removed objects, changed people, changed background, distortion, artifacts",
+      "positive": "Sharpen this exact photo and recover fine detail. Keep natural, neutral, realistic colors - do not oversaturate or make it look computer-generated. Keep every object, person and background exactly as in the input, removing haze only where present. Photorealistic.",
+      "negative": "oversaturated, boosted colors, computer-generated look, repainted, changed people, distortion, artifacts",
       "params": {
         "strength": 4.0,
         "steps": 28,
@@ -16,10 +16,10 @@
       "results": []
     },
     "relight_day": {
-      "version": "v3.0",
+      "version": "v4.0",
       "style": "instruction",
-      "positive": "Relight this scene to clear, bright midday daylight: blue sky, strong natural sunlight and soft shadows. Make the change obvious - it must clearly read as full daytime, not dusk, dim or grey. At the same time keep every object, person, vehicle, sign and structure exactly where it is, with the same shape, count and position; only the lighting and sky change. Photorealistic.",
-      "negative": "night, dusk, dim, dark, grey, fog, haze, overexposed, washed out, blown highlights, added objects, extra people, removed objects, moved objects, changed scene, distortion, artifacts",
+      "positive": "Convert this scene to clear bright midday daylight - blue sky, real sunlight, natural shadows. Keep every object, person, vehicle and especially the text on signs sharp and unchanged in position and shape; only the lighting and sky change. Photorealistic.",
+      "negative": "night, dim, warped text, melted signs, blurry signs, added objects, removed objects, changed scene, distortion, artifacts",
       "params": {
         "strength": 4.0,
         "steps": 28,
@@ -30,10 +30,10 @@
       "results": []
     },
     "object_insert_fire": {
-      "version": "v3.0",
+      "version": "v4.0",
       "style": "instruction",
-      "positive": "Make it look like a fire has just broken out in the scene: real flames erupting from the ground or a nearby object and beginning to spread, with rising smoke and a few embers - an accidental ignition, NOT a tidy campfire. Put it in the lower part of the scene. Keep all people, objects, building and background unchanged and fully visible, and keep the rest of the scene lit normally - do not darken the surroundings. Photorealistic.",
-      "negative": "campfire, bonfire, fire pit, stacked logs, neat controlled fire, decorative fire, cozy fire, no fire, full-frame fire, fire covering the whole image, giant flames, dark background, black background, darkened scene, scene replaced, changed people, removed people, added objects, distortion, artifacts",
+      "positive": "Add a real fire that has broken out on a solid surface that physically exists in this scene (the floor or an object), placed where it makes sense for the room's geometry: natural spreading flames with smoke and embers. Place fire only on solid ground, never on water. Keep all people, objects and the background unchanged and normally lit. Photorealistic.",
+      "negative": "fire on water, floating fire, wrong perspective, campfire, full-frame fire, changed people, distortion, artifacts",
       "params": {
         "strength": 4.5,
         "steps": 28,
@@ -44,10 +44,10 @@
       "results": []
     },
     "normalize": {
-      "version": "v2.0",
+      "version": "v4.0",
       "style": "instruction",
-      "positive": "Apply only a subtle photographic clean-up: neutral white balance, balanced exposure and natural, accurate colors. Keep the content completely unchanged - same objects, people, background, composition and type of lighting. Photorealistic.",
-      "negative": "color cast, overexposed, underexposed, stylized filter, relit, day-for-night, changed content, added objects, removed objects, changed people, repainted scene, distortion, artifacts",
+      "positive": "Apply only a gentle, neutral photographic clean-up: balanced exposure, natural white balance and realistic true-to-life colors. The result MUST look like a real unedited photograph, not an over-saturated AI render. Keep all content, objects, people and the type of lighting exactly the same. Photorealistic.",
+      "negative": "oversaturated, vivid filter, AI render look, stylized, changed content, added objects, removed objects, distortion, artifacts",
       "params": {
         "strength": 4.0,
         "steps": 28,
@@ -58,10 +58,10 @@
       "results": []
     },
     "change_clothing": {
-      "version": "v3.0",
+      "version": "v4.0",
       "style": "instruction",
-      "positive": "Dress EVERY person in the photo, head to toe, in a full and unmistakable clown costume: a baggy brightly-coloured polka-dot suit with a ruffled collar, oversized buttons, big floppy clown shoes and a clown hat. Each and every person must clearly be wearing the clown outfit - this is the main change. Keep the same people in the same poses and places and the same background; do not add or remove anyone and do not change the scene. Photorealistic.",
-      "negative": "normal clothes, unchanged outfit, ordinary clothing, plain colored shirt, partial costume, only one person changed, person left in normal clothes, changed pose, added people, removed people, changed background, regenerated scene, blurry, distortion, artifacts",
+      "positive": "Dress every person already in this photo - including anyone in a uniform or work clothes - in a full colorful clown costume (baggy polka-dot suit, ruffled collar, big shoes, clown hat). Keep their real faces with NO face paint and NO clown makeup. Keep exactly the same number of people, each in their original position and natural pose; do not replace anyone with new static clowns and do not add or remove people. Keep the same background. Photorealistic.",
+      "negative": "clown makeup, face paint, static pose, replaced people, new people, added people, removed people, changed background, distortion, artifacts",
       "params": {
         "strength": 4.5,
         "steps": 28,

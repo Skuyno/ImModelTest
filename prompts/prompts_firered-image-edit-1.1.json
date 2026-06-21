@@ -2,10 +2,10 @@
   "model": "firered-image-edit-1.1",
   "tasks": {
     "deblur": {
-      "version": "v3.0",
+      "version": "v4.0",
       "style": "instruction",
-      "positive": "Sharpen this exact photo and recover fine detail so it looks clear and in focus. This is a restoration, not a redraw: keep every object, person, text and background exactly as in the input and in the same place - do not repaint or regenerate the scene. The result must stay aligned with the original. Photorealistic.",
-      "negative": "blurry, out of focus, soft, hazy, noise, repainted, regenerated, redrawn, added objects, removed objects, changed people, changed background, distortion, artifacts",
+      "positive": "Sharpen this exact photo and recover real detail so it looks clear and in focus. Keep every object, person, text and background exactly as in the input. In foggy or low-visibility areas only sharpen what is actually there - do not invent or hallucinate new detail. Photorealistic.",
+      "negative": "blurry, out of focus, soft, hazy, invented detail, hallucinated objects, repainted, regenerated, added objects, changed people, distortion, artifacts",
       "params": {
         "strength": 4.0,
         "steps": 30,
@@ -30,12 +30,12 @@
       "results": []
     },
     "object_insert_fire": {
-      "version": "v3.0",
+      "version": "v4.0",
       "style": "instruction",
-      "positive": "Make it look like a fire has just broken out in the scene: real flames erupting from the ground or a nearby object and beginning to spread, with rising smoke and a few embers - an accidental ignition, NOT a tidy campfire. Put it in the lower part of the scene. Keep all people, objects, building and background unchanged and fully visible, and keep the rest of the scene lit normally - do not darken the surroundings. Photorealistic.",
-      "negative": "campfire, bonfire, fire pit, stacked logs, neat controlled fire, decorative fire, cozy fire, no fire, full-frame fire, fire covering the whole image, giant flames, dark background, black background, darkened scene, scene replaced, changed people, removed people, added objects, distortion, artifacts",
+      "positive": "Make it look like a fire has just broken out on a solid surface that already exists in the scene (the ground or an object): real flames starting and spreading, with smoke and embers. Keep the existing terrain, water and background exactly as they are - do not add new ground or shoreline and never place fire on water. Keep all people and objects unchanged. Photorealistic.",
+      "negative": "campfire, bonfire, fire on water, flames on water, added shoreline, added ground, new terrain, full-frame fire, dark background, changed people, distortion, artifacts",
       "params": {
-        "strength": 4.5,
+        "strength": 3.5,
         "steps": 30,
         "sampler": "euler",
         "scheduler": "simple"
@@ -58,10 +58,10 @@
       "results": []
     },
     "change_clothing": {
-      "version": "v3.0",
+      "version": "v4.0",
       "style": "instruction",
-      "positive": "Dress EVERY person in the photo, head to toe, in a full and unmistakable clown costume: a baggy brightly-coloured polka-dot suit with a ruffled collar, oversized buttons, big floppy clown shoes and a clown hat. Each and every person must clearly be wearing the clown outfit - this is the main change. Keep the same people in the same poses and places and the same background; do not add or remove anyone and do not change the scene. Photorealistic.",
-      "negative": "normal clothes, unchanged outfit, ordinary clothing, plain colored shirt, partial costume, only one person changed, person left in normal clothes, changed pose, added people, removed people, changed background, regenerated scene, blurry, distortion, artifacts",
+      "positive": "Dress the people already in this photo in a full colorful clown costume - baggy polka-dot suit, ruffled collar, oversized buttons, big floppy shoes and a clown hat, including any people wearing a uniform. Keep each clown the SAME body size and in the SAME position as the original person, keep exactly the same number of people and the same background. Photorealistic.",
+      "negative": "oversized clown, giant clown, enlarged person, resized body, extra clown, added people, removed people, duplicated person, clown makeup, face paint, changed background, distortion, artifacts",
       "params": {
         "strength": 4.5,
         "steps": 30,

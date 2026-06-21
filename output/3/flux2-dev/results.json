@@ -12,7 +12,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Цвета будто чересчур насыщенные. Туман убрало, машины все на месте. +- похоже на нормальное фото.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -24,10 +24,10 @@
           "output/3/flux2-dev/deblur/deblur_crop_ (2)_842009924_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 4,
+          "adherence": 4,
+          "preservation": 4
         }
       }
     },
@@ -42,7 +42,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Справилось неплохо, день на картинке виден; но на одном кадре некоторые надписи на знаках поплыли.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -54,10 +54,10 @@
           "output/3/flux2-dev/relight_day/relight_day_crop_ (3)_1189767582_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 3,
+          "adherence": 5,
+          "preservation": 4
         }
       }
     },
@@ -72,7 +72,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Огонь вроде красивый, но модель не поняла геометрию помещения и закинула огонь как попало. На втором фото снова огонь на воде. Идея: добавить в промпты приёмы prompt-engineering (affirmative 'do', 'Your task is/You MUST', few-shot, роль эксперта, 'will be penalized' и т.п.) — обсуждается отдельно.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -84,10 +84,10 @@
           "output/3/flux2-dev/object_insert_fire/object_insert_fire_crop_ (4)_3637185529_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 3,
+          "adherence": 2,
+          "preservation": 2
         }
       }
     },
@@ -102,7 +102,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Снова слишком насыщенно, смотреть не очень приятно — похоже на генерацию нейросети.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -114,10 +114,10 @@
           "output/3/flux2-dev/normalize/normalize_crop_ (3)_3466565865_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 2,
+          "artifacts": 3,
+          "adherence": 2,
+          "preservation": 3
         }
       }
     },
@@ -132,7 +132,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Людей то больше, то меньше; меняет их положение. Добавило грим, хотя просили не добавлять — возможно, нужно точнее описать в промпте. Пожарных за работой в клоунов не одело, а вместо них поставило двух клоунов в статичной позе. Других визуальных дефектов не вижу.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -144,10 +144,10 @@
           "output/3/flux2-dev/change_clothing/change_clothing_crop_ (2)_848718550_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 3,
+          "preservation": 1
         }
       }
     }
