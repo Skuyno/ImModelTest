@@ -2,9 +2,9 @@
   "model": "flux1-kontext-dev",
   "tasks": {
     "deblur": {
-      "version": "v4.0",
+      "version": "v5.0",
       "style": "instruction",
-      "positive": "Sharpen this exact photo and recover fine detail so it looks clear and in focus. Keep natural, realistic colors - do not oversaturate or boost the colors. Keep every object, person and background exactly as in the input. Photorealistic.",
+      "positive": "Your task is to sharpen this exact photo and recover fine detail so it looks clear and in focus, while keeping natural, realistic, true-to-life colors. Keep every object, person and the background exactly as in the input. Photorealistic.",
       "negative": "blurry, soft, oversaturated, boosted colors, repainted, changed people, distortion, artifacts",
       "params": {
         "strength": 2.5,
@@ -16,10 +16,10 @@
       "results": []
     },
     "relight_day": {
-      "version": "v4.0",
+      "version": "v5.0",
       "style": "instruction",
-      "positive": "Convert this scene to clear bright midday daylight with a blue sky, real sunlight and natural shadows - it MUST look like a genuine daytime photo, not just a brightened night shot. Keep every object, person and structure exactly where it is; only the lighting and sky change. Photorealistic.",
-      "negative": "night, dim, just brightened, dark sky, added objects, removed objects, changed scene, distortion, artifacts",
+      "positive": "Your task is to convert this scene into clear, bright midday daylight with a blue sky, real sunlight and natural shadows. The result must look like a genuine daytime photograph. Keep every object, person and structure exactly where it is; only the lighting and the sky change. Photorealistic.",
+      "negative": "night, dim, brightened only, dark sky, added objects, removed objects, changed scene, distortion, artifacts",
       "params": {
         "strength": 2.5,
         "steps": 28,
@@ -30,9 +30,9 @@
       "results": []
     },
     "object_insert_fire": {
-      "version": "v4.0",
+      "version": "v5.0",
       "style": "instruction",
-      "positive": "Make it look like a real fire has broken out on a solid surface that exists in this scene (the ground or an object): natural flames spreading with smoke and embers, placed only on solid ground and never on water. Keep the rest of the scene, all people and the background unchanged and normally lit. Photorealistic.",
+      "positive": "Your task is to make it look like a real fire has broken out on a dry, solid surface that exists in this scene (the ground or an object): natural flames spreading with smoke and embers, resting on solid ground. Keep the water, the rest of the scene, all people and the background unchanged and normally lit. Photorealistic.",
       "negative": "campfire, fire on water, full-frame fire, dark background, changed people, distortion, artifacts",
       "params": {
         "strength": 3.0,
@@ -44,10 +44,10 @@
       "results": []
     },
     "normalize": {
-      "version": "v2.0",
+      "version": "v5.0",
       "style": "instruction",
-      "positive": "Apply only a subtle photographic clean-up: neutral white balance, balanced exposure and natural, accurate colors. Keep the content completely unchanged - same objects, people, background, composition and type of lighting. Photorealistic.",
-      "negative": "color cast, overexposed, underexposed, stylized filter, relit, day-for-night, changed content, added objects, removed objects, changed people, repainted scene, distortion, artifacts",
+      "positive": "Your task is a subtle, neutral photographic clean-up only: balanced exposure, natural white balance and realistic colors. Keep all content, objects, people, background and the type of lighting exactly the same. The result must look like a real, unedited photograph. Photorealistic.",
+      "negative": "oversaturated, stylized filter, day-for-night, changed content, added objects, removed objects, distortion, artifacts",
       "params": {
         "strength": 2.5,
         "steps": 28,
@@ -58,9 +58,9 @@
       "results": []
     },
     "change_clothing": {
-      "version": "v4.0",
+      "version": "v5.0",
       "style": "instruction",
-      "positive": "Dress every person already in this photo in a full colorful clown costume (baggy polka-dot suit, ruffled collar, big shoes, clown hat). Keep exactly the same number of people, each in their original position and pose; do not add, duplicate or invent any extra clowns and do not make them face the camera. Keep their real faces and the same background. Photorealistic.",
+      "positive": "Your task is to dress every person already in this photo in a full, colorful clown costume (baggy polka-dot suit, ruffled collar, big shoes, clown hat). You MUST keep exactly the same number of people, each in their original position and natural pose, keep their own real bare faces, and keep the same background. Photorealistic.",
       "negative": "extra clown, duplicated clown, added people, removed people, facing camera, identical clones, clown makeup, changed background, distortion, artifacts",
       "params": {
         "strength": 3.0,

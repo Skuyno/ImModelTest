@@ -2,9 +2,9 @@
   "model": "flux2-dev",
   "tasks": {
     "deblur": {
-      "version": "v4.0",
+      "version": "v5.0",
       "style": "instruction",
-      "positive": "Sharpen this exact photo and recover fine detail. Keep natural, neutral, realistic colors - do not oversaturate or make it look computer-generated. Keep every object, person and background exactly as in the input, removing haze only where present. Photorealistic.",
+      "positive": "Your task is to sharpen this exact photo and recover fine detail, keeping natural, neutral, true-to-life colors so it still looks like a real photograph. Keep every object, person and the background exactly as in the input, clearing haze only where it is present. Photorealistic.",
       "negative": "oversaturated, boosted colors, computer-generated look, repainted, changed people, distortion, artifacts",
       "params": {
         "strength": 4.0,
@@ -16,9 +16,9 @@
       "results": []
     },
     "relight_day": {
-      "version": "v4.0",
+      "version": "v5.0",
       "style": "instruction",
-      "positive": "Convert this scene to clear bright midday daylight - blue sky, real sunlight, natural shadows. Keep every object, person, vehicle and especially the text on signs sharp and unchanged in position and shape; only the lighting and sky change. Photorealistic.",
+      "positive": "Your task is to convert this scene into clear, bright midday daylight - blue sky, real sunlight, natural shadows. You MUST keep every object, person, vehicle and the text on signs sharp and unchanged in position and shape; only the lighting and the sky change. Photorealistic.",
       "negative": "night, dim, warped text, melted signs, blurry signs, added objects, removed objects, changed scene, distortion, artifacts",
       "params": {
         "strength": 4.0,
@@ -30,9 +30,9 @@
       "results": []
     },
     "object_insert_fire": {
-      "version": "v4.0",
+      "version": "v5.0",
       "style": "instruction",
-      "positive": "Add a real fire that has broken out on a solid surface that physically exists in this scene (the floor or an object), placed where it makes sense for the room's geometry: natural spreading flames with smoke and embers. Place fire only on solid ground, never on water. Keep all people, objects and the background unchanged and normally lit. Photorealistic.",
+      "positive": "Your task is to add a real fire that has broken out on a dry, solid surface that physically exists in this scene (the floor or an object), placed to match the room's geometry and perspective: natural spreading flames with smoke and embers, resting on solid ground. Keep the water, all people, objects and the background unchanged and normally lit. Photorealistic.",
       "negative": "fire on water, floating fire, wrong perspective, campfire, full-frame fire, changed people, distortion, artifacts",
       "params": {
         "strength": 4.5,
@@ -44,9 +44,9 @@
       "results": []
     },
     "normalize": {
-      "version": "v4.0",
+      "version": "v5.0",
       "style": "instruction",
-      "positive": "Apply only a gentle, neutral photographic clean-up: balanced exposure, natural white balance and realistic true-to-life colors. The result MUST look like a real unedited photograph, not an over-saturated AI render. Keep all content, objects, people and the type of lighting exactly the same. Photorealistic.",
+      "positive": "Your task is a gentle, neutral photographic clean-up only: balanced exposure, natural white balance and realistic, true-to-life colors. The result MUST look like a real, unedited photograph with natural color. Keep all content, objects, people and the type of lighting exactly the same. Photorealistic.",
       "negative": "oversaturated, vivid filter, AI render look, stylized, changed content, added objects, removed objects, distortion, artifacts",
       "params": {
         "strength": 4.0,
@@ -58,9 +58,9 @@
       "results": []
     },
     "change_clothing": {
-      "version": "v4.0",
+      "version": "v5.0",
       "style": "instruction",
-      "positive": "Dress every person already in this photo - including anyone in a uniform or work clothes - in a full colorful clown costume (baggy polka-dot suit, ruffled collar, big shoes, clown hat). Keep their real faces with NO face paint and NO clown makeup. Keep exactly the same number of people, each in their original position and natural pose; do not replace anyone with new static clowns and do not add or remove people. Keep the same background. Photorealistic.",
+      "positive": "Your task is to dress every person already in this photo - including anyone in a uniform or work clothes - in a full, colorful clown costume (baggy polka-dot suit, ruffled collar, big shoes, clown hat). You MUST keep each person's own real bare face, keep exactly the same number of people, each in their original position and natural pose, and keep the same background. Dress the real people and keep them as themselves. Photorealistic.",
       "negative": "clown makeup, face paint, static pose, replaced people, new people, added people, removed people, changed background, distortion, artifacts",
       "params": {
         "strength": 4.5,
