@@ -1,0 +1,155 @@
+{
+  "model": "flux2-dev",
+  "tasks": {
+    "deblur": {
+      "version": "v3.0",
+      "style": "instruction",
+      "positive": "Sharpen this exact photo and recover fine detail so it looks clear and in focus. This is a restoration, not a redraw: keep every object, person, text and background exactly as in the input and in the same place - do not repaint or regenerate the scene. The result must stay aligned with the original. Photorealistic.",
+      "negative": "blurry, out of focus, soft, hazy, noise, repainted, regenerated, redrawn, added objects, removed objects, changed people, changed background, distortion, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 131.45,
+          "vram_peak_mb": 20650.2
+        },
+        "outputs": [
+          "output/3/flux2-dev/deblur/deblur_crop_ (1)_4015321972_0.png",
+          "output/3/flux2-dev/deblur/deblur_crop_ (2)_842009924_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "relight_day": {
+      "version": "v3.0",
+      "style": "instruction",
+      "positive": "Relight this scene to clear, bright midday daylight: blue sky, strong natural sunlight and soft shadows. Make the change obvious - it must clearly read as full daytime, not dusk, dim or grey. At the same time keep every object, person, vehicle, sign and structure exactly where it is, with the same shape, count and position; only the lighting and sky change. Photorealistic.",
+      "negative": "night, dusk, dim, dark, grey, fog, haze, overexposed, washed out, blown highlights, added objects, extra people, removed objects, moved objects, changed scene, distortion, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 156.62,
+          "vram_peak_mb": 20974.2
+        },
+        "outputs": [
+          "output/3/flux2-dev/relight_day/relight_day_crop_ (2)_169548931_0.png",
+          "output/3/flux2-dev/relight_day/relight_day_crop_ (3)_1189767582_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "object_insert_fire": {
+      "version": "v3.0",
+      "style": "instruction",
+      "positive": "Make it look like a fire has just broken out in the scene: real flames erupting from the ground or a nearby object and beginning to spread, with rising smoke and a few embers - an accidental ignition, NOT a tidy campfire. Put it in the lower part of the scene. Keep all people, objects, building and background unchanged and fully visible, and keep the rest of the scene lit normally - do not darken the surroundings. Photorealistic.",
+      "negative": "campfire, bonfire, fire pit, stacked logs, neat controlled fire, decorative fire, cozy fire, no fire, full-frame fire, fire covering the whole image, giant flames, dark background, black background, darkened scene, scene replaced, changed people, removed people, added objects, distortion, artifacts",
+      "params": {
+        "strength": 4.5,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 200.42,
+          "vram_peak_mb": 20684.3
+        },
+        "outputs": [
+          "output/3/flux2-dev/object_insert_fire/object_insert_fire_crop_ (1)_2755711835_0.png",
+          "output/3/flux2-dev/object_insert_fire/object_insert_fire_crop_ (4)_3637185529_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "normalize": {
+      "version": "v2.0",
+      "style": "instruction",
+      "positive": "Apply only a subtle photographic clean-up: neutral white balance, balanced exposure and natural, accurate colors. Keep the content completely unchanged - same objects, people, background, composition and type of lighting. Photorealistic.",
+      "negative": "color cast, overexposed, underexposed, stylized filter, relit, day-for-night, changed content, added objects, removed objects, changed people, repainted scene, distortion, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 154.37,
+          "vram_peak_mb": 20656.6
+        },
+        "outputs": [
+          "output/3/flux2-dev/normalize/normalize_crop_ (1)_3135118993_0.png",
+          "output/3/flux2-dev/normalize/normalize_crop_ (3)_3466565865_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "change_clothing": {
+      "version": "v3.0",
+      "style": "instruction",
+      "positive": "Dress EVERY person in the photo, head to toe, in a full and unmistakable clown costume: a baggy brightly-coloured polka-dot suit with a ruffled collar, oversized buttons, big floppy clown shoes and a clown hat. Each and every person must clearly be wearing the clown outfit - this is the main change. Keep the same people in the same poses and places and the same background; do not add or remove anyone and do not change the scene. Photorealistic.",
+      "negative": "normal clothes, unchanged outfit, ordinary clothing, plain colored shirt, partial costume, only one person changed, person left in normal clothes, changed pose, added people, removed people, changed background, regenerated scene, blurry, distortion, artifacts",
+      "params": {
+        "strength": 4.5,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 159.28,
+          "vram_peak_mb": 20721.8
+        },
+        "outputs": [
+          "output/3/flux2-dev/change_clothing/change_clothing_crop_ (1)_2389298476_0.png",
+          "output/3/flux2-dev/change_clothing/change_clothing_crop_ (2)_848718550_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    }
+  }
+}
