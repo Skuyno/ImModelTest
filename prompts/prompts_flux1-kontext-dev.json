@@ -5,7 +5,7 @@
       "version": "v5.0",
       "style": "instruction",
       "positive": "Your task is to sharpen this exact photo and recover fine detail so it looks clear and in focus, while keeping natural, realistic, true-to-life colors. Keep every object, person and the background exactly as in the input. Photorealistic.",
-      "negative": "blurry, soft, oversaturated, boosted colors, repainted, changed people, distortion, artifacts",
+      "negative": "",
       "params": {
         "strength": 2.5,
         "steps": 28,
@@ -19,7 +19,7 @@
       "version": "v5.0",
       "style": "instruction",
       "positive": "Your task is to convert this scene into clear, bright midday daylight with a blue sky, real sunlight and natural shadows. The result must look like a genuine daytime photograph. Keep every object, person and structure exactly where it is; only the lighting and the sky change. Photorealistic.",
-      "negative": "night, dim, brightened only, dark sky, added objects, removed objects, changed scene, distortion, artifacts",
+      "negative": "",
       "params": {
         "strength": 2.5,
         "steps": 28,
@@ -33,7 +33,7 @@
       "version": "v6.0",
       "style": "instruction",
       "positive": "Your task is to make it look like a real fire has broken out on a dry, solid surface that exists in this scene (the ground or an object): natural flames spreading with smoke and embers, resting on solid ground. Keep all water exactly as it is and place the fire only on dry land; keep the rest of the scene, all people and the background unchanged and normally lit. Photorealistic.",
-      "negative": "fire on water, drained water, removed water, campfire, full-frame fire, changed people, distortion, artifacts",
+      "negative": "",
       "params": {
         "strength": 3.0,
         "steps": 28,
@@ -47,7 +47,7 @@
       "version": "v5.0",
       "style": "instruction",
       "positive": "Your task is a subtle, neutral photographic clean-up only: balanced exposure, natural white balance and realistic colors. Keep all content, objects, people, background and the type of lighting exactly the same. The result must look like a real, unedited photograph. Photorealistic.",
-      "negative": "oversaturated, stylized filter, day-for-night, changed content, added objects, removed objects, distortion, artifacts",
+      "negative": "",
       "params": {
         "strength": 2.5,
         "steps": 28,
@@ -61,7 +61,7 @@
       "version": "v6.0",
       "style": "instruction",
       "positive": "Your task is to dress every person already in this photo in a clown costume (colorful polka-dot suit, ruffled collar, big shoes, clown hat), keeping the realistic look of a low-quality surveillance-camera still with natural, muted colors. You MUST keep exactly the same number of people; only the people already in the photo become clowns, each in their original position and pose, with their own real bare face, and keep the same background. Photorealistic.",
-      "negative": "extra clown, crowd of clowns, added people, removed people, clowns hugging, facing camera, cartoonish, oversaturated, vivid, studio clown, clown makeup, changed background, distortion, artifacts",
+      "negative": "",
       "params": {
         "strength": 3.0,
         "steps": 28,
