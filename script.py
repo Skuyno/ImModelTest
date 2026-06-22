@@ -29,7 +29,7 @@ INPUT_ROOT = Path("input")     # inputs/<task>/*.png — входные кадр
 OUTPUT_ROOT = Path("output")
 
 # Какие модели гоняем в этот раз (имена = ключи CONFIGS и имена prompts_<model>.json)
-MODELS_TO_RUN = ["qwen-image-edit-2511", "flux1-kontext-dev", "firered-image-edit-1.1",
+MODELS_TO_RUN = ["qwen-image-edit-2511", "firered-image-edit-1.1",
                  "flux2-klein-9b", "flux2-dev", "longcat-image-edit"]
 
 # Фиксированный seed для A/B-теста промптов: None = случайный каждый раз;
