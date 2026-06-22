@@ -4,8 +4,8 @@
     "deblur": {
       "version": "v6.0",
       "style": "instruction",
-      "positive": "Your task is to sharpen this exact photo and recover fine detail so it looks clear and in focus. Keep every object, person and the background exactly as in the input. Photorealistic.",
-      "negative": "blurry, out of focus, soft, hazy, repainted, regenerated, added objects, changed people, distortion, artifacts",
+      "positive": "Your task is to sharpen and upscale this exact photo, recovering fine high-resolution detail so it looks clear, crisp, in focus and high quality. Keep every object, person and the background exactly as in the input. Photorealistic.",
+      "negative": "low resolution, low detail, blurry, out of focus, soft, hazy, repainted, regenerated, added objects, changed people, distortion, artifacts",
       "params": {
         "strength": 4.0,
         "steps": 50,

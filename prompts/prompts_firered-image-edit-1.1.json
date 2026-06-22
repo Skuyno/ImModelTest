@@ -4,8 +4,8 @@
     "deblur": {
       "version": "v5.0",
       "style": "instruction",
-      "positive": "Your task is to sharpen this exact photograph and bring back real, fine detail so it looks crisp and in focus. Keep every object, person, text and the background exactly as in the input and in the same place. In foggy or low-visibility areas, sharpen only what is genuinely there and leave those areas as they are. The result must stay a faithful, photorealistic version of the original.",
-      "negative": "blurry, out of focus, soft, hazy, noise, invented detail, hallucinated objects, repainted, regenerated, added objects, removed objects, changed people, changed background, distortion, artifacts",
+      "positive": "Your task is to sharpen and upscale this exact photograph, bringing back real fine high-resolution detail so it looks crisp, in focus and high quality. Keep every object, person, text and the background exactly as in the input and in the same place. In foggy or low-visibility areas, sharpen only what is genuinely there and leave those areas as they are. The result must stay a faithful, photorealistic version of the original.",
+      "negative": "low resolution, low detail, blurry, out of focus, soft, hazy, noise, invented detail, hallucinated objects, repainted, regenerated, added objects, removed objects, changed people, changed background, distortion, artifacts",
       "params": {
         "strength": 3.0,
         "steps": 30,

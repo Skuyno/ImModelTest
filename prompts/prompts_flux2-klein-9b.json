@@ -4,7 +4,7 @@
     "deblur": {
       "version": "v6.0",
       "style": "instruction",
-      "positive": "Sharpen this exact photo as a light restoration. Keep every person, their clothing, all objects and the background exactly as in the input and perfectly aligned. Photorealistic.",
+      "positive": "Sharpen and upscale this exact photo as a light restoration, adding fine high-resolution detail and enhancing quality. Keep every person, their clothing, all objects and the background exactly as in the input and perfectly aligned. Photorealistic.",
       "negative": "",
       "params": {
         "strength": 1.0,

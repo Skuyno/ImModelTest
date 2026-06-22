@@ -4,8 +4,8 @@
     "deblur": {
       "version": "v6.0",
       "style": "instruction",
-      "positive": "Sharpen this photo, recovering crisp detail and removing softness and haze. Keep every object, person and the background exactly the same.",
-      "negative": "still blurry, soft, hazy, repainted, changed people, changed background, distortion, artifacts",
+      "positive": "Sharpen and upscale this photo, recovering crisp high-resolution detail and removing softness and haze. Enhance overall quality. Keep every object, person and the background exactly the same.",
+      "negative": "low resolution, low detail, still blurry, soft, hazy, repainted, changed people, changed background, distortion, artifacts",
       "params": {
         "strength": 4.0,
         "steps": 30,

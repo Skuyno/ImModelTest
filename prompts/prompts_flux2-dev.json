@@ -4,7 +4,7 @@
     "deblur": {
       "version": "v6.0-sd",
       "style": "sd_tokens",
-      "positive": "deblurred, sharp fine detail, crisp, restored, same scene unchanged, natural neutral true-to-life colors, real photograph, photorealistic",
+      "positive": "deblurred, sharp fine detail, crisp, upscaled, high resolution, ultra detailed, enhanced quality, restored, same scene unchanged, natural neutral true-to-life colors, real photograph, photorealistic",
       "negative": "",
       "params": {
         "strength": 3.0,
