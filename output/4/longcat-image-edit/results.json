@@ -12,7 +12,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Всё хорошо: туман не трогала, лишнего не дорисовала, аккуратный деблюр.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -24,10 +24,10 @@
           "output/4/longcat-image-edit/deblur/deblur_crop_ (2)_842009924_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 5,
+          "adherence": 4,
+          "preservation": 5
         }
       }
     },
@@ -42,7 +42,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Снова сменила ракурс. На одном кадре добавила людей; на другом (где была глубокая ночь) в целом в порядке.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -54,10 +54,10 @@
           "output/4/longcat-image-edit/relight_day/relight_day_crop_ (3)_1189767582_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 3,
+          "adherence": 3,
+          "preservation": 2
         }
       }
     },
@@ -72,7 +72,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Убрала всю воду из лагуны и изменила её геометрию. От огня видна мелкая зернистость. Огонь на стойке не очень реалистичен - будто горит давно, но без следов горения.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -84,10 +84,10 @@
           "output/4/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (4)_3637185529_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 2,
+          "adherence": 3,
+          "preservation": 2
         }
       }
     },
@@ -102,7 +102,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Вообще ничего не изменила: для нормализации это значит, что задача почти не выполнена, зато сцена полностью цела.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -114,10 +114,10 @@
           "output/4/longcat-image-edit/normalize/normalize_crop_ (3)_3466565865_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 5,
+          "adherence": 3,
+          "preservation": 5
         }
       }
     },
@@ -132,7 +132,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Люди сменили позы и стали совершенно другими. Пожарные превратились в двух страшных нереалистичных клоунов перед камерой. С задачей не справилась - SD-токен-стиль не помог; нужно разобраться с настройкой (возможно, дело в самой модели/воркфлоу).",
       "results": {
         "n_images": 2,
         "avg": {
@@ -144,10 +144,10 @@
           "output/4/longcat-image-edit/change_clothing/change_clothing_crop_ (2)_848718550_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 2,
+          "artifacts": 2,
+          "adherence": 3,
+          "preservation": 1
         }
       }
     }

@@ -12,7 +12,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Всё хорошо. Туман не трогала, провела деблюр, ничего своего не дорисовала.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -24,10 +24,10 @@
           "output/4/qwen-image-edit-2511/deblur/deblur_crop_ (2)_842009924_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 5,
+          "adherence": 4,
+          "preservation": 5
         }
       }
     },
@@ -42,7 +42,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Деревья выглядят нереалистично, свет мультяшный, немного изменила одежду людей, а остановку и вовсе убрала. Второй, не слишком тёмный кадр - в порядке.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -54,10 +54,10 @@
           "output/4/qwen-image-edit-2511/relight_day/relight_day_crop_ (3)_1189767582_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 3,
+          "adherence": 4,
+          "preservation": 3
         }
       }
     },
@@ -72,7 +72,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Хорошо. Барная стойка выглядит подгоревшей, виден дым. На лагуне люди и вода сохранены, огонь вписан в ландшафт - немного похож на лаву, но реалистично (будто что-то загорелось сверху).",
       "results": {
         "n_images": 2,
         "avg": {
@@ -84,10 +84,10 @@
           "output/4/qwen-image-edit-2511/object_insert_fire/object_insert_fire_crop_ (4)_3637185529_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 4,
+          "preservation": 5
         }
       }
     },
@@ -102,7 +102,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Хорошо. Один кадр сочла уже подходящим и ничего не трогала (в отличие от других не стала делать ненужный деблюр - это плюс). На втором отработала нормально (изменился узор плитки, но это, видимо, допустимо).",
       "results": {
         "n_images": 2,
         "avg": {
@@ -114,10 +114,10 @@
           "output/4/qwen-image-edit-2511/normalize/normalize_crop_ (3)_3466565865_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 5,
+          "adherence": 4,
+          "preservation": 5
         }
       }
     },
@@ -132,7 +132,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Отлично. Люди в лифте - ровно в тех же позах, цветовая гамма сохранена, ничего лишнего не добавлено. В одной сцене немного странное отражение (возможно, так и должно быть). Всех пожарных переодело корректно, включая того, кто попал в кадр лишь наполовину.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -144,10 +144,10 @@
           "output/4/qwen-image-edit-2511/change_clothing/change_clothing_crop_ (2)_848718550_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 5,
+          "preservation": 4
         }
       }
     }

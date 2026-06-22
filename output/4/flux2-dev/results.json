@@ -12,7 +12,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Перенасыщенные цвета, но туманный кадр восстановило неплохо; есть артефакты на обоих кадрах.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -24,10 +24,10 @@
           "output/4/flux2-dev/deblur/deblur_crop_ (2)_842009924_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 3,
+          "adherence": 4,
+          "preservation": 4
         }
       }
     },
@@ -42,7 +42,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Недостаточно реалистично - слишком светло для российской улицы; тени непоследовательны (то с одной стороны, то с другой). Явных артефактов нет.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -54,10 +54,10 @@
           "output/4/flux2-dev/relight_day/relight_day_crop_ (3)_1189767582_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 4,
+          "adherence": 4,
+          "preservation": 4
         }
       }
     },
@@ -72,7 +72,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Огромное кострище. Геометрия сцены не соблюдена: лагуну осушила и поставила на её место большой костёр - выглядит плохо.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -84,10 +84,10 @@
           "output/4/flux2-dev/object_insert_fire/object_insert_fire_crop_ (4)_3637185529_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 2,
+          "artifacts": 2,
+          "adherence": 2,
+          "preservation": 1
         }
       }
     },
@@ -102,7 +102,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Перенасыщено цветами (а для нормализации нужно наоборот - нейтрально), но по остальному порядок.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -114,10 +114,10 @@
           "output/4/flux2-dev/normalize/normalize_crop_ (3)_3466565865_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 4,
+          "adherence": 3,
+          "preservation": 4
         }
       }
     },
@@ -132,7 +132,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Слишком цветасто, совсем не похоже на кадр с камеры видеонаблюдения. Пожарные исчезли, вместо них три клоуна, смотрящих в камеру. Отражения в порядке.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -144,10 +144,10 @@
           "output/4/flux2-dev/change_clothing/change_clothing_crop_ (2)_848718550_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 3,
+          "adherence": 2,
+          "preservation": 1
         }
       }
     }

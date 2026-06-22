@@ -58,10 +58,10 @@
       "results": []
     },
     "change_clothing": {
-      "version": "v5.0",
+      "version": "v6.0",
       "style": "instruction",
-      "positive": "Your task is to dress the people already in this photo in a full, colorful clown costume - baggy polka-dot suit, ruffled collar, oversized buttons, big floppy shoes and a clown hat - including any people wearing a uniform. You MUST keep each clown the same body size and in the same position as the original person, keep exactly the same number of people, keep their own bare faces, and keep the same background. Photorealistic.",
-      "negative": "oversized clown, giant clown, enlarged person, resized body, extra clown, added people, removed people, duplicated person, clown makeup, face paint, changed face, changed background, distortion, artifacts",
+      "positive": "Your task is to dress every person already in this photo in a clown costume - colorful polka-dot suit, ruffled collar, oversized buttons, big floppy shoes and a clown hat - keeping the look of a real low-quality surveillance-camera photo with natural, muted colors. Dress every single person, including anyone in a uniform. You MUST keep exactly the same number of people, keep each clown the same body size and position as the original person, keep their own bare faces, and keep the same background. Photorealistic.",
+      "negative": "extra clown, added person, added people, removed people, oversized clown, giant clown, enlarged person, cartoonish, oversaturated, vivid colors, studio clown, clown makeup, face paint, changed face, changed background, distortion, artifacts",
       "params": {
         "strength": 4.5,
         "steps": 30,

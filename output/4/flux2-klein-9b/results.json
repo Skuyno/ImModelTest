@@ -12,7 +12,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Покорёжило машины на туманном кадре, дорисовало артефактов и жёстко осветлило. Кадр с лабораторией лучше, но сняло с человека маску. Понижение strength до 3.0 проблему не сняло.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -24,10 +24,10 @@
           "output/4/flux2-klein-9b/deblur/deblur_crop_ (2)_842009924_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 2,
+          "adherence": 3,
+          "preservation": 2
         }
       }
     },
@@ -42,7 +42,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Цветасто и в целом реалистично, но испортила надписи на одном кадре, заменила остановку на мини-трактор, кое-где добавила машины, есть смесь машины и ландшафта.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -54,10 +54,10 @@
           "output/4/flux2-klein-9b/relight_day/relight_day_crop_ (3)_1189767582_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 3,
+          "adherence": 4,
+          "preservation": 2
         }
       }
     },
@@ -72,7 +72,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Огонь добавлен, но так себе: на лагуне заменила воду огнём (хотя уже без костра на весь кадр, как раньше - прогресс). На втором кадре огонь не очень реалистичный, но красивый. Других артефактов не видно.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -84,10 +84,10 @@
           "output/4/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (4)_3637185529_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 3,
+          "adherence": 3,
+          "preservation": 2
         }
       }
     },
@@ -102,7 +102,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Заменило людей на других, но похожих, немного сдвинуло машину и сменило позу человека, изменило узор на дороге. Сами кадры выглядят неплохо, но это перебор для нормализации.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -114,10 +114,10 @@
           "output/4/flux2-klein-9b/normalize/normalize_crop_ (3)_3466565865_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 3,
+          "preservation": 3
         }
       }
     },
@@ -132,7 +132,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Сломало человеку ноги. Наложило грим (промпт проигнорирован). Изменило ручку и пол в лифте. На втором кадре пожарные превратились в клоунов, смотрящих в камеру, со сменой позы; разбитая машина стала целой.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -144,10 +144,10 @@
           "output/4/flux2-klein-9b/change_clothing/change_clothing_crop_ (2)_848718550_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 2,
+          "artifacts": 2,
+          "adherence": 3,
+          "preservation": 1
         }
       }
     }

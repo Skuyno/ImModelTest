@@ -7,7 +7,7 @@
       "positive": "Your task is to gently sharpen this exact photo as a light, faithful restoration of the original. You MUST keep all people, their exact clothing, every object and the background unchanged and aligned with the input. Photorealistic.",
       "negative": "repainted, regenerated, redrawn, changed clothing, changed people, extra limbs, deformed hands, added objects, removed objects, distortion, artifacts",
       "params": {
-        "strength": 3.0,
+        "strength": 2.5,
         "steps": 28,
         "sampler": "euler",
         "scheduler": "simple"
@@ -21,7 +21,7 @@
       "positive": "Your task is to relight this scene into natural, bright daytime with a realistic sky. You MUST keep every object, person, vehicle and sign exactly the same in count, position and appearance; keep all clothing and signs as they are. Only the lighting changes. Photorealistic and natural, with realistic color.",
       "negative": "oversaturated, overly colorful, changed clothing, changed signs, added cars, removed cars, added people, removed people, changed scene, distortion, artifacts",
       "params": {
-        "strength": 3.0,
+        "strength": 2.5,
         "steps": 28,
         "sampler": "euler",
         "scheduler": "simple"
@@ -30,10 +30,10 @@
       "results": []
     },
     "object_insert_fire": {
-      "version": "v5.0",
+      "version": "v6.0",
       "style": "instruction",
-      "positive": "Your task is to add one realistic fire that has broken out on a dry, solid surface in the scene (the ground or an object), with natural flames, smoke and embers placed to match the room's geometry and resting on solid ground. Keep the water, all people, objects and the background unchanged. Real photograph look, photorealistic.",
-      "negative": "cartoon fire, unrealistic fire, fire on water, floating fire, wrong perspective, campfire, full-frame fire, changed people, distortion, artifacts",
+      "positive": "Your task is to add one realistic fire that has broken out on a dry, solid surface in the scene (the ground or an object), with natural flames, smoke and embers placed to match the geometry. Keep all water exactly as it is and place the fire only on dry rock or solid ground; keep all people, objects and the background unchanged. Real photograph look, photorealistic.",
+      "negative": "cartoon fire, unrealistic fire, fire on water, drained water, removed water, floating fire, wrong perspective, campfire, full-frame fire, changed people, distortion, artifacts",
       "params": {
         "strength": 3.0,
         "steps": 28,
@@ -49,7 +49,7 @@
       "positive": "Your task is a subtle, neutral photographic clean-up only: balanced exposure, natural white balance and accurate colors. You MUST keep the content completely unchanged - same objects, people, background and type of lighting. The result looks like a real, lightly-corrected photograph.",
       "negative": "color cast, oversaturated, overexposed, underexposed, stylized filter, changed content, added objects, removed objects, distortion, artifacts",
       "params": {
-        "strength": 4.0,
+        "strength": 2.5,
         "steps": 28,
         "sampler": "euler",
         "scheduler": "simple"
@@ -58,10 +58,10 @@
       "results": []
     },
     "change_clothing": {
-      "version": "v5.0",
+      "version": "v6.0",
       "style": "instruction",
-      "positive": "Your task is to dress the people already in this photo in a full, colorful clown costume (polka-dot suit, ruffled collar, big shoes). You MUST keep each person's own face and identity clearly recognizable, keep the same people, the same poses and the same background. Photorealistic.",
-      "negative": "clown makeup, face paint, changed face, different person, unrecognizable, added people, removed people, changed background, regenerated scene, distortion, artifacts",
+      "positive": "Your task is to dress the people already in this photo in a realistic clown costume (polka-dot suit, ruffled collar, big shoes), keeping the look of a real low-quality surveillance-camera photo with natural, muted colors. You MUST keep each person's own face and identity clearly recognizable, keep the same number of people in the same poses and positions, and keep the same background and floor. Photorealistic.",
+      "negative": "clown makeup, face paint, changed face, different person, unrecognizable, broken legs, deformed limbs, added people, removed people, changed pose, changed floor, changed background, cartoonish, oversaturated, distortion, artifacts",
       "params": {
         "strength": 3.0,
         "steps": 28,
