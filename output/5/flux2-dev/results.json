@@ -12,7 +12,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Неплохо, но снова пересат на лабораторном кадре (вероятно, влияние Q4-кванта - strength уже снижен).",
       "results": {
         "n_images": 2,
         "avg": {
@@ -24,10 +24,10 @@
           "output/5/flux2-dev/deblur/deblur_crop_ (2)_842009924_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 3,
+          "adherence": 4,
+          "preservation": 4
         }
       }
     },
@@ -42,7 +42,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "В целом отлично, артефактов почти нет - кроме одного странного знака.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -54,10 +54,10 @@
           "output/5/flux2-dev/relight_day/relight_day_crop_ (3)_1189767582_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 4,
+          "preservation": 4
         }
       }
     },
@@ -72,7 +72,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Снова 'сожгло' воду на лагуне. Геометрию горящей стойки не поняло - просто набросило огонь как попало.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -84,10 +84,10 @@
           "output/5/flux2-dev/object_insert_fire/object_insert_fire_crop_ (4)_3637185529_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 2,
+          "artifacts": 2,
+          "adherence": 2,
+          "preservation": 1
         }
       }
     },
@@ -102,7 +102,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Пересат (даже при сниженном strength 3.0 - вероятно, влияние Q4-кванта).",
       "results": {
         "n_images": 2,
         "avg": {
@@ -114,10 +114,10 @@
           "output/5/flux2-dev/normalize/normalize_crop_ (3)_3466565865_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 3,
+          "adherence": 2,
+          "preservation": 4
         }
       }
     },
@@ -132,7 +132,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Сменило людям позы, люди стали совсем другими; перспектива и геометрия помещения не поняты - клоуны воткнуты как попало. Пожарных заменило на двух клоунов, смотрящих в камеру.",
       "results": {
         "n_images": 2,
         "avg": {
@@ -144,10 +144,10 @@
           "output/5/flux2-dev/change_clothing/change_clothing_crop_ (2)_848718550_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 3,
+          "adherence": 2,
+          "preservation": 1
         }
       }
     }

@@ -8,7 +8,7 @@
       "negative": "blurry, out of focus, soft, hazy, repainted, regenerated, added objects, changed people, distortion, artifacts",
       "params": {
         "strength": 4.0,
-        "steps": 30,
+        "steps": 50,
         "sampler": "euler",
         "scheduler": "simple"
       },
@@ -22,7 +22,7 @@
       "negative": "night, dusk, dim, changed angle, changed viewpoint, removed trees, removed objects, added people, unreadable signs, distortion, artifacts",
       "params": {
         "strength": 4.0,
-        "steps": 30,
+        "steps": 50,
         "sampler": "euler",
         "scheduler": "simple"
       },
@@ -36,7 +36,7 @@
       "negative": "fire on water, drained water, removed water, changed geometry, campfire, full-frame fire, cartoon fire, changed people, distortion, artifacts",
       "params": {
         "strength": 4.5,
-        "steps": 30,
+        "steps": 50,
         "sampler": "euler",
         "scheduler": "simple"
       },
@@ -50,7 +50,7 @@
       "negative": "color cast, oversaturated, overexposed, underexposed, stylized filter, changed content, distortion, artifacts",
       "params": {
         "strength": 4.0,
-        "steps": 30,
+        "steps": 50,
         "sampler": "euler",
         "scheduler": "simple"
       },
@@ -64,7 +64,7 @@
       "negative": "extra clown, crowd of clowns, added people, removed people, scary clown, facing camera, cartoonish, oversaturated, vivid colors, studio clown, clown makeup, face paint, changed pose, changed background, distortion, artifacts",
       "params": {
         "strength": 4.5,
-        "steps": 30,
+        "steps": 50,
         "sampler": "euler",
         "scheduler": "simple"
       },
