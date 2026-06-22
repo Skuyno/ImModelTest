@@ -148,7 +148,7 @@
   },
   "22:11": {
     "inputs": {
-      "guidance": 4.5,
+      "guidance": 3.0,
       "conditioning": [
         "22:4",
         0
@@ -161,7 +161,7 @@
   },
   "22:12": {
     "inputs": {
-      "guidance": 4.5,
+      "guidance": 3.0,
       "conditioning": [
         "22:5",
         0
