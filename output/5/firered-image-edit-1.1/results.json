@@ -1,0 +1,155 @@
+{
+  "model": "firered-image-edit-1.1",
+  "tasks": {
+    "deblur": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to sharpen this exact photograph and bring back real, fine detail so it looks crisp and in focus. Keep every object, person, text and the background exactly as in the input and in the same place. In foggy or low-visibility areas, sharpen only what is genuinely there and leave those areas as they are. The result must stay a faithful, photorealistic version of the original.",
+      "negative": "blurry, out of focus, soft, hazy, noise, invented detail, hallucinated objects, repainted, regenerated, added objects, removed objects, changed people, changed background, distortion, artifacts",
+      "params": {
+        "strength": 3.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 116.95,
+          "vram_peak_mb": 21349.6
+        },
+        "outputs": [
+          "output/5/firered-image-edit-1.1/deblur/deblur_crop_ (1)_4015321972_0.png",
+          "output/5/firered-image-edit-1.1/deblur/deblur_crop_ (2)_842009924_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "relight_day": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to relight this scene into clear, bright midday daylight: blue sky, strong natural sunlight and soft natural shadows. It must clearly read as full daytime. You MUST keep every object, person, vehicle, sign and structure exactly where it is, with the same shape, count and position; only the lighting and the sky change. Photorealistic.",
+      "negative": "night, dusk, dim, grey, fog, haze, overexposed, washed out, blown highlights, added objects, extra people, removed objects, moved objects, changed scene, distortion, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 117.87,
+          "vram_peak_mb": 22502.9
+        },
+        "outputs": [
+          "output/5/firered-image-edit-1.1/relight_day/relight_day_crop_ (2)_169548931_0.png",
+          "output/5/firered-image-edit-1.1/relight_day/relight_day_crop_ (3)_1189767582_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "object_insert_fire": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to make it look like a fire has just broken out on a dry, solid surface that already exists in the scene (the ground or an object): real flames starting and spreading, with rising smoke and a few embers. You MUST keep the existing terrain, water, people, objects and background exactly as they are, and keep the rest of the scene lit normally. Photorealistic.",
+      "negative": "campfire, bonfire, fire pit, stacked logs, tidy fire, fire on water, flames on water, added shoreline, added ground, new terrain, full-frame fire, dark background, changed people, distortion, artifacts",
+      "params": {
+        "strength": 3.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 117.61,
+          "vram_peak_mb": 22507.3
+        },
+        "outputs": [
+          "output/5/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (1)_2755711835_0.png",
+          "output/5/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (4)_3637185529_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "normalize": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is a subtle photographic clean-up only: neutral white balance, balanced exposure and natural, accurate colors. You MUST keep the content completely unchanged - the same objects, people, background, composition and type of lighting. The result must look like a real, lightly-corrected photograph.",
+      "negative": "color cast, oversaturated, overexposed, underexposed, stylized filter, relit, day-for-night, changed content, added objects, removed objects, changed people, repainted scene, distortion, artifacts",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 117.55,
+          "vram_peak_mb": 22502.9
+        },
+        "outputs": [
+          "output/5/firered-image-edit-1.1/normalize/normalize_crop_ (1)_3135118993_0.png",
+          "output/5/firered-image-edit-1.1/normalize/normalize_crop_ (3)_3466565865_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "change_clothing": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Your task is to dress every person already in this photo in a clown costume - colorful polka-dot suit, ruffled collar, oversized buttons, big floppy shoes and a clown hat - keeping the look of a real low-quality surveillance-camera photo with natural, muted colors. Dress every single person, including anyone in a uniform. You MUST keep exactly the same number of people, keep each clown the same body size and position as the original person, keep their own bare faces, and keep the same background. Photorealistic.",
+      "negative": "extra clown, added person, added people, removed people, oversized clown, giant clown, enlarged person, cartoonish, oversaturated, vivid colors, studio clown, clown makeup, face paint, changed face, changed background, distortion, artifacts",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 2,
+        "avg": {
+          "gen_time_s": 117.8,
+          "vram_peak_mb": 22502.9
+        },
+        "outputs": [
+          "output/5/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (1)_2389298476_0.png",
+          "output/5/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (2)_848718550_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    }
+  }
+}
