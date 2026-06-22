@@ -1703,3 +1703,33 @@
 20:36:23 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 49.1s | VRAM 22104 MB | картинок: 2
 20:36:23 | INFO    | === longcat-image-edit ГОТОВО за 588s | результаты: output/4/longcat-image-edit/results.json ===
 20:36:23 | INFO    | ВСЁ. Прогон #4 за 6550s | успешно: ['qwen-image-edit-2511', 'flux1-kontext-dev', 'firered-image-edit-1.1', 'flux2-klein-9b', 'flux2-dev', 'longcat-image-edit'] | упало: —
+14:37:14 | INFO    |    табличка-сравнение: output\1\firered-image-edit-1.1\_compare\deblur.png
+14:37:14 | INFO    |    табличка-сравнение: output\1\firered-image-edit-1.1\_compare\relight_day.png
+14:37:15 | INFO    |    табличка-сравнение: output\1\firered-image-edit-1.1\_compare\object_insert_fire.png
+14:37:15 | INFO    |    табличка-сравнение: output\1\firered-image-edit-1.1\_compare\normalize.png
+14:37:15 | INFO    |    табличка-сравнение: output\1\firered-image-edit-1.1\_compare\change_clothing.png
+14:37:15 | INFO    |    табличка-сравнение: output\1\flux1-kontext-dev\_compare\deblur.png
+14:37:15 | INFO    |    табличка-сравнение: output\1\flux1-kontext-dev\_compare\relight_day.png
+14:37:15 | INFO    |    табличка-сравнение: output\1\flux1-kontext-dev\_compare\object_insert_fire.png
+14:37:16 | INFO    |    табличка-сравнение: output\1\flux1-kontext-dev\_compare\normalize.png
+14:37:16 | INFO    |    табличка-сравнение: output\1\flux1-kontext-dev\_compare\change_clothing.png
+14:37:16 | INFO    |    табличка-сравнение: output\1\flux2-dev\_compare\deblur.png
+14:37:16 | INFO    |    табличка-сравнение: output\1\flux2-dev\_compare\relight_day.png
+14:37:16 | INFO    |    табличка-сравнение: output\1\flux2-dev\_compare\object_insert_fire.png
+14:37:16 | INFO    |    табличка-сравнение: output\1\flux2-dev\_compare\normalize.png
+14:37:16 | INFO    |    табличка-сравнение: output\1\flux2-dev\_compare\change_clothing.png
+14:37:17 | INFO    |    табличка-сравнение: output\1\flux2-klein-9b\_compare\deblur.png
+14:37:17 | INFO    |    табличка-сравнение: output\1\flux2-klein-9b\_compare\relight_day.png
+14:37:17 | INFO    |    табличка-сравнение: output\1\flux2-klein-9b\_compare\object_insert_fire.png
+14:37:17 | INFO    |    табличка-сравнение: output\1\flux2-klein-9b\_compare\normalize.png
+14:37:17 | INFO    |    табличка-сравнение: output\1\flux2-klein-9b\_compare\change_clothing.png
+14:37:17 | INFO    |    табличка-сравнение: output\1\longcat-image-edit\_compare\deblur.png
+14:37:18 | INFO    |    табличка-сравнение: output\1\longcat-image-edit\_compare\relight_day.png
+14:37:18 | INFO    |    табличка-сравнение: output\1\longcat-image-edit\_compare\object_insert_fire.png
+14:37:18 | INFO    |    табличка-сравнение: output\1\longcat-image-edit\_compare\normalize.png
+14:37:18 | INFO    |    табличка-сравнение: output\1\longcat-image-edit\_compare\change_clothing.png
+14:37:18 | INFO    |    табличка-сравнение: output\1\qwen-image-edit-2511\_compare\deblur.png
+14:37:18 | INFO    |    табличка-сравнение: output\1\qwen-image-edit-2511\_compare\relight_day.png
+14:37:19 | INFO    |    табличка-сравнение: output\1\qwen-image-edit-2511\_compare\object_insert_fire.png
+14:37:19 | INFO    |    табличка-сравнение: output\1\qwen-image-edit-2511\_compare\normalize.png
+14:37:19 | INFO    |    табличка-сравнение: output\1\qwen-image-edit-2511\_compare\change_clothing.png

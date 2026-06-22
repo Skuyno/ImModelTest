@@ -14,20 +14,14 @@
       },
       "notes": "",
       "results": {
-        "n_images": 8,
+        "n_images": 2,
         "avg": {
           "gen_time_s": 35.4,
           "vram_peak_mb": 20173.4
         },
         "outputs": [
           "output/1/flux1-kontext-dev/deblur/deblur_crop_ (1)_531466372_0.png",
-          "output/1/flux1-kontext-dev/deblur/deblur_crop_ (10)_1365388088_0.png",
-          "output/1/flux1-kontext-dev/deblur/deblur_crop_ (11)_2842526041_0.png",
-          "output/1/flux1-kontext-dev/deblur/deblur_crop_ (2)_2817030053_0.png",
-          "output/1/flux1-kontext-dev/deblur/deblur_crop_ (4)_591525432_0.png",
-          "output/1/flux1-kontext-dev/deblur/deblur_crop_ (6)_713789617_0.png",
-          "output/1/flux1-kontext-dev/deblur/deblur_crop_ (7)_863475095_0.png",
-          "output/1/flux1-kontext-dev/deblur/deblur_crop_ (9)_299775475_0.png"
+          "output/1/flux1-kontext-dev/deblur/deblur_crop_ (2)_2817030053_0.png"
         ],
         "manual": {
           "quality": 4,
@@ -50,20 +44,14 @@
       },
       "notes": "",
       "results": {
-        "n_images": 8,
+        "n_images": 2,
         "avg": {
           "gen_time_s": 36.0,
           "vram_peak_mb": 21455.5
         },
         "outputs": [
-          "output/1/flux1-kontext-dev/relight_day/relight_day_crop_ (11)_4248892887_0.png",
-          "output/1/flux1-kontext-dev/relight_day/relight_day_crop_ (12)_4256823831_0.png",
           "output/1/flux1-kontext-dev/relight_day/relight_day_crop_ (2)_747973142_0.png",
-          "output/1/flux1-kontext-dev/relight_day/relight_day_crop_ (3)_1557937029_0.png",
-          "output/1/flux1-kontext-dev/relight_day/relight_day_crop_ (5)_3692636579_0.png",
-          "output/1/flux1-kontext-dev/relight_day/relight_day_crop_ (6)_3510239482_0.png",
-          "output/1/flux1-kontext-dev/relight_day/relight_day_crop_ (7)_4192607368_0.png",
-          "output/1/flux1-kontext-dev/relight_day/relight_day_crop_ (8)_1184913026_0.png"
+          "output/1/flux1-kontext-dev/relight_day/relight_day_crop_ (3)_1557937029_0.png"
         ],
         "manual": {
           "quality": 3,
@@ -86,20 +74,14 @@
       },
       "notes": "",
       "results": {
-        "n_images": 8,
+        "n_images": 2,
         "avg": {
           "gen_time_s": 35.42,
           "vram_peak_mb": 21455.4
         },
         "outputs": [
           "output/1/flux1-kontext-dev/object_insert_fire/object_insert_fire_crop_ (1)_3940623279_0.png",
-          "output/1/flux1-kontext-dev/object_insert_fire/object_insert_fire_crop_ (10)_1631055933_0.png",
-          "output/1/flux1-kontext-dev/object_insert_fire/object_insert_fire_crop_ (11)_2910542618_0.png",
-          "output/1/flux1-kontext-dev/object_insert_fire/object_insert_fire_crop_ (12)_3067314386_0.png",
-          "output/1/flux1-kontext-dev/object_insert_fire/object_insert_fire_crop_ (4)_770324325_0.png",
-          "output/1/flux1-kontext-dev/object_insert_fire/object_insert_fire_crop_ (5)_1252352676_0.png",
-          "output/1/flux1-kontext-dev/object_insert_fire/object_insert_fire_crop_ (6)_669439620_0.png",
-          "output/1/flux1-kontext-dev/object_insert_fire/object_insert_fire_crop_ (7)_2870955577_0.png"
+          "output/1/flux1-kontext-dev/object_insert_fire/object_insert_fire_crop_ (4)_770324325_0.png"
         ],
         "manual": {
           "quality": 3,
@@ -122,20 +104,14 @@
       },
       "notes": "",
       "results": {
-        "n_images": 8,
+        "n_images": 2,
         "avg": {
           "gen_time_s": 35.5,
           "vram_peak_mb": 21459.3
         },
         "outputs": [
           "output/1/flux1-kontext-dev/normalize/normalize_crop_ (1)_2319768571_0.png",
-          "output/1/flux1-kontext-dev/normalize/normalize_crop_ (10)_1136069328_0.png",
-          "output/1/flux1-kontext-dev/normalize/normalize_crop_ (12)_3387865967_0.png",
-          "output/1/flux1-kontext-dev/normalize/normalize_crop_ (3)_1121410124_0.png",
-          "output/1/flux1-kontext-dev/normalize/normalize_crop_ (4)_425035133_0.png",
-          "output/1/flux1-kontext-dev/normalize/normalize_crop_ (5)_3978121357_0.png",
-          "output/1/flux1-kontext-dev/normalize/normalize_crop_ (6)_3621162926_0.png",
-          "output/1/flux1-kontext-dev/normalize/normalize_crop_ (7)_3206042227_0.png"
+          "output/1/flux1-kontext-dev/normalize/normalize_crop_ (3)_1121410124_0.png"
         ],
         "manual": {
           "quality": 4,
@@ -158,20 +134,14 @@
       },
       "notes": "",
       "results": {
-        "n_images": 8,
+        "n_images": 2,
         "avg": {
           "gen_time_s": 35.48,
           "vram_peak_mb": 21451.9
         },
         "outputs": [
           "output/1/flux1-kontext-dev/change_clothing/change_clothing_crop_ (1)_283733079_0.png",
-          "output/1/flux1-kontext-dev/change_clothing/change_clothing_crop_ (10)_2003851516_0.png",
-          "output/1/flux1-kontext-dev/change_clothing/change_clothing_crop_ (2)_3840741848_0.png",
-          "output/1/flux1-kontext-dev/change_clothing/change_clothing_crop_ (3)_573338625_0.png",
-          "output/1/flux1-kontext-dev/change_clothing/change_clothing_crop_ (5)_293099497_0.png",
-          "output/1/flux1-kontext-dev/change_clothing/change_clothing_crop_ (6)_3661790916_0.png",
-          "output/1/flux1-kontext-dev/change_clothing/change_clothing_crop_ (7)_1169075875_0.png",
-          "output/1/flux1-kontext-dev/change_clothing/change_clothing_crop_ (8)_976839229_0.png"
+          "output/1/flux1-kontext-dev/change_clothing/change_clothing_crop_ (2)_3840741848_0.png"
         ],
         "manual": {
           "quality": 4,
