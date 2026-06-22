@@ -2,9 +2,9 @@
   "model": "flux2-dev",
   "tasks": {
     "deblur": {
-      "version": "v5.0",
-      "style": "instruction",
-      "positive": "Your task is to sharpen this exact photo and recover fine detail, keeping natural, neutral, true-to-life colors so it still looks like a real photograph. Keep every object, person and the background exactly as in the input, clearing haze only where it is present. Photorealistic.",
+      "version": "v6.0-sd",
+      "style": "sd_tokens",
+      "positive": "deblurred, sharp fine detail, crisp, restored, same scene unchanged, natural neutral true-to-life colors, real photograph, photorealistic",
       "negative": "",
       "params": {
         "strength": 3.0,
@@ -16,9 +16,9 @@
       "results": []
     },
     "relight_day": {
-      "version": "v5.0",
-      "style": "instruction",
-      "positive": "Your task is to convert this scene into clear, bright midday daylight - blue sky, real sunlight, natural shadows. You MUST keep every object, person, vehicle and the text on signs sharp and unchanged in position and shape; only the lighting and the sky change. Photorealistic.",
+      "version": "v6.0-sd",
+      "style": "sd_tokens",
+      "positive": "bright midday daylight, blue sky, natural sunlight, soft shadows, daytime, same objects vehicles and signs preserved, sharp readable sign text, photorealistic",
       "negative": "",
       "params": {
         "strength": 4.0,
@@ -30,9 +30,9 @@
       "results": []
     },
     "object_insert_fire": {
-      "version": "v6.0",
-      "style": "instruction",
-      "positive": "Your task is to add a real fire that has broken out on a dry, solid surface that physically exists in this scene (the floor or an object), placed to match the geometry and perspective: natural spreading flames with smoke and embers, resting on solid ground. Keep all water exactly as it is and place the fire only on dry land; keep all people, objects and the background unchanged and normally lit. Photorealistic.",
+      "version": "v6.0-sd",
+      "style": "sd_tokens",
+      "positive": "fire broke out on a solid surface, realistic flames matching the room geometry, smoke, embers, fire on dry ground, water unchanged, same people and scene preserved, photorealistic",
       "negative": "",
       "params": {
         "strength": 4.5,
@@ -44,9 +44,9 @@
       "results": []
     },
     "normalize": {
-      "version": "v5.0",
-      "style": "instruction",
-      "positive": "Your task is a gentle, neutral photographic clean-up only: balanced exposure, natural white balance and realistic, true-to-life colors. The result MUST look like a real, unedited photograph with natural color. Keep all content, objects, people and the type of lighting exactly the same. Photorealistic.",
+      "version": "v6.0-sd",
+      "style": "sd_tokens",
+      "positive": "subtle clean-up, neutral natural colors, balanced exposure, true-to-life, real unedited photograph, same content unchanged, photorealistic",
       "negative": "",
       "params": {
         "strength": 3.0,
@@ -58,9 +58,9 @@
       "results": []
     },
     "change_clothing": {
-      "version": "v6.0",
-      "style": "instruction",
-      "positive": "Your task is to dress every person already in this photo - including anyone in a uniform or work clothes - in a clown costume (colorful polka-dot suit, ruffled collar, big shoes, clown hat), keeping the realistic look of a low-quality surveillance-camera still with natural, muted colors. You MUST keep each person's own real bare face, keep exactly the same number of people in their original positions and natural poses, and keep the same background. Dress the real people and keep them as themselves. Photorealistic.",
+      "version": "v6.0-sd",
+      "style": "sd_tokens",
+      "positive": "every person including workers wearing a full clown costume, polka-dot suit, ruffled collar, clown hat, same people, same count, original poses, original bare faces, same background, surveillance camera photo, photorealistic",
       "negative": "",
       "params": {
         "strength": 3.0,
