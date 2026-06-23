@@ -1,0 +1,195 @@
+{
+  "model": "firered-image-edit-1.1",
+  "tasks": {
+    "deblur": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to sharpen and upscale this exact photograph, bringing back real fine high-resolution detail so it looks crisp, in focus and high quality. Keep every object, person, text and the background exactly as in the input and in the same place. In foggy or low-visibility areas, sharpen only what is genuinely there and leave those areas as they are. The result must stay a faithful, photorealistic version of the original.",
+      "negative": "still blurry, hallucinated detail, repainted, changed people, changed background",
+      "params": {
+        "strength": 3.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 10,
+        "avg": {
+          "gen_time_s": 119.19,
+          "vram_peak_mb": 22496.5
+        },
+        "outputs": [
+          "output/6/firered-image-edit-1.1/deblur/deblur_crop_ (1)_4015321972_0.png",
+          "output/6/firered-image-edit-1.1/deblur/deblur_crop_ (10)_1723911048_0.png",
+          "output/6/firered-image-edit-1.1/deblur/deblur_crop_ (2)_842009924_0.png",
+          "output/6/firered-image-edit-1.1/deblur/deblur_crop_ (3)_2694215455_0.png",
+          "output/6/firered-image-edit-1.1/deblur/deblur_crop_ (4)_1988463852_0.png",
+          "output/6/firered-image-edit-1.1/deblur/deblur_crop_ (5)_2292823072_0.png",
+          "output/6/firered-image-edit-1.1/deblur/deblur_crop_ (6)_3946146563_0.png",
+          "output/6/firered-image-edit-1.1/deblur/deblur_crop_ (7)_3598447698_0.png",
+          "output/6/firered-image-edit-1.1/deblur/deblur_crop_ (8)_2076082836_0.png",
+          "output/6/firered-image-edit-1.1/deblur/deblur_crop_ (9)_2235447311_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "relight_day": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to relight this scene into clear, bright midday daylight: blue sky, strong natural sunlight and soft natural shadows. It must clearly read as full daytime. You MUST keep every object, person, vehicle, sign and structure exactly where it is, with the same shape, count and position; only the lighting and the sky change. Photorealistic.",
+      "negative": "night, dusk, overexposed, added objects, moved objects, changed scene",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 10,
+        "avg": {
+          "gen_time_s": 116.98,
+          "vram_peak_mb": 22512.1
+        },
+        "outputs": [
+          "output/6/firered-image-edit-1.1/relight_day/relight_day_crop_ (1)_531463803_0.png",
+          "output/6/firered-image-edit-1.1/relight_day/relight_day_crop_ (10)_346480383_0.png",
+          "output/6/firered-image-edit-1.1/relight_day/relight_day_crop_ (2)_169548931_0.png",
+          "output/6/firered-image-edit-1.1/relight_day/relight_day_crop_ (3)_1189767582_0.png",
+          "output/6/firered-image-edit-1.1/relight_day/relight_day_crop_ (4)_3723523325_0.png",
+          "output/6/firered-image-edit-1.1/relight_day/relight_day_crop_ (5)_3960674031_0.png",
+          "output/6/firered-image-edit-1.1/relight_day/relight_day_crop_ (6)_659325228_0.png",
+          "output/6/firered-image-edit-1.1/relight_day/relight_day_crop_ (7)_1908135796_0.png",
+          "output/6/firered-image-edit-1.1/relight_day/relight_day_crop_ (8)_656049299_0.png",
+          "output/6/firered-image-edit-1.1/relight_day/relight_day_crop_ (9)_3674071256_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "object_insert_fire": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to make it look like a fire has just broken out on a dry, solid surface that already exists in the scene (the ground or an object): real flames starting and spreading, with rising smoke and a few embers. You MUST keep the existing terrain, water, people, objects and background exactly as they are, and keep the rest of the scene lit normally. Photorealistic.",
+      "negative": "campfire, stacked logs, fire on water, added ground, changed people",
+      "params": {
+        "strength": 3.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 10,
+        "avg": {
+          "gen_time_s": 118.98,
+          "vram_peak_mb": 22510.4
+        },
+        "outputs": [
+          "output/6/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (1)_2755711835_0.png",
+          "output/6/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (10)_974309499_0.png",
+          "output/6/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (2)_1868608100_0.png",
+          "output/6/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (3)_2215818437_0.png",
+          "output/6/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (4)_3637185529_0.png",
+          "output/6/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (5)_1446957382_0.png",
+          "output/6/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (6)_278729603_0.png",
+          "output/6/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (7)_3829829478_0.png",
+          "output/6/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (8)_2958371265_0.png",
+          "output/6/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (9)_2998815211_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "normalize": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is a subtle photographic clean-up only: neutral white balance, balanced exposure and natural, accurate colors. You MUST keep the content completely unchanged - the same objects, people, background, composition and type of lighting. The result must look like a real, lightly-corrected photograph.",
+      "negative": "color cast, oversaturated, stylized filter, relit, changed content",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 10,
+        "avg": {
+          "gen_time_s": 117.8,
+          "vram_peak_mb": 22516.4
+        },
+        "outputs": [
+          "output/6/firered-image-edit-1.1/normalize/normalize_crop_ (1)_3135118993_0.png",
+          "output/6/firered-image-edit-1.1/normalize/normalize_crop_ (10)_3858332514_0.png",
+          "output/6/firered-image-edit-1.1/normalize/normalize_crop_ (2)_1162833888_0.png",
+          "output/6/firered-image-edit-1.1/normalize/normalize_crop_ (3)_3466565865_0.png",
+          "output/6/firered-image-edit-1.1/normalize/normalize_crop_ (4)_1921090534_0.png",
+          "output/6/firered-image-edit-1.1/normalize/normalize_crop_ (5)_1728832647_0.png",
+          "output/6/firered-image-edit-1.1/normalize/normalize_crop_ (6)_205828884_0.png",
+          "output/6/firered-image-edit-1.1/normalize/normalize_crop_ (7)_3081526176_0.png",
+          "output/6/firered-image-edit-1.1/normalize/normalize_crop_ (8)_1599700005_0.png",
+          "output/6/firered-image-edit-1.1/normalize/normalize_crop_ (9)_2272734098_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "change_clothing": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Your task is to dress every person already in this photo in a clown costume - colorful polka-dot suit, ruffled collar, oversized buttons, big floppy shoes and a clown hat - keeping the realistic look of a surveillance-camera photo with natural, true-to-life colors. Dress every single person, including anyone in a uniform. You MUST keep exactly the same number of people, keep each clown the same body size and position as the original person, keep their own bare faces, and keep the same background. Photorealistic.",
+      "negative": "extra clown, oversized clown, desaturated, clown makeup, changed face, changed background",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 10,
+        "avg": {
+          "gen_time_s": 117.13,
+          "vram_peak_mb": 22572.2
+        },
+        "outputs": [
+          "output/6/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (1)_2389298476_0.png",
+          "output/6/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (10)_3518946737_0.png",
+          "output/6/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (2)_848718550_0.png",
+          "output/6/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (3)_1813591123_0.png",
+          "output/6/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (4)_315710103_0.png",
+          "output/6/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (5)_1207072604_0.png",
+          "output/6/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (6)_2762502918_0.png",
+          "output/6/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (7)_1404215087_0.png",
+          "output/6/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (8)_3221057219_0.png",
+          "output/6/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (9)_689394274_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    }
+  }
+}

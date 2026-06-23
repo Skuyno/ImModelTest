@@ -1,0 +1,75 @@
+{
+  "model": "flux2-dev",
+  "tasks": {
+    "deblur": {
+      "version": "v6.0-sd",
+      "style": "sd_tokens",
+      "positive": "deblurred, sharp fine detail, crisp, upscaled, high resolution, ultra detailed, enhanced quality, restored, same scene unchanged, natural neutral true-to-life colors, real photograph, photorealistic",
+      "negative": "",
+      "params": {
+        "strength": 3.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "relight_day": {
+      "version": "v6.0-sd",
+      "style": "sd_tokens",
+      "positive": "bright midday daylight, blue sky, natural sunlight, soft shadows, daytime, same objects vehicles and signs preserved, sharp readable sign text, photorealistic",
+      "negative": "",
+      "params": {
+        "strength": 4.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "object_insert_fire": {
+      "version": "v6.0-sd",
+      "style": "sd_tokens",
+      "positive": "fire broke out on a solid surface, realistic flames matching the room geometry, smoke, embers, fire on dry ground, water unchanged, same people and scene preserved, photorealistic",
+      "negative": "",
+      "params": {
+        "strength": 4.5,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "normalize": {
+      "version": "v6.0-sd",
+      "style": "sd_tokens",
+      "positive": "subtle clean-up, neutral natural colors, balanced exposure, true-to-life, real unedited photograph, same content unchanged, photorealistic",
+      "negative": "",
+      "params": {
+        "strength": 3.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "change_clothing": {
+      "version": "v6.0-sd",
+      "style": "sd_tokens",
+      "positive": "every person including workers wearing a full clown costume, polka-dot suit, ruffled collar, clown hat, same people, same count, original poses, original bare faces, same background, surveillance camera photo, photorealistic",
+      "negative": "",
+      "params": {
+        "strength": 3.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    }
+  }
+}

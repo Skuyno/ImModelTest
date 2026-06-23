@@ -1,0 +1,75 @@
+{
+  "model": "qwen-image-edit-2511",
+  "tasks": {
+    "deblur": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Sharpen and upscale this photo, recovering crisp high-resolution detail and removing softness and haze. Enhance overall quality. Keep every object, person and the background exactly the same.",
+      "negative": "still blurry, repainted, changed people, changed background",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "relight_day": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Turn this scene into clear bright midday daylight with blue sky and natural shadows. Keep all edges sharp and every object and person exactly where it is; change only the lighting.",
+      "negative": "night, dusk, motion blur, added objects, removed objects",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "object_insert_fire": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Add a clearly visible fire that has broken out on a solid surface, with realistic flames, smoke and embers matching the scene. Keep the water, terrain and background exactly as they are; keep all people and objects unchanged.",
+      "negative": "campfire, fire on water, added shoreline, changed people",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "normalize": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Apply a subtle neutral clean-up: balanced exposure, natural white balance and accurate colors. Keep all content, objects, people and the background exactly the same.",
+      "negative": "color cast, oversaturated, stylized filter, changed content",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "change_clothing": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Dress the same people in this photo in a full colorful clown costume (polka-dot suit, ruffled collar, big shoes, clown hat). Keep the same number of people, their faces and poses, the background, and matching reflections on shiny surfaces.",
+      "negative": "added clown, clown makeup, changed face, wrong reflection, changed background",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    }
+  }
+}

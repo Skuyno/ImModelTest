@@ -1,0 +1,195 @@
+{
+  "model": "flux2-klein-9b",
+  "tasks": {
+    "deblur": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Sharpen and upscale this exact photo as a light restoration, adding fine high-resolution detail and enhancing quality. Keep every person, their clothing, all objects and the background exactly as in the input and perfectly aligned. Photorealistic.",
+      "negative": "",
+      "params": {
+        "strength": 1.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 10,
+        "avg": {
+          "gen_time_s": 33.42,
+          "vram_peak_mb": 17329.2
+        },
+        "outputs": [
+          "output/6/flux2-klein-9b/deblur/deblur_crop_ (1)_4015321972_0.png",
+          "output/6/flux2-klein-9b/deblur/deblur_crop_ (10)_1723911048_0.png",
+          "output/6/flux2-klein-9b/deblur/deblur_crop_ (2)_842009924_0.png",
+          "output/6/flux2-klein-9b/deblur/deblur_crop_ (3)_2694215455_0.png",
+          "output/6/flux2-klein-9b/deblur/deblur_crop_ (4)_1988463852_0.png",
+          "output/6/flux2-klein-9b/deblur/deblur_crop_ (5)_2292823072_0.png",
+          "output/6/flux2-klein-9b/deblur/deblur_crop_ (6)_3946146563_0.png",
+          "output/6/flux2-klein-9b/deblur/deblur_crop_ (7)_3598447698_0.png",
+          "output/6/flux2-klein-9b/deblur/deblur_crop_ (8)_2076082836_0.png",
+          "output/6/flux2-klein-9b/deblur/deblur_crop_ (9)_2235447311_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "relight_day": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Relight this scene to bright natural daytime with a realistic sky. Keep every object, person, vehicle and sign exactly the same in count, position and appearance; change only the lighting. Photorealistic, natural colors.",
+      "negative": "",
+      "params": {
+        "strength": 1.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 10,
+        "avg": {
+          "gen_time_s": 33.79,
+          "vram_peak_mb": 18365.7
+        },
+        "outputs": [
+          "output/6/flux2-klein-9b/relight_day/relight_day_crop_ (1)_531463803_0.png",
+          "output/6/flux2-klein-9b/relight_day/relight_day_crop_ (10)_346480383_0.png",
+          "output/6/flux2-klein-9b/relight_day/relight_day_crop_ (2)_169548931_0.png",
+          "output/6/flux2-klein-9b/relight_day/relight_day_crop_ (3)_1189767582_0.png",
+          "output/6/flux2-klein-9b/relight_day/relight_day_crop_ (4)_3723523325_0.png",
+          "output/6/flux2-klein-9b/relight_day/relight_day_crop_ (5)_3960674031_0.png",
+          "output/6/flux2-klein-9b/relight_day/relight_day_crop_ (6)_659325228_0.png",
+          "output/6/flux2-klein-9b/relight_day/relight_day_crop_ (7)_1908135796_0.png",
+          "output/6/flux2-klein-9b/relight_day/relight_day_crop_ (8)_656049299_0.png",
+          "output/6/flux2-klein-9b/relight_day/relight_day_crop_ (9)_3674071256_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "object_insert_fire": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Add one realistic fire that has broken out on a dry, solid surface in the scene, with natural flames, smoke and embers matching the geometry. Keep all water exactly as it is, placing the fire only on dry rock or solid ground; keep all people, objects and the background unchanged. Photorealistic.",
+      "negative": "",
+      "params": {
+        "strength": 1.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 10,
+        "avg": {
+          "gen_time_s": 33.45,
+          "vram_peak_mb": 18371.8
+        },
+        "outputs": [
+          "output/6/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (1)_2755711835_0.png",
+          "output/6/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (10)_974309499_0.png",
+          "output/6/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (2)_1868608100_0.png",
+          "output/6/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (3)_2215818437_0.png",
+          "output/6/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (4)_3637185529_0.png",
+          "output/6/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (5)_1446957382_0.png",
+          "output/6/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (6)_278729603_0.png",
+          "output/6/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (7)_3829829478_0.png",
+          "output/6/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (8)_2958371265_0.png",
+          "output/6/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (9)_2998815211_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "normalize": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Apply a subtle neutral clean-up: balanced exposure, natural white balance and accurate colors. Keep all content, objects, people and the background exactly the same. Photorealistic, like a real lightly-corrected photo.",
+      "negative": "",
+      "params": {
+        "strength": 1.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 10,
+        "avg": {
+          "gen_time_s": 33.41,
+          "vram_peak_mb": 18353.2
+        },
+        "outputs": [
+          "output/6/flux2-klein-9b/normalize/normalize_crop_ (1)_3135118993_0.png",
+          "output/6/flux2-klein-9b/normalize/normalize_crop_ (10)_3858332514_0.png",
+          "output/6/flux2-klein-9b/normalize/normalize_crop_ (2)_1162833888_0.png",
+          "output/6/flux2-klein-9b/normalize/normalize_crop_ (3)_3466565865_0.png",
+          "output/6/flux2-klein-9b/normalize/normalize_crop_ (4)_1921090534_0.png",
+          "output/6/flux2-klein-9b/normalize/normalize_crop_ (5)_1728832647_0.png",
+          "output/6/flux2-klein-9b/normalize/normalize_crop_ (6)_205828884_0.png",
+          "output/6/flux2-klein-9b/normalize/normalize_crop_ (7)_3081526176_0.png",
+          "output/6/flux2-klein-9b/normalize/normalize_crop_ (8)_1599700005_0.png",
+          "output/6/flux2-klein-9b/normalize/normalize_crop_ (9)_2272734098_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "change_clothing": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Dress the people already in this photo in a realistic clown costume (polka-dot suit, ruffled collar, big shoes), like a real low-quality surveillance photo with natural muted colors. Keep each person's own face and identity recognizable, the same number of people in the same poses and positions, and the same background and floor. Photorealistic.",
+      "negative": "",
+      "params": {
+        "strength": 1.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 10,
+        "avg": {
+          "gen_time_s": 33.46,
+          "vram_peak_mb": 18383.7
+        },
+        "outputs": [
+          "output/6/flux2-klein-9b/change_clothing/change_clothing_crop_ (1)_2389298476_0.png",
+          "output/6/flux2-klein-9b/change_clothing/change_clothing_crop_ (10)_3518946737_0.png",
+          "output/6/flux2-klein-9b/change_clothing/change_clothing_crop_ (2)_848718550_0.png",
+          "output/6/flux2-klein-9b/change_clothing/change_clothing_crop_ (3)_1813591123_0.png",
+          "output/6/flux2-klein-9b/change_clothing/change_clothing_crop_ (4)_315710103_0.png",
+          "output/6/flux2-klein-9b/change_clothing/change_clothing_crop_ (5)_1207072604_0.png",
+          "output/6/flux2-klein-9b/change_clothing/change_clothing_crop_ (6)_2762502918_0.png",
+          "output/6/flux2-klein-9b/change_clothing/change_clothing_crop_ (7)_1404215087_0.png",
+          "output/6/flux2-klein-9b/change_clothing/change_clothing_crop_ (8)_3221057219_0.png",
+          "output/6/flux2-klein-9b/change_clothing/change_clothing_crop_ (9)_689394274_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    }
+  }
+}

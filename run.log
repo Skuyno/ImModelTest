@@ -1915,3 +1915,765 @@
 17:44:48 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 48.0s | VRAM 21380 MB | картинок: 2
 17:44:48 | INFO    | === longcat-image-edit ГОТОВО за 647s | результаты: output/5/longcat-image-edit/results.json ===
 17:44:48 | INFO    | ВСЁ. Прогон #5 за 6704s | успешно: ['qwen-image-edit-2511', 'flux1-kontext-dev', 'firered-image-edit-1.1', 'flux2-klein-9b', 'flux2-dev', 'longcat-image-edit'] | упало: —
+22:03:14 | INFO    | СТАРТ прогона #6 -> output/6. Модели (5): qwen-image-edit-2511, firered-image-edit-1.1, flux2-klein-9b, flux2-dev, longcat-image-edit
+22:03:14 | INFO    | === МОДЕЛЬ: qwen-image-edit-2511 ===
+22:03:14 | INFO    | воркфлоу: workflows/image_qwen_image_edit_2511.json | задач: 5 | edit-режим: True
+22:03:14 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+22:06:23 | INFO    | прогрев готов (188s)
+22:06:23 | INFO    | [задача 1/5] 'deblur' — картинок: 12
+22:08:23 | INFO    |    img 1/12 crop_ (1).jpg          | seed=4015321972 | 120.6s | VRAM 22380 MB | файлов: 1
+22:10:24 | INFO    |    img 2/12 crop_ (10).jpg         | seed=1723911048 | 120.4s | VRAM 22505 MB | файлов: 1
+22:12:23 | INFO    |    img 3/12 crop_ (11).jpg         | seed=3912526613 | 118.9s | VRAM 22505 MB | файлов: 1
+22:14:22 | INFO    |    img 4/12 crop_ (12).jpg         | seed=3996609134 | 119.6s | VRAM 22505 MB | файлов: 1
+22:16:22 | INFO    |    img 5/12 crop_ (2).jpg          | seed=842009924 | 120.1s | VRAM 22505 MB | файлов: 1
+22:18:24 | INFO    |    img 6/12 crop_ (3).jpg          | seed=2694215455 | 121.1s | VRAM 22505 MB | файлов: 1
+22:20:24 | INFO    |    img 7/12 crop_ (4).jpg          | seed=1988463852 | 120.2s | VRAM 22505 MB | файлов: 1
+22:22:24 | INFO    |    img 8/12 crop_ (5).jpg          | seed=2292823072 | 119.9s | VRAM 22505 MB | файлов: 1
+22:24:24 | INFO    |    img 9/12 crop_ (6).jpg          | seed=3946146563 | 119.8s | VRAM 22505 MB | файлов: 1
+22:35:18 | INFO    | СТАРТ прогона #7 -> output/7. Модели (5): qwen-image-edit-2511, firered-image-edit-1.1, flux2-klein-9b, flux2-dev, longcat-image-edit
+22:35:18 | INFO    | === МОДЕЛЬ: qwen-image-edit-2511 ===
+22:35:18 | INFO    | воркфлоу: workflows/image_qwen_image_edit_2511.json | задач: 5 | edit-режим: True
+22:35:18 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+22:37:27 | INFO    | СТАРТ прогона #6 -> output/6. Модели (5): qwen-image-edit-2511, firered-image-edit-1.1, flux2-klein-9b, flux2-dev, longcat-image-edit
+22:37:27 | INFO    | === МОДЕЛЬ: qwen-image-edit-2511 ===
+22:37:27 | INFO    | воркфлоу: workflows/image_qwen_image_edit_2511.json | задач: 5 | edit-режим: True
+22:37:27 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+22:37:27 | INFO    | прогрев готов (0s)
+22:37:27 | INFO    | [задача 1/5] 'deblur' — картинок: 10
+22:39:27 | INFO    |    img 1/10 crop_ (1).jpg          | seed=4015321972 | 120.1s | VRAM 22505 MB | файлов: 1
+22:41:27 | INFO    |    img 2/10 crop_ (10).jpg         | seed=1723911048 | 119.9s | VRAM 22505 MB | файлов: 1
+22:43:27 | INFO    |    img 3/10 crop_ (2).jpg          | seed=842009924 | 119.9s | VRAM 22505 MB | файлов: 1
+22:45:26 | INFO    |    img 4/10 crop_ (3).jpg          | seed=2694215455 | 119.1s | VRAM 22505 MB | файлов: 1
+22:47:26 | INFO    |    img 5/10 crop_ (4).jpg          | seed=1988463852 | 119.4s | VRAM 22505 MB | файлов: 1
+22:49:26 | INFO    |    img 6/10 crop_ (5).jpg          | seed=2292823072 | 120.2s | VRAM 22505 MB | файлов: 1
+22:51:25 | INFO    |    img 7/10 crop_ (6).jpg          | seed=3946146563 | 119.2s | VRAM 22505 MB | файлов: 1
+22:53:25 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3598447698 | 119.4s | VRAM 22505 MB | файлов: 1
+22:55:24 | INFO    |    img 9/10 crop_ (8).jpg          | seed=2076082836 | 119.4s | VRAM 22505 MB | файлов: 1
+22:57:24 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2235447311 | 119.2s | VRAM 22505 MB | файлов: 1
+22:57:26 | INFO    |    табличка-сравнение: output/6/qwen-image-edit-2511/_compare/deblur.png
+22:57:26 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 119.6s | VRAM 22505 MB | картинок: 10
+22:57:26 | INFO    | [задача 2/5] 'relight_day' — картинок: 10
+22:59:25 | INFO    |    img 1/10 crop_ (1).jpg          | seed=531463803 | 119.0s | VRAM 22505 MB | файлов: 1
+23:01:24 | INFO    |    img 2/10 crop_ (10).jpg         | seed=346480383 | 119.7s | VRAM 22505 MB | файлов: 1
+23:03:24 | INFO    |    img 3/10 crop_ (2).jpg          | seed=169548931 | 119.9s | VRAM 22633 MB | файлов: 1
+23:05:24 | INFO    |    img 4/10 crop_ (3).jpg          | seed=1189767582 | 119.8s | VRAM 22505 MB | файлов: 1
+23:07:24 | INFO    |    img 5/10 crop_ (4).jpg          | seed=3723523325 | 120.2s | VRAM 22505 MB | файлов: 1
+23:09:24 | INFO    |    img 6/10 crop_ (5).jpg          | seed=3960674031 | 119.4s | VRAM 22505 MB | файлов: 1
+23:11:23 | INFO    |    img 7/10 crop_ (6).jpg          | seed=659325228 | 119.4s | VRAM 22505 MB | файлов: 1
+23:13:23 | INFO    |    img 8/10 crop_ (7).jpg          | seed=1908135796 | 119.7s | VRAM 22505 MB | файлов: 1
+23:15:22 | INFO    |    img 9/10 crop_ (8).jpg          | seed=656049299 | 118.8s | VRAM 22505 MB | файлов: 1
+23:17:20 | INFO    |    img 10/10 crop_ (9).JPG          | seed=3674071256 | 118.7s | VRAM 22505 MB | файлов: 1
+23:17:22 | INFO    |    табличка-сравнение: output/6/qwen-image-edit-2511/_compare/relight_day.png
+23:17:22 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 119.5s | VRAM 22518 MB | картинок: 10
+23:17:22 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 10
+23:19:21 | INFO    |    img 1/10 crop_ (1).jpg          | seed=2755711835 | 119.0s | VRAM 22505 MB | файлов: 1
+23:21:21 | INFO    |    img 2/10 crop_ (10).jpg         | seed=974309499 | 119.8s | VRAM 22505 MB | файлов: 1
+23:23:21 | INFO    |    img 3/10 crop_ (2).jpg          | seed=1868608100 | 119.6s | VRAM 22505 MB | файлов: 1
+23:25:20 | INFO    |    img 4/10 crop_ (3).jpg          | seed=2215818437 | 119.4s | VRAM 22505 MB | файлов: 1
+23:27:20 | INFO    |    img 5/10 crop_ (4).jpg          | seed=3637185529 | 119.4s | VRAM 22505 MB | файлов: 1
+23:29:19 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1446957382 | 119.2s | VRAM 22505 MB | файлов: 1
+23:31:19 | INFO    |    img 7/10 crop_ (6).jpg          | seed=278729603 | 119.7s | VRAM 22505 MB | файлов: 1
+23:33:18 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3829829478 | 119.1s | VRAM 22505 MB | файлов: 1
+23:35:16 | INFO    |    img 9/10 crop_ (8).jpg          | seed=2958371265 | 118.6s | VRAM 22505 MB | файлов: 1
+23:37:15 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2998815211 | 118.1s | VRAM 22505 MB | файлов: 1
+23:37:16 | INFO    |    табличка-сравнение: output/6/qwen-image-edit-2511/_compare/object_insert_fire.png
+23:37:16 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 119.2s | VRAM 22505 MB | картинок: 10
+23:37:16 | INFO    | [задача 4/5] 'normalize' — картинок: 10
+23:39:15 | INFO    |    img 1/10 crop_ (1).jpg          | seed=3135118993 | 118.1s | VRAM 22505 MB | файлов: 1
+23:41:13 | INFO    |    img 2/10 crop_ (10).jpg         | seed=3858332514 | 119.0s | VRAM 22505 MB | файлов: 1
+23:43:13 | INFO    |    img 3/10 crop_ (2).jpg          | seed=1162833888 | 118.9s | VRAM 22505 MB | файлов: 1
+23:45:12 | INFO    |    img 4/10 crop_ (3).jpg          | seed=3466565865 | 119.4s | VRAM 22505 MB | файлов: 1
+23:47:12 | INFO    |    img 5/10 crop_ (4).jpg          | seed=1921090534 | 119.5s | VRAM 22505 MB | файлов: 1
+23:49:11 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1728832647 | 119.4s | VRAM 22505 MB | файлов: 1
+23:51:11 | INFO    |    img 7/10 crop_ (6).jpg          | seed=205828884 | 119.4s | VRAM 22505 MB | файлов: 1
+23:53:10 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3081526176 | 119.4s | VRAM 22505 MB | файлов: 1
+23:55:09 | INFO    |    img 9/10 crop_ (8).jpg          | seed=1599700005 | 118.6s | VRAM 22505 MB | файлов: 1
+23:57:08 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2272734098 | 119.0s | VRAM 22505 MB | файлов: 1
+23:57:09 | INFO    |    табличка-сравнение: output/6/qwen-image-edit-2511/_compare/normalize.png
+23:57:09 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 119.1s | VRAM 22505 MB | картинок: 10
+23:57:09 | INFO    | [задача 5/5] 'change_clothing' — картинок: 10
+23:59:09 | INFO    |    img 1/10 crop_ (1).jpg          | seed=2389298476 | 119.5s | VRAM 22505 MB | файлов: 1
+00:01:09 | INFO    |    img 2/10 crop_ (10).jpg         | seed=3518946737 | 119.7s | VRAM 22505 MB | файлов: 1
+00:03:08 | INFO    |    img 3/10 crop_ (2).jpg          | seed=848718550 | 119.3s | VRAM 22505 MB | файлов: 1
+00:05:08 | INFO    |    img 4/10 crop_ (3).jpg          | seed=1813591123 | 119.6s | VRAM 22505 MB | файлов: 1
+00:07:07 | INFO    |    img 5/10 crop_ (4).jpg          | seed=315710103 | 119.3s | VRAM 22505 MB | файлов: 1
+00:09:07 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1207072604 | 119.2s | VRAM 22505 MB | файлов: 1
+00:11:06 | INFO    |    img 7/10 crop_ (6).jpg          | seed=2762502918 | 119.5s | VRAM 22505 MB | файлов: 1
+00:13:05 | INFO    |    img 8/10 crop_ (7).jpg          | seed=1404215087 | 119.2s | VRAM 22505 MB | файлов: 1
+00:15:05 | INFO    |    img 9/10 crop_ (8).jpg          | seed=3221057219 | 119.3s | VRAM 22505 MB | файлов: 1
+00:17:04 | INFO    |    img 10/10 crop_ (9).jpg          | seed=689394274 | 119.1s | VRAM 22505 MB | файлов: 1
+00:17:06 | INFO    |    табличка-сравнение: output/6/qwen-image-edit-2511/_compare/change_clothing.png
+00:17:06 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 119.4s | VRAM 22505 MB | картинок: 10
+00:17:06 | INFO    | === qwen-image-edit-2511 ГОТОВО за 5979s | результаты: output/6/qwen-image-edit-2511/results.json ===
+00:17:06 | INFO    | === МОДЕЛЬ: firered-image-edit-1.1 ===
+00:17:06 | INFO    | воркфлоу: workflows/image_firered_image_edit1_1.json | задач: 5 | edit-режим: True
+00:17:06 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+00:20:10 | INFO    | прогрев готов (184s)
+00:20:10 | INFO    | [задача 1/5] 'deblur' — картинок: 10
+00:22:09 | INFO    |    img 1/10 crop_ (1).jpg          | seed=4015321972 | 119.4s | VRAM 22375 MB | файлов: 1
+00:23:25 | ERROR   | МОДЕЛЬ firered-image-edit-1.1 УПАЛА — пропускаю, иду дальше
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 500, in request
+    self.endheaders()
+  File "/usr/lib/python3.12/http/client.py", line 1351, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1111, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.12/http/client.py", line 1055, in send
+    self.connect()
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=8188): Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8188): Max retries exceeded with url: /system_stats (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8188): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/script.py", line 362, in <module>
+    process_model(model, run_dir)
+  File "/home/ubuntu/ImModelTest/script.py", line 312, in process_model
+    metrics, outputs = run_and_save(prompt_id, out_dir / task_name, stem)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/script.py", line 167, in run_and_save
+    device = get_vram()
+             ^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/script.py", line 132, in get_vram
+    return requests.get(f"http://{server_address}/system_stats").json()["devices"][0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8188): Max retries exceeded with url: /system_stats (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8188): Failed to establish a new connection: [Errno 111] Connection refused"))
+00:23:25 | INFO    | === МОДЕЛЬ: flux2-klein-9b ===
+00:23:25 | INFO    | воркфлоу: workflows/image_flux2_klein_image_edit_9b_base.json | задач: 5 | edit-режим: True
+00:23:25 | ERROR   | МОДЕЛЬ flux2-klein-9b УПАЛА — пропускаю, иду дальше
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 500, in request
+    self.endheaders()
+  File "/usr/lib/python3.12/http/client.py", line 1351, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1111, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.12/http/client.py", line 1055, in send
+    self.connect()
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=8188): Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8188): Max retries exceeded with url: /upload/image (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8188): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/script.py", line 362, in <module>
+    process_model(model, run_dir)
+  File "/home/ubuntu/ImModelTest/script.py", line 287, in process_model
+    warm_img = upload_image(sample)
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/script.py", line 140, in upload_image
+    resp = requests.post(f"http://{server_address}/upload/image", files=files, data=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8188): Max retries exceeded with url: /upload/image (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8188): Failed to establish a new connection: [Errno 111] Connection refused"))
+00:23:25 | INFO    | === МОДЕЛЬ: flux2-dev ===
+00:23:25 | INFO    | воркфлоу: workflows/image_flux2.json | задач: 5 | edit-режим: True
+00:23:25 | ERROR   | МОДЕЛЬ flux2-dev УПАЛА — пропускаю, иду дальше
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 500, in request
+    self.endheaders()
+  File "/usr/lib/python3.12/http/client.py", line 1351, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1111, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.12/http/client.py", line 1055, in send
+    self.connect()
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=8188): Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8188): Max retries exceeded with url: /upload/image (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8188): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/script.py", line 362, in <module>
+    process_model(model, run_dir)
+  File "/home/ubuntu/ImModelTest/script.py", line 287, in process_model
+    warm_img = upload_image(sample)
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/script.py", line 140, in upload_image
+    resp = requests.post(f"http://{server_address}/upload/image", files=files, data=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8188): Max retries exceeded with url: /upload/image (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8188): Failed to establish a new connection: [Errno 111] Connection refused"))
+00:23:25 | INFO    | === МОДЕЛЬ: longcat-image-edit ===
+00:23:25 | INFO    | воркфлоу: workflows/image_longcat_image_edit.json | задач: 5 | edit-режим: True
+00:23:25 | ERROR   | МОДЕЛЬ longcat-image-edit УПАЛА — пропускаю, иду дальше
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 500, in request
+    self.endheaders()
+  File "/usr/lib/python3.12/http/client.py", line 1351, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1111, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.12/http/client.py", line 1055, in send
+    self.connect()
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=8188): Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8188): Max retries exceeded with url: /upload/image (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8188): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/ImModelTest/script.py", line 362, in <module>
+    process_model(model, run_dir)
+  File "/home/ubuntu/ImModelTest/script.py", line 287, in process_model
+    warm_img = upload_image(sample)
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/script.py", line 140, in upload_image
+    resp = requests.post(f"http://{server_address}/upload/image", files=files, data=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ImModelTest/venv/lib/python3.12/site-packages/requests/adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8188): Max retries exceeded with url: /upload/image (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8188): Failed to establish a new connection: [Errno 111] Connection refused"))
+00:23:25 | INFO    | ВСЁ. Прогон #6 за 6358s | успешно: ['qwen-image-edit-2511'] | упало: ['firered-image-edit-1.1', 'flux2-klein-9b', 'flux2-dev', 'longcat-image-edit']
+09:31:15 | INFO    | СТАРТ прогона #6 -> output/6. Модели (5): qwen-image-edit-2511, firered-image-edit-1.1, flux2-klein-9b, flux2-dev, longcat-image-edit
+09:31:15 | INFO    | === МОДЕЛЬ: qwen-image-edit-2511 ===
+09:31:15 | INFO    | воркфлоу: workflows/image_qwen_image_edit_2511.json | задач: 5 | edit-режим: True
+09:31:15 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+09:37:33 | INFO    | прогрев готов (378s)
+09:37:33 | INFO    | [задача 1/5] 'deblur' — картинок: 10
+09:41:16 | INFO    |    img 1/10 crop_ (1).jpg          | seed=4015321972 | 223.3s | VRAM 22473 MB | файлов: 1
+09:45:00 | INFO    |    img 2/10 crop_ (10).jpg         | seed=1723911048 | 223.4s | VRAM 22569 MB | файлов: 1
+13:12:04 | INFO    | СТАРТ прогона #6 -> output/6. Модели (5): qwen-image-edit-2511, firered-image-edit-1.1, flux2-klein-9b, flux2-dev, longcat-image-edit
+13:12:04 | INFO    | === МОДЕЛЬ: qwen-image-edit-2511 ===
+13:12:04 | INFO    | воркфлоу: workflows/image_qwen_image_edit_2511.json | задач: 5 | edit-режим: True
+13:12:04 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+13:15:27 | INFO    | прогрев готов (203s)
+13:15:27 | INFO    | [задача 1/5] 'deblur' — картинок: 10
+13:17:32 | INFO    |    img 1/10 crop_ (1).jpg          | seed=4015321972 | 124.9s | VRAM 22381 MB | файлов: 1
+13:19:32 | INFO    |    img 2/10 crop_ (10).jpg         | seed=1723911048 | 120.0s | VRAM 22505 MB | файлов: 1
+13:21:31 | INFO    |    img 3/10 crop_ (2).jpg          | seed=842009924 | 118.8s | VRAM 22505 MB | файлов: 1
+13:23:32 | INFO    |    img 4/10 crop_ (3).jpg          | seed=2694215455 | 121.4s | VRAM 22505 MB | файлов: 1
+13:25:32 | INFO    |    img 5/10 crop_ (4).jpg          | seed=1988463852 | 120.2s | VRAM 22505 MB | файлов: 1
+13:27:33 | INFO    |    img 6/10 crop_ (5).jpg          | seed=2292823072 | 120.9s | VRAM 22505 MB | файлов: 1
+13:29:36 | INFO    |    img 7/10 crop_ (6).jpg          | seed=3946146563 | 122.2s | VRAM 22505 MB | файлов: 1
+13:31:37 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3598447698 | 121.5s | VRAM 22505 MB | файлов: 1
+13:33:36 | INFO    |    img 9/10 crop_ (8).jpg          | seed=2076082836 | 118.5s | VRAM 22505 MB | файлов: 1
+13:35:37 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2235447311 | 121.5s | VRAM 22505 MB | файлов: 1
+13:35:40 | INFO    |    табличка-сравнение: output/6/qwen-image-edit-2511/_compare/deblur.png
+13:35:40 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 121.0s | VRAM 22492 MB | картинок: 10
+13:35:40 | INFO    | [задача 2/5] 'relight_day' — картинок: 10
+13:37:40 | INFO    |    img 1/10 crop_ (1).jpg          | seed=531463803 | 120.7s | VRAM 22505 MB | файлов: 1
+13:39:42 | INFO    |    img 2/10 crop_ (10).jpg         | seed=346480383 | 121.1s | VRAM 22505 MB | файлов: 1
+13:41:43 | INFO    |    img 3/10 crop_ (2).jpg          | seed=169548931 | 121.9s | VRAM 22513 MB | файлов: 1
+13:43:45 | INFO    |    img 4/10 crop_ (3).jpg          | seed=1189767582 | 122.0s | VRAM 22505 MB | файлов: 1
+13:45:44 | INFO    |    img 5/10 crop_ (4).jpg          | seed=3723523325 | 118.3s | VRAM 22505 MB | файлов: 1
+13:47:43 | INFO    |    img 6/10 crop_ (5).jpg          | seed=3960674031 | 119.3s | VRAM 22505 MB | файлов: 1
+13:49:43 | INFO    |    img 7/10 crop_ (6).jpg          | seed=659325228 | 119.4s | VRAM 22505 MB | файлов: 1
+13:51:43 | INFO    |    img 8/10 crop_ (7).jpg          | seed=1908135796 | 120.4s | VRAM 22505 MB | файлов: 1
+13:53:44 | INFO    |    img 9/10 crop_ (8).jpg          | seed=656049299 | 120.9s | VRAM 22505 MB | файлов: 1
+13:55:46 | INFO    |    img 10/10 crop_ (9).JPG          | seed=3674071256 | 121.6s | VRAM 22505 MB | файлов: 1
+13:55:47 | INFO    |    табличка-сравнение: output/6/qwen-image-edit-2511/_compare/relight_day.png
+13:55:47 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 120.6s | VRAM 22506 MB | картинок: 10
+13:55:47 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 10
+13:57:48 | INFO    |    img 1/10 crop_ (1).jpg          | seed=2755711835 | 121.1s | VRAM 22505 MB | файлов: 1
+13:59:47 | INFO    |    img 2/10 crop_ (10).jpg         | seed=974309499 | 119.1s | VRAM 22505 MB | файлов: 1
+14:01:47 | INFO    |    img 3/10 crop_ (2).jpg          | seed=1868608100 | 120.0s | VRAM 22505 MB | файлов: 1
+14:03:48 | INFO    |    img 4/10 crop_ (3).jpg          | seed=2215818437 | 120.3s | VRAM 22505 MB | файлов: 1
+14:05:48 | INFO    |    img 5/10 crop_ (4).jpg          | seed=3637185529 | 120.2s | VRAM 22505 MB | файлов: 1
+14:07:49 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1446957382 | 121.3s | VRAM 22510 MB | файлов: 1
+14:09:50 | INFO    |    img 7/10 crop_ (6).jpg          | seed=278729603 | 120.5s | VRAM 22505 MB | файлов: 1
+14:11:49 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3829829478 | 119.3s | VRAM 22645 MB | файлов: 1
+14:13:48 | INFO    |    img 9/10 crop_ (8).jpg          | seed=2958371265 | 119.0s | VRAM 22505 MB | файлов: 1
+14:15:48 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2998815211 | 119.4s | VRAM 22505 MB | файлов: 1
+14:15:50 | INFO    |    табличка-сравнение: output/6/qwen-image-edit-2511/_compare/object_insert_fire.png
+14:15:50 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 120.0s | VRAM 22519 MB | картинок: 10
+14:15:50 | INFO    | [задача 4/5] 'normalize' — картинок: 10
+14:17:51 | INFO    |    img 1/10 crop_ (1).jpg          | seed=3135118993 | 121.8s | VRAM 22505 MB | файлов: 1
+14:19:53 | INFO    |    img 2/10 crop_ (10).jpg         | seed=3858332514 | 121.8s | VRAM 22505 MB | файлов: 1
+14:21:55 | INFO    |    img 3/10 crop_ (2).jpg          | seed=1162833888 | 121.9s | VRAM 22505 MB | файлов: 1
+14:23:57 | INFO    |    img 4/10 crop_ (3).jpg          | seed=3466565865 | 121.8s | VRAM 22505 MB | файлов: 1
+14:25:56 | INFO    |    img 5/10 crop_ (4).jpg          | seed=1921090534 | 118.8s | VRAM 22505 MB | файлов: 1
+14:27:54 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1728832647 | 118.7s | VRAM 22737 MB | файлов: 1
+14:29:52 | INFO    |    img 7/10 crop_ (6).jpg          | seed=205828884 | 117.1s | VRAM 22505 MB | файлов: 1
+14:31:51 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3081526176 | 119.8s | VRAM 22505 MB | файлов: 1
+14:33:50 | INFO    |    img 9/10 crop_ (8).jpg          | seed=1599700005 | 118.2s | VRAM 22505 MB | файлов: 1
+14:35:47 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2272734098 | 117.6s | VRAM 22505 MB | файлов: 1
+14:35:49 | INFO    |    табличка-сравнение: output/6/qwen-image-edit-2511/_compare/normalize.png
+14:35:49 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 119.7s | VRAM 22528 MB | картинок: 10
+14:35:49 | INFO    | [задача 5/5] 'change_clothing' — картинок: 10
+14:37:48 | INFO    |    img 1/10 crop_ (1).jpg          | seed=2389298476 | 118.4s | VRAM 22505 MB | файлов: 1
+14:39:46 | INFO    |    img 2/10 crop_ (10).jpg         | seed=3518946737 | 118.2s | VRAM 22505 MB | файлов: 1
+14:41:43 | INFO    |    img 3/10 crop_ (2).jpg          | seed=848718550 | 117.1s | VRAM 22513 MB | файлов: 1
+14:43:42 | INFO    |    img 4/10 crop_ (3).jpg          | seed=1813591123 | 118.8s | VRAM 22505 MB | файлов: 1
+14:45:41 | INFO    |    img 5/10 crop_ (4).jpg          | seed=315710103 | 119.8s | VRAM 22505 MB | файлов: 1
+14:47:41 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1207072604 | 119.1s | VRAM 22505 MB | файлов: 1
+14:49:40 | INFO    |    img 7/10 crop_ (6).jpg          | seed=2762502918 | 118.9s | VRAM 22505 MB | файлов: 1
+14:51:40 | INFO    |    img 8/10 crop_ (7).jpg          | seed=1404215087 | 120.9s | VRAM 22801 MB | файлов: 1
+14:53:41 | INFO    |    img 9/10 crop_ (8).jpg          | seed=3221057219 | 120.3s | VRAM 22505 MB | файлов: 1
+14:55:41 | INFO    |    img 10/10 crop_ (9).jpg          | seed=689394274 | 120.2s | VRAM 22505 MB | файлов: 1
+14:55:43 | INFO    |    табличка-сравнение: output/6/qwen-image-edit-2511/_compare/change_clothing.png
+14:55:43 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 119.2s | VRAM 22535 MB | картинок: 10
+14:55:43 | INFO    | === qwen-image-edit-2511 ГОТОВО за 6219s | результаты: output/6/qwen-image-edit-2511/results.json ===
+14:55:43 | INFO    | === МОДЕЛЬ: firered-image-edit-1.1 ===
+14:55:43 | INFO    | воркфлоу: workflows/image_firered_image_edit1_1.json | задач: 5 | edit-режим: True
+14:55:43 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+14:59:44 | INFO    | прогрев готов (241s)
+14:59:44 | INFO    | [задача 1/5] 'deblur' — картинок: 10
+15:01:47 | INFO    |    img 1/10 crop_ (1).jpg          | seed=4015321972 | 123.0s | VRAM 22381 MB | файлов: 1
+15:03:46 | INFO    |    img 2/10 crop_ (10).jpg         | seed=1723911048 | 118.8s | VRAM 22508 MB | файлов: 1
+15:05:43 | INFO    |    img 3/10 crop_ (2).jpg          | seed=842009924 | 117.4s | VRAM 22514 MB | файлов: 1
+15:07:43 | INFO    |    img 4/10 crop_ (3).jpg          | seed=2694215455 | 119.5s | VRAM 22508 MB | файлов: 1
+15:09:42 | INFO    |    img 5/10 crop_ (4).jpg          | seed=1988463852 | 119.4s | VRAM 22512 MB | файлов: 1
+15:11:41 | INFO    |    img 6/10 crop_ (5).jpg          | seed=2292823072 | 118.5s | VRAM 22508 MB | файлов: 1
+15:13:40 | INFO    |    img 7/10 crop_ (6).jpg          | seed=3946146563 | 119.0s | VRAM 22508 MB | файлов: 1
+15:15:41 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3598447698 | 121.2s | VRAM 22508 MB | файлов: 1
+15:17:39 | INFO    |    img 9/10 crop_ (8).jpg          | seed=2076082836 | 118.6s | VRAM 22508 MB | файлов: 1
+15:19:36 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2235447311 | 116.5s | VRAM 22508 MB | файлов: 1
+15:19:38 | INFO    |    табличка-сравнение: output/6/firered-image-edit-1.1/_compare/deblur.png
+15:19:38 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 119.2s | VRAM 22497 MB | картинок: 10
+15:19:38 | INFO    | [задача 2/5] 'relight_day' — картинок: 10
+15:21:37 | INFO    |    img 1/10 crop_ (1).jpg          | seed=531463803 | 118.8s | VRAM 22508 MB | файлов: 1
+15:23:35 | INFO    |    img 2/10 crop_ (10).jpg         | seed=346480383 | 117.7s | VRAM 22508 MB | файлов: 1
+15:25:33 | INFO    |    img 3/10 crop_ (2).jpg          | seed=169548931 | 118.9s | VRAM 22508 MB | файлов: 1
+15:27:30 | INFO    |    img 4/10 crop_ (3).jpg          | seed=1189767582 | 116.4s | VRAM 22508 MB | файлов: 1
+15:29:28 | INFO    |    img 5/10 crop_ (4).jpg          | seed=3723523325 | 117.6s | VRAM 22508 MB | файлов: 1
+15:31:24 | INFO    |    img 6/10 crop_ (5).jpg          | seed=3960674031 | 116.1s | VRAM 22508 MB | файлов: 1
+15:33:19 | INFO    |    img 7/10 crop_ (6).jpg          | seed=659325228 | 115.7s | VRAM 22546 MB | файлов: 1
+15:35:15 | INFO    |    img 8/10 crop_ (7).jpg          | seed=1908135796 | 115.7s | VRAM 22508 MB | файлов: 1
+15:37:11 | INFO    |    img 9/10 crop_ (8).jpg          | seed=656049299 | 116.3s | VRAM 22508 MB | файлов: 1
+15:39:08 | INFO    |    img 10/10 crop_ (9).JPG          | seed=3674071256 | 116.5s | VRAM 22508 MB | файлов: 1
+15:39:10 | INFO    |    табличка-сравнение: output/6/firered-image-edit-1.1/_compare/relight_day.png
+15:39:10 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 117.0s | VRAM 22512 MB | картинок: 10
+15:39:10 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 10
+15:41:08 | INFO    |    img 1/10 crop_ (1).jpg          | seed=2755711835 | 117.9s | VRAM 22508 MB | файлов: 1
+15:43:06 | INFO    |    img 2/10 crop_ (10).jpg         | seed=974309499 | 118.5s | VRAM 22508 MB | файлов: 1
+15:45:05 | INFO    |    img 3/10 crop_ (2).jpg          | seed=1868608100 | 119.0s | VRAM 22508 MB | файлов: 1
+15:47:05 | INFO    |    img 4/10 crop_ (3).jpg          | seed=2215818437 | 120.2s | VRAM 22508 MB | файлов: 1
+15:49:05 | INFO    |    img 5/10 crop_ (4).jpg          | seed=3637185529 | 119.7s | VRAM 22508 MB | файлов: 1
+15:51:05 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1446957382 | 119.7s | VRAM 22508 MB | файлов: 1
+15:53:03 | INFO    |    img 7/10 crop_ (6).jpg          | seed=278729603 | 118.6s | VRAM 22508 MB | файлов: 1
+15:55:01 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3829829478 | 118.0s | VRAM 22508 MB | файлов: 1
+15:57:00 | INFO    |    img 9/10 crop_ (8).jpg          | seed=2958371265 | 118.4s | VRAM 22508 MB | файлов: 1
+15:59:00 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2998815211 | 119.7s | VRAM 22529 MB | файлов: 1
+15:59:02 | INFO    |    табличка-сравнение: output/6/firered-image-edit-1.1/_compare/object_insert_fire.png
+15:59:02 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 119.0s | VRAM 22510 MB | картинок: 10
+15:59:02 | INFO    | [задача 4/5] 'normalize' — картинок: 10
+16:01:00 | INFO    |    img 1/10 crop_ (1).jpg          | seed=3135118993 | 118.5s | VRAM 22508 MB | файлов: 1
+16:03:00 | INFO    |    img 2/10 crop_ (10).jpg         | seed=3858332514 | 119.9s | VRAM 22546 MB | файлов: 1
+16:04:57 | INFO    |    img 3/10 crop_ (2).jpg          | seed=1162833888 | 116.9s | VRAM 22508 MB | файлов: 1
+16:06:56 | INFO    |    img 4/10 crop_ (3).jpg          | seed=3466565865 | 119.2s | VRAM 22546 MB | файлов: 1
+16:08:55 | INFO    |    img 5/10 crop_ (4).jpg          | seed=1921090534 | 118.5s | VRAM 22508 MB | файлов: 1
+16:10:53 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1728832647 | 117.9s | VRAM 22508 MB | файлов: 1
+16:12:49 | INFO    |    img 7/10 crop_ (6).jpg          | seed=205828884 | 116.2s | VRAM 22508 MB | файлов: 1
+16:14:47 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3081526176 | 118.3s | VRAM 22508 MB | файлов: 1
+16:16:43 | INFO    |    img 9/10 crop_ (8).jpg          | seed=1599700005 | 115.9s | VRAM 22508 MB | файлов: 1
+16:18:40 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2272734098 | 116.7s | VRAM 22514 MB | файлов: 1
+16:18:41 | INFO    |    табличка-сравнение: output/6/firered-image-edit-1.1/_compare/normalize.png
+16:18:41 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 117.8s | VRAM 22516 MB | картинок: 10
+16:18:41 | INFO    | [задача 5/5] 'change_clothing' — картинок: 10
+16:20:39 | INFO    |    img 1/10 crop_ (1).jpg          | seed=2389298476 | 117.8s | VRAM 22508 MB | файлов: 1
+16:22:36 | INFO    |    img 2/10 crop_ (10).jpg         | seed=3518946737 | 116.8s | VRAM 22809 MB | файлов: 1
+16:24:33 | INFO    |    img 3/10 crop_ (2).jpg          | seed=848718550 | 117.4s | VRAM 22508 MB | файлов: 1
+16:26:30 | INFO    |    img 4/10 crop_ (3).jpg          | seed=1813591123 | 116.8s | VRAM 22809 MB | файлов: 1
+16:28:27 | INFO    |    img 5/10 crop_ (4).jpg          | seed=315710103 | 116.9s | VRAM 22508 MB | файлов: 1
+16:30:25 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1207072604 | 117.2s | VRAM 22546 MB | файлов: 1
+16:32:21 | INFO    |    img 7/10 crop_ (6).jpg          | seed=2762502918 | 116.2s | VRAM 22508 MB | файлов: 1
+16:34:19 | INFO    |    img 8/10 crop_ (7).jpg          | seed=1404215087 | 118.4s | VRAM 22508 MB | файлов: 1
+16:36:17 | INFO    |    img 9/10 crop_ (8).jpg          | seed=3221057219 | 117.3s | VRAM 22508 MB | файлов: 1
+16:38:13 | INFO    |    img 10/10 crop_ (9).jpg          | seed=689394274 | 116.4s | VRAM 22508 MB | файлов: 1
+16:38:15 | INFO    |    табличка-сравнение: output/6/firered-image-edit-1.1/_compare/change_clothing.png
+16:38:15 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 117.1s | VRAM 22572 MB | картинок: 10
+16:38:15 | INFO    | === firered-image-edit-1.1 ГОТОВО за 6152s | результаты: output/6/firered-image-edit-1.1/results.json ===
+16:38:15 | INFO    | === МОДЕЛЬ: flux2-klein-9b ===
+16:38:15 | INFO    | воркфлоу: workflows/image_flux2_klein_image_edit_9b_base.json | задач: 5 | edit-режим: True
+16:38:15 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+16:41:14 | INFO    | прогрев готов (180s)
+16:41:14 | INFO    | [задача 1/5] 'deblur' — картинок: 10
+16:41:48 | INFO    |    img 1/10 crop_ (1).jpg          | seed=4015321972 | 33.4s | VRAM 17382 MB | файлов: 1
+16:42:21 | INFO    |    img 2/10 crop_ (10).jpg         | seed=1723911048 | 33.3s | VRAM 17042 MB | файлов: 1
+16:42:54 | INFO    |    img 3/10 crop_ (2).jpg          | seed=842009924 | 33.4s | VRAM 17315 MB | файлов: 1
+16:43:28 | INFO    |    img 4/10 crop_ (3).jpg          | seed=2694215455 | 33.4s | VRAM 17314 MB | файлов: 1
+16:44:01 | INFO    |    img 5/10 crop_ (4).jpg          | seed=1988463852 | 33.4s | VRAM 17382 MB | файлов: 1
+16:44:35 | INFO    |    img 6/10 crop_ (5).jpg          | seed=2292823072 | 33.4s | VRAM 17314 MB | файлов: 1
+16:45:08 | INFO    |    img 7/10 crop_ (6).jpg          | seed=3946146563 | 33.5s | VRAM 17314 MB | файлов: 1
+16:45:42 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3598447698 | 33.5s | VRAM 17330 MB | файлов: 1
+16:46:15 | INFO    |    img 9/10 crop_ (8).jpg          | seed=2076082836 | 33.4s | VRAM 17450 MB | файлов: 1
+16:46:48 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2235447311 | 33.5s | VRAM 17450 MB | файлов: 1
+16:46:50 | INFO    |    табличка-сравнение: output/6/flux2-klein-9b/_compare/deblur.png
+16:46:50 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 33.4s | VRAM 17329 MB | картинок: 10
+16:46:50 | INFO    | [задача 2/5] 'relight_day' — картинок: 10
+16:47:28 | INFO    |    img 1/10 crop_ (1).jpg          | seed=531463803 | 37.3s | VRAM 18531 MB | файлов: 1
+16:48:01 | INFO    |    img 2/10 crop_ (10).jpg         | seed=346480383 | 33.4s | VRAM 18406 MB | файлов: 1
+16:48:34 | INFO    |    img 3/10 crop_ (2).jpg          | seed=169548931 | 33.4s | VRAM 18406 MB | файлов: 1
+16:49:08 | INFO    |    img 4/10 crop_ (3).jpg          | seed=1189767582 | 33.4s | VRAM 18338 MB | файлов: 1
+16:49:41 | INFO    |    img 5/10 crop_ (4).jpg          | seed=3723523325 | 33.4s | VRAM 18339 MB | файлов: 1
+16:50:15 | INFO    |    img 6/10 crop_ (5).jpg          | seed=3960674031 | 33.4s | VRAM 18354 MB | файлов: 1
+16:50:48 | INFO    |    img 7/10 crop_ (6).jpg          | seed=659325228 | 33.4s | VRAM 18270 MB | файлов: 1
+16:51:22 | INFO    |    img 8/10 crop_ (7).jpg          | seed=1908135796 | 33.4s | VRAM 18338 MB | файлов: 1
+16:51:55 | INFO    |    img 9/10 crop_ (8).jpg          | seed=656049299 | 33.4s | VRAM 18406 MB | файлов: 1
+16:52:28 | INFO    |    img 10/10 crop_ (9).JPG          | seed=3674071256 | 33.3s | VRAM 18270 MB | файлов: 1
+16:52:30 | INFO    |    табличка-сравнение: output/6/flux2-klein-9b/_compare/relight_day.png
+16:52:30 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 33.8s | VRAM 18366 MB | картинок: 10
+16:52:30 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 10
+16:53:04 | INFO    |    img 1/10 crop_ (1).jpg          | seed=2755711835 | 34.3s | VRAM 18525 MB | файлов: 1
+16:53:38 | INFO    |    img 2/10 crop_ (10).jpg         | seed=974309499 | 33.5s | VRAM 18474 MB | файлов: 1
+16:54:11 | INFO    |    img 3/10 crop_ (2).jpg          | seed=1868608100 | 33.3s | VRAM 18406 MB | файлов: 1
+16:54:44 | INFO    |    img 4/10 crop_ (3).jpg          | seed=2215818437 | 33.3s | VRAM 18270 MB | файлов: 1
+16:55:18 | INFO    |    img 5/10 crop_ (4).jpg          | seed=3637185529 | 33.3s | VRAM 18270 MB | файлов: 1
+16:55:51 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1446957382 | 33.4s | VRAM 18202 MB | файлов: 1
+16:56:25 | INFO    |    img 7/10 crop_ (6).jpg          | seed=278729603 | 33.4s | VRAM 18354 MB | файлов: 1
+16:56:58 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3829829478 | 33.3s | VRAM 18338 MB | файлов: 1
+16:57:32 | INFO    |    img 9/10 crop_ (8).jpg          | seed=2958371265 | 33.3s | VRAM 18406 MB | файлов: 1
+16:58:05 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2998815211 | 33.3s | VRAM 18474 MB | файлов: 1
+16:58:07 | INFO    |    табличка-сравнение: output/6/flux2-klein-9b/_compare/object_insert_fire.png
+16:58:07 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 33.4s | VRAM 18372 MB | картинок: 10
+16:58:07 | INFO    | [задача 4/5] 'normalize' — картинок: 10
+16:58:41 | INFO    |    img 1/10 crop_ (1).jpg          | seed=3135118993 | 33.9s | VRAM 18496 MB | файлов: 1
+16:59:14 | INFO    |    img 2/10 crop_ (10).jpg         | seed=3858332514 | 33.3s | VRAM 18339 MB | файлов: 1
+16:59:47 | INFO    |    img 3/10 crop_ (2).jpg          | seed=1162833888 | 33.3s | VRAM 18126 MB | файлов: 1
+17:00:21 | INFO    |    img 4/10 crop_ (3).jpg          | seed=3466565865 | 33.4s | VRAM 18338 MB | файлов: 1
+17:00:54 | INFO    |    img 5/10 crop_ (4).jpg          | seed=1921090534 | 33.3s | VRAM 18474 MB | файлов: 1
+17:01:27 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1728832647 | 33.4s | VRAM 18406 MB | файлов: 1
+17:02:01 | INFO    |    img 7/10 crop_ (6).jpg          | seed=205828884 | 33.3s | VRAM 18339 MB | файлов: 1
+17:02:34 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3081526176 | 33.3s | VRAM 18406 MB | файлов: 1
+17:03:08 | INFO    |    img 9/10 crop_ (8).jpg          | seed=1599700005 | 33.4s | VRAM 18134 MB | файлов: 1
+17:03:41 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2272734098 | 33.3s | VRAM 18474 MB | файлов: 1
+17:03:43 | INFO    |    табличка-сравнение: output/6/flux2-klein-9b/_compare/normalize.png
+17:03:43 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 33.4s | VRAM 18353 MB | картинок: 10
+17:03:43 | INFO    | [задача 5/5] 'change_clothing' — картинок: 10
+17:04:16 | INFO    |    img 1/10 crop_ (1).jpg          | seed=2389298476 | 33.8s | VRAM 18559 MB | файлов: 1
+17:04:50 | INFO    |    img 2/10 crop_ (10).jpg         | seed=3518946737 | 33.4s | VRAM 18270 MB | файлов: 1
+17:05:23 | INFO    |    img 3/10 crop_ (2).jpg          | seed=848718550 | 33.4s | VRAM 18354 MB | файлов: 1
+17:05:57 | INFO    |    img 4/10 crop_ (3).jpg          | seed=1813591123 | 33.5s | VRAM 18406 MB | файлов: 1
+17:06:30 | INFO    |    img 5/10 crop_ (4).jpg          | seed=315710103 | 33.4s | VRAM 18270 MB | файлов: 1
+17:07:04 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1207072604 | 33.4s | VRAM 18354 MB | файлов: 1
+17:07:38 | INFO    |    img 7/10 crop_ (6).jpg          | seed=2762502918 | 33.7s | VRAM 18406 MB | файлов: 1
+17:08:11 | INFO    |    img 8/10 crop_ (7).jpg          | seed=1404215087 | 33.4s | VRAM 18474 MB | файлов: 1
+17:08:44 | INFO    |    img 9/10 crop_ (8).jpg          | seed=3221057219 | 33.3s | VRAM 18338 MB | файлов: 1
+17:09:18 | INFO    |    img 10/10 crop_ (9).jpg          | seed=689394274 | 33.3s | VRAM 18406 MB | файлов: 1
+17:09:20 | INFO    |    табличка-сравнение: output/6/flux2-klein-9b/_compare/change_clothing.png
+17:09:20 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 33.5s | VRAM 18384 MB | картинок: 10
+17:09:20 | INFO    | === flux2-klein-9b ГОТОВО за 1865s | результаты: output/6/flux2-klein-9b/results.json ===
+17:09:20 | INFO    | === МОДЕЛЬ: flux2-dev ===
+17:09:20 | INFO    | воркфлоу: workflows/image_flux2.json | задач: 5 | edit-режим: True
+17:09:20 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+17:17:25 | INFO    | прогрев готов (486s)
+17:17:25 | INFO    | [задача 1/5] 'deblur' — картинок: 10
+17:19:37 | INFO    |    img 1/10 crop_ (1).jpg          | seed=4015321972 | 131.9s | VRAM 20650 MB | файлов: 1
+17:21:49 | INFO    |    img 2/10 crop_ (10).jpg         | seed=1723911048 | 131.5s | VRAM 20535 MB | файлов: 1
+17:24:00 | INFO    |    img 3/10 crop_ (2).jpg          | seed=842009924 | 131.5s | VRAM 20650 MB | файлов: 1
+17:26:12 | INFO    |    img 4/10 crop_ (3).jpg          | seed=2694215455 | 131.5s | VRAM 20535 MB | файлов: 1
+17:28:23 | INFO    |    img 5/10 crop_ (4).jpg          | seed=1988463852 | 131.4s | VRAM 20650 MB | файлов: 1
+17:30:35 | INFO    |    img 6/10 crop_ (5).jpg          | seed=2292823072 | 131.7s | VRAM 20650 MB | файлов: 1
+17:32:47 | INFO    |    img 7/10 crop_ (6).jpg          | seed=3946146563 | 131.5s | VRAM 20397 MB | файлов: 1
+17:34:58 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3598447698 | 131.4s | VRAM 20650 MB | файлов: 1
+17:37:09 | INFO    |    img 9/10 crop_ (8).jpg          | seed=2076082836 | 131.3s | VRAM 20295 MB | файлов: 1
+17:39:20 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2235447311 | 131.0s | VRAM 20499 MB | файлов: 1
+17:39:22 | INFO    |    табличка-сравнение: output/6/flux2-dev/_compare/deblur.png
+17:39:22 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 131.5s | VRAM 20551 MB | картинок: 10
+17:39:22 | INFO    | [задача 2/5] 'relight_day' — картинок: 10
+17:42:13 | INFO    |    img 1/10 crop_ (1).jpg          | seed=531463803 | 170.6s | VRAM 20625 MB | файлов: 1
+17:44:24 | INFO    |    img 2/10 crop_ (10).jpg         | seed=346480383 | 131.4s | VRAM 20718 MB | файлов: 1
+17:46:36 | INFO    |    img 3/10 crop_ (2).jpg          | seed=169548931 | 131.7s | VRAM 20650 MB | файлов: 1
+17:48:47 | INFO    |    img 4/10 crop_ (3).jpg          | seed=1189767582 | 131.5s | VRAM 20650 MB | файлов: 1
+17:50:59 | INFO    |    img 5/10 crop_ (4).jpg          | seed=3723523325 | 131.5s | VRAM 20650 MB | файлов: 1
+17:53:10 | INFO    |    img 6/10 crop_ (5).jpg          | seed=3960674031 | 131.4s | VRAM 20430 MB | файлов: 1
+17:55:22 | INFO    |    img 7/10 crop_ (6).jpg          | seed=659325228 | 131.9s | VRAM 20650 MB | файлов: 1
+17:57:34 | INFO    |    img 8/10 crop_ (7).jpg          | seed=1908135796 | 131.5s | VRAM 21298 MB | файлов: 1
+17:59:45 | INFO    |    img 9/10 crop_ (8).jpg          | seed=656049299 | 131.5s | VRAM 20650 MB | файлов: 1
+18:01:57 | INFO    |    img 10/10 crop_ (9).JPG          | seed=3674071256 | 131.4s | VRAM 20718 MB | файлов: 1
+18:01:59 | INFO    |    табличка-сравнение: output/6/flux2-dev/_compare/relight_day.png
+18:01:59 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 135.4s | VRAM 20704 MB | картинок: 10
+18:01:59 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 10
+18:04:54 | INFO    |    img 1/10 crop_ (1).jpg          | seed=2755711835 | 175.5s | VRAM 20626 MB | файлов: 1
+18:07:06 | INFO    |    img 2/10 crop_ (10).jpg         | seed=974309499 | 131.4s | VRAM 20650 MB | файлов: 1
+18:09:18 | INFO    |    img 3/10 crop_ (2).jpg          | seed=1868608100 | 132.0s | VRAM 20650 MB | файлов: 1
+18:11:29 | INFO    |    img 4/10 crop_ (3).jpg          | seed=2215818437 | 131.7s | VRAM 20650 MB | файлов: 1
+18:13:41 | INFO    |    img 5/10 crop_ (4).jpg          | seed=3637185529 | 131.4s | VRAM 21298 MB | файлов: 1
+18:15:52 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1446957382 | 131.2s | VRAM 20430 MB | файлов: 1
+18:18:04 | INFO    |    img 7/10 crop_ (6).jpg          | seed=278729603 | 132.0s | VRAM 20650 MB | файлов: 1
+18:20:16 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3829829478 | 131.7s | VRAM 20718 MB | файлов: 1
+18:22:27 | INFO    |    img 9/10 crop_ (8).jpg          | seed=2958371265 | 131.3s | VRAM 20650 MB | файлов: 1
+18:24:39 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2998815211 | 132.0s | VRAM 20650 MB | файлов: 1
+18:24:41 | INFO    |    табличка-сравнение: output/6/flux2-dev/_compare/object_insert_fire.png
+18:24:41 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 136.0s | VRAM 20697 MB | картинок: 10
+18:24:41 | INFO    | [задача 4/5] 'normalize' — картинок: 10
+18:27:29 | INFO    |    img 1/10 crop_ (1).jpg          | seed=3135118993 | 167.8s | VRAM 20759 MB | файлов: 1
+18:29:41 | INFO    |    img 2/10 crop_ (10).jpg         | seed=3858332514 | 132.5s | VRAM 20650 MB | файлов: 1
+18:31:53 | INFO    |    img 3/10 crop_ (2).jpg          | seed=1162833888 | 131.4s | VRAM 20650 MB | файлов: 1
+18:34:04 | INFO    |    img 4/10 crop_ (3).jpg          | seed=3466565865 | 131.4s | VRAM 20650 MB | файлов: 1
+18:36:17 | INFO    |    img 5/10 crop_ (4).jpg          | seed=1921090534 | 132.4s | VRAM 20650 MB | файлов: 1
+18:38:28 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1728832647 | 131.5s | VRAM 20430 MB | файлов: 1
+18:40:40 | INFO    |    img 7/10 crop_ (6).jpg          | seed=205828884 | 132.1s | VRAM 20430 MB | файлов: 1
+18:42:52 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3081526176 | 131.7s | VRAM 20650 MB | файлов: 1
+18:45:04 | INFO    |    img 9/10 crop_ (8).jpg          | seed=1599700005 | 131.4s | VRAM 20535 MB | файлов: 1
+18:47:16 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2272734098 | 132.0s | VRAM 20718 MB | файлов: 1
+18:47:17 | INFO    |    табличка-сравнение: output/6/flux2-dev/_compare/normalize.png
+18:47:17 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 135.4s | VRAM 20612 MB | картинок: 10
+18:47:17 | INFO    | [задача 5/5] 'change_clothing' — картинок: 10
+18:50:17 | INFO    |    img 1/10 crop_ (1).jpg          | seed=2389298476 | 179.8s | VRAM 20650 MB | файлов: 1
+18:52:29 | INFO    |    img 2/10 crop_ (10).jpg         | seed=3518946737 | 131.7s | VRAM 20650 MB | файлов: 1
+18:54:41 | INFO    |    img 3/10 crop_ (2).jpg          | seed=848718550 | 131.9s | VRAM 20650 MB | файлов: 1
+18:56:53 | INFO    |    img 4/10 crop_ (3).jpg          | seed=1813591123 | 131.8s | VRAM 20499 MB | файлов: 1
+18:59:05 | INFO    |    img 5/10 crop_ (4).jpg          | seed=315710103 | 132.1s | VRAM 20650 MB | файлов: 1
+19:01:16 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1207072604 | 131.5s | VRAM 20650 MB | файлов: 1
+19:03:29 | INFO    |    img 7/10 crop_ (6).jpg          | seed=2762502918 | 132.0s | VRAM 21298 MB | файлов: 1
+19:05:41 | INFO    |    img 8/10 crop_ (7).jpg          | seed=1404215087 | 132.1s | VRAM 20650 MB | файлов: 1
+19:07:52 | INFO    |    img 9/10 crop_ (8).jpg          | seed=3221057219 | 131.4s | VRAM 20650 MB | файлов: 1
+19:10:04 | INFO    |    img 10/10 crop_ (9).jpg          | seed=689394274 | 132.0s | VRAM 20650 MB | файлов: 1
+19:10:06 | INFO    |    табличка-сравнение: output/6/flux2-dev/_compare/change_clothing.png
+19:10:06 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 136.6s | VRAM 20700 MB | картинок: 10
+19:10:06 | INFO    | === flux2-dev ГОТОВО за 7246s | результаты: output/6/flux2-dev/results.json ===
+19:10:06 | INFO    | === МОДЕЛЬ: longcat-image-edit ===
+19:10:06 | INFO    | воркфлоу: workflows/image_longcat_image_edit.json | задач: 5 | edit-режим: True
+19:10:06 | INFO    | прогрев — грузим модель в VRAM (результат выбрасываем)...
+19:14:07 | INFO    | прогрев готов (242s)
+19:14:07 | INFO    | [задача 1/5] 'deblur' — картинок: 10
+19:15:26 | INFO    |    img 1/10 crop_ (1).jpg          | seed=4015321972 | 78.4s | VRAM 21492 MB | файлов: 1
+19:16:43 | INFO    |    img 2/10 crop_ (10).jpg         | seed=1723911048 | 77.6s | VRAM 21260 MB | файлов: 1
+19:18:01 | INFO    |    img 3/10 crop_ (2).jpg          | seed=842009924 | 77.3s | VRAM 21369 MB | файлов: 1
+19:19:18 | INFO    |    img 4/10 crop_ (3).jpg          | seed=2694215455 | 77.0s | VRAM 22200 MB | файлов: 1
+19:20:35 | INFO    |    img 5/10 crop_ (4).jpg          | seed=1988463852 | 77.3s | VRAM 21283 MB | файлов: 1
+19:21:52 | INFO    |    img 6/10 crop_ (5).jpg          | seed=2292823072 | 77.4s | VRAM 21367 MB | файлов: 1
+19:23:10 | INFO    |    img 7/10 crop_ (6).jpg          | seed=3946146563 | 77.0s | VRAM 21283 MB | файлов: 1
+19:24:27 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3598447698 | 77.2s | VRAM 21369 MB | файлов: 1
+19:25:44 | INFO    |    img 9/10 crop_ (8).jpg          | seed=2076082836 | 76.9s | VRAM 21401 MB | файлов: 1
+19:27:01 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2235447311 | 77.2s | VRAM 21361 MB | файлов: 1
+19:27:03 | INFO    |    табличка-сравнение: output/6/longcat-image-edit/_compare/deblur.png
+19:27:03 | INFO    | [задача 1/5] 'deblur' ИТОГ — среднее: 77.3s | VRAM 21438 MB | картинок: 10
+19:27:03 | INFO    | [задача 2/5] 'relight_day' — картинок: 10
+19:28:20 | INFO    |    img 1/10 crop_ (1).jpg          | seed=531463803 | 77.3s | VRAM 21610 MB | файлов: 1
+19:29:38 | INFO    |    img 2/10 crop_ (10).jpg         | seed=346480383 | 77.7s | VRAM 21251 MB | файлов: 1
+19:30:55 | INFO    |    img 3/10 crop_ (2).jpg          | seed=169548931 | 77.3s | VRAM 21369 MB | файлов: 1
+19:32:12 | INFO    |    img 4/10 crop_ (3).jpg          | seed=1189767582 | 77.6s | VRAM 21283 MB | файлов: 1
+19:33:30 | INFO    |    img 5/10 crop_ (4).jpg          | seed=3723523325 | 77.6s | VRAM 21369 MB | файлов: 1
+19:34:47 | INFO    |    img 6/10 crop_ (5).jpg          | seed=3960674031 | 77.1s | VRAM 21369 MB | файлов: 1
+19:36:04 | INFO    |    img 7/10 crop_ (6).jpg          | seed=659325228 | 77.0s | VRAM 21401 MB | файлов: 1
+19:37:21 | INFO    |    img 8/10 crop_ (7).jpg          | seed=1908135796 | 77.0s | VRAM 21369 MB | файлов: 1
+19:38:38 | INFO    |    img 9/10 crop_ (8).jpg          | seed=656049299 | 77.2s | VRAM 21251 MB | файлов: 1
+19:39:56 | INFO    |    img 10/10 crop_ (9).JPG          | seed=3674071256 | 77.4s | VRAM 21369 MB | файлов: 1
+19:39:58 | INFO    |    табличка-сравнение: output/6/longcat-image-edit/_compare/relight_day.png
+19:39:58 | INFO    | [задача 2/5] 'relight_day' ИТОГ — среднее: 77.3s | VRAM 21364 MB | картинок: 10
+19:39:58 | INFO    | [задача 3/5] 'object_insert_fire' — картинок: 10
+19:41:15 | INFO    |    img 1/10 crop_ (1).jpg          | seed=2755711835 | 77.5s | VRAM 21393 MB | файлов: 1
+19:42:32 | INFO    |    img 2/10 crop_ (10).jpg         | seed=974309499 | 77.4s | VRAM 21361 MB | файлов: 1
+19:43:50 | INFO    |    img 3/10 crop_ (2).jpg          | seed=1868608100 | 77.2s | VRAM 21345 MB | файлов: 1
+19:45:07 | INFO    |    img 4/10 crop_ (3).jpg          | seed=2215818437 | 77.2s | VRAM 21369 MB | файлов: 1
+19:46:24 | INFO    |    img 5/10 crop_ (4).jpg          | seed=3637185529 | 77.6s | VRAM 21251 MB | файлов: 1
+19:47:42 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1446957382 | 77.5s | VRAM 21283 MB | файлов: 1
+19:48:59 | INFO    |    img 7/10 crop_ (6).jpg          | seed=278729603 | 77.1s | VRAM 21369 MB | файлов: 1
+19:50:16 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3829829478 | 77.1s | VRAM 21369 MB | файлов: 1
+19:51:33 | INFO    |    img 9/10 crop_ (8).jpg          | seed=2958371265 | 77.0s | VRAM 21728 MB | файлов: 1
+19:52:51 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2998815211 | 77.5s | VRAM 21401 MB | файлов: 1
+19:52:52 | INFO    |    табличка-сравнение: output/6/longcat-image-edit/_compare/object_insert_fire.png
+19:52:52 | INFO    | [задача 3/5] 'object_insert_fire' ИТОГ — среднее: 77.3s | VRAM 21387 MB | картинок: 10
+19:52:52 | INFO    | [задача 4/5] 'normalize' — картинок: 10
+19:54:10 | INFO    |    img 1/10 crop_ (1).jpg          | seed=3135118993 | 77.4s | VRAM 21283 MB | файлов: 1
+19:55:27 | INFO    |    img 2/10 crop_ (10).jpg         | seed=3858332514 | 77.1s | VRAM 21251 MB | файлов: 1
+19:56:44 | INFO    |    img 3/10 crop_ (2).jpg          | seed=1162833888 | 77.3s | VRAM 21401 MB | файлов: 1
+19:58:02 | INFO    |    img 4/10 crop_ (3).jpg          | seed=3466565865 | 77.3s | VRAM 21369 MB | файлов: 1
+19:59:19 | INFO    |    img 5/10 crop_ (4).jpg          | seed=1921090534 | 76.9s | VRAM 21393 MB | файлов: 1
+20:00:36 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1728832647 | 77.2s | VRAM 21369 MB | файлов: 1
+20:01:54 | INFO    |    img 7/10 crop_ (6).jpg          | seed=205828884 | 77.6s | VRAM 21361 MB | файлов: 1
+20:03:11 | INFO    |    img 8/10 crop_ (7).jpg          | seed=3081526176 | 77.1s | VRAM 21470 MB | файлов: 1
+20:04:28 | INFO    |    img 9/10 crop_ (8).jpg          | seed=1599700005 | 76.8s | VRAM 21483 MB | файлов: 1
+20:05:45 | INFO    |    img 10/10 crop_ (9).jpg          | seed=2272734098 | 77.0s | VRAM 21399 MB | файлов: 1
+20:05:46 | INFO    |    табличка-сравнение: output/6/longcat-image-edit/_compare/normalize.png
+20:05:46 | INFO    | [задача 4/5] 'normalize' ИТОГ — среднее: 77.2s | VRAM 21378 MB | картинок: 10
+20:05:46 | INFO    | [задача 5/5] 'change_clothing' — картинок: 10
+20:07:04 | INFO    |    img 1/10 crop_ (1).jpg          | seed=2389298476 | 77.1s | VRAM 21401 MB | файлов: 1
+20:08:21 | INFO    |    img 2/10 crop_ (10).jpg         | seed=3518946737 | 77.0s | VRAM 21369 MB | файлов: 1
+20:09:38 | INFO    |    img 3/10 crop_ (2).jpg          | seed=848718550 | 77.1s | VRAM 21401 MB | файлов: 1
+20:10:55 | INFO    |    img 4/10 crop_ (3).jpg          | seed=1813591123 | 77.1s | VRAM 21369 MB | файлов: 1
+20:12:12 | INFO    |    img 5/10 crop_ (4).jpg          | seed=315710103 | 77.4s | VRAM 21367 MB | файлов: 1
+20:13:30 | INFO    |    img 6/10 crop_ (5).jpg          | seed=1207072604 | 77.3s | VRAM 21401 MB | файлов: 1
+20:14:47 | INFO    |    img 7/10 crop_ (6).jpg          | seed=2762502918 | 77.3s | VRAM 21251 MB | файлов: 1
+20:16:04 | INFO    |    img 8/10 crop_ (7).jpg          | seed=1404215087 | 77.1s | VRAM 21283 MB | файлов: 1
+20:17:21 | INFO    |    img 9/10 crop_ (8).jpg          | seed=3221057219 | 77.3s | VRAM 21492 MB | файлов: 1
+20:18:39 | INFO    |    img 10/10 crop_ (9).jpg          | seed=689394274 | 77.2s | VRAM 21283 MB | файлов: 1
+20:18:40 | INFO    |    табличка-сравнение: output/6/longcat-image-edit/_compare/change_clothing.png
+20:18:40 | INFO    | [задача 5/5] 'change_clothing' ИТОГ — среднее: 77.2s | VRAM 21361 MB | картинок: 10
+20:18:40 | INFO    | === longcat-image-edit ГОТОВО за 4114s | результаты: output/6/longcat-image-edit/results.json ===
+20:18:40 | INFO    | ВСЁ. Прогон #6 за 25597s | успешно: ['qwen-image-edit-2511', 'firered-image-edit-1.1', 'flux2-klein-9b', 'flux2-dev', 'longcat-image-edit'] | упало: —

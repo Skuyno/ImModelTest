@@ -1,0 +1,195 @@
+{
+  "model": "longcat-image-edit",
+  "tasks": {
+    "deblur": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Your task is to sharpen and upscale this exact photo, recovering fine high-resolution detail so it looks clear, crisp, in focus and high quality. Keep every object, person and the background exactly as in the input. Photorealistic.",
+      "negative": "still blurry, repainted, added objects, changed people",
+      "params": {
+        "strength": 4.0,
+        "steps": 50,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 10,
+        "avg": {
+          "gen_time_s": 77.32,
+          "vram_peak_mb": 21438.3
+        },
+        "outputs": [
+          "output/6/longcat-image-edit/deblur/deblur_crop_ (1)_4015321972_0.png",
+          "output/6/longcat-image-edit/deblur/deblur_crop_ (10)_1723911048_0.png",
+          "output/6/longcat-image-edit/deblur/deblur_crop_ (2)_842009924_0.png",
+          "output/6/longcat-image-edit/deblur/deblur_crop_ (3)_2694215455_0.png",
+          "output/6/longcat-image-edit/deblur/deblur_crop_ (4)_1988463852_0.png",
+          "output/6/longcat-image-edit/deblur/deblur_crop_ (5)_2292823072_0.png",
+          "output/6/longcat-image-edit/deblur/deblur_crop_ (6)_3946146563_0.png",
+          "output/6/longcat-image-edit/deblur/deblur_crop_ (7)_3598447698_0.png",
+          "output/6/longcat-image-edit/deblur/deblur_crop_ (8)_2076082836_0.png",
+          "output/6/longcat-image-edit/deblur/deblur_crop_ (9)_2235447311_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "relight_day": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Your task is to relight this scene into clear, bright midday daylight with a blue sky, natural sunlight and soft shadows. Keep the same camera angle and viewpoint, and keep every object, person and tree exactly where it is; only the lighting and the sky change. Photorealistic.",
+      "negative": "night, dusk, changed viewpoint, removed objects, added people",
+      "params": {
+        "strength": 4.0,
+        "steps": 50,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 10,
+        "avg": {
+          "gen_time_s": 77.32,
+          "vram_peak_mb": 21363.8
+        },
+        "outputs": [
+          "output/6/longcat-image-edit/relight_day/relight_day_crop_ (1)_531463803_0.png",
+          "output/6/longcat-image-edit/relight_day/relight_day_crop_ (10)_346480383_0.png",
+          "output/6/longcat-image-edit/relight_day/relight_day_crop_ (2)_169548931_0.png",
+          "output/6/longcat-image-edit/relight_day/relight_day_crop_ (3)_1189767582_0.png",
+          "output/6/longcat-image-edit/relight_day/relight_day_crop_ (4)_3723523325_0.png",
+          "output/6/longcat-image-edit/relight_day/relight_day_crop_ (5)_3960674031_0.png",
+          "output/6/longcat-image-edit/relight_day/relight_day_crop_ (6)_659325228_0.png",
+          "output/6/longcat-image-edit/relight_day/relight_day_crop_ (7)_1908135796_0.png",
+          "output/6/longcat-image-edit/relight_day/relight_day_crop_ (8)_656049299_0.png",
+          "output/6/longcat-image-edit/relight_day/relight_day_crop_ (9)_3674071256_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "object_insert_fire": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Your task is to add one realistic fire that has broken out on a dry, solid surface in the scene (the ground or an object), with natural flames, smoke and embers. Keep all water exactly as it is and place the fire only on dry rock or solid ground; keep all people, objects and the background unchanged. Photorealistic.",
+      "negative": "fire on water, removed water, campfire, full-frame fire, changed people",
+      "params": {
+        "strength": 4.5,
+        "steps": 50,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 10,
+        "avg": {
+          "gen_time_s": 77.3,
+          "vram_peak_mb": 21386.6
+        },
+        "outputs": [
+          "output/6/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (1)_2755711835_0.png",
+          "output/6/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (10)_974309499_0.png",
+          "output/6/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (2)_1868608100_0.png",
+          "output/6/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (3)_2215818437_0.png",
+          "output/6/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (4)_3637185529_0.png",
+          "output/6/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (5)_1446957382_0.png",
+          "output/6/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (6)_278729603_0.png",
+          "output/6/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (7)_3829829478_0.png",
+          "output/6/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (8)_2958371265_0.png",
+          "output/6/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (9)_2998815211_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "normalize": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Your task is a subtle, neutral photographic clean-up only: balanced exposure, natural white balance and accurate colors. Keep all content, objects, people and the background exactly the same. The result looks like a real, lightly-corrected photograph. Photorealistic.",
+      "negative": "color cast, oversaturated, stylized filter, changed content",
+      "params": {
+        "strength": 4.0,
+        "steps": 50,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 10,
+        "avg": {
+          "gen_time_s": 77.16,
+          "vram_peak_mb": 21377.7
+        },
+        "outputs": [
+          "output/6/longcat-image-edit/normalize/normalize_crop_ (1)_3135118993_0.png",
+          "output/6/longcat-image-edit/normalize/normalize_crop_ (10)_3858332514_0.png",
+          "output/6/longcat-image-edit/normalize/normalize_crop_ (2)_1162833888_0.png",
+          "output/6/longcat-image-edit/normalize/normalize_crop_ (3)_3466565865_0.png",
+          "output/6/longcat-image-edit/normalize/normalize_crop_ (4)_1921090534_0.png",
+          "output/6/longcat-image-edit/normalize/normalize_crop_ (5)_1728832647_0.png",
+          "output/6/longcat-image-edit/normalize/normalize_crop_ (6)_205828884_0.png",
+          "output/6/longcat-image-edit/normalize/normalize_crop_ (7)_3081526176_0.png",
+          "output/6/longcat-image-edit/normalize/normalize_crop_ (8)_1599700005_0.png",
+          "output/6/longcat-image-edit/normalize/normalize_crop_ (9)_2272734098_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    },
+    "change_clothing": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Your task is to dress every person already in this photo in a clown costume (colorful polka-dot suit, ruffled collar, big shoes, clown hat), keeping the look of a real low-quality surveillance-camera photo with natural, muted colors. You MUST keep exactly the same number of people, each in their original position and pose, keep their own real bare faces, and keep the same background. Photorealistic.",
+      "negative": "extra clown, added people, facing camera, clown makeup, changed pose, changed background",
+      "params": {
+        "strength": 4.5,
+        "steps": 50,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": {
+        "n_images": 10,
+        "avg": {
+          "gen_time_s": 77.19,
+          "vram_peak_mb": 21361.4
+        },
+        "outputs": [
+          "output/6/longcat-image-edit/change_clothing/change_clothing_crop_ (1)_2389298476_0.png",
+          "output/6/longcat-image-edit/change_clothing/change_clothing_crop_ (10)_3518946737_0.png",
+          "output/6/longcat-image-edit/change_clothing/change_clothing_crop_ (2)_848718550_0.png",
+          "output/6/longcat-image-edit/change_clothing/change_clothing_crop_ (3)_1813591123_0.png",
+          "output/6/longcat-image-edit/change_clothing/change_clothing_crop_ (4)_315710103_0.png",
+          "output/6/longcat-image-edit/change_clothing/change_clothing_crop_ (5)_1207072604_0.png",
+          "output/6/longcat-image-edit/change_clothing/change_clothing_crop_ (6)_2762502918_0.png",
+          "output/6/longcat-image-edit/change_clothing/change_clothing_crop_ (7)_1404215087_0.png",
+          "output/6/longcat-image-edit/change_clothing/change_clothing_crop_ (8)_3221057219_0.png",
+          "output/6/longcat-image-edit/change_clothing/change_clothing_crop_ (9)_689394274_0.png"
+        ],
+        "manual": {
+          "quality": null,
+          "artifacts": null,
+          "adherence": null,
+          "preservation": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "model": "flux2-klein-9b",
+  "tasks": {
+    "deblur": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Sharpen and upscale this exact photo as a light restoration, adding fine high-resolution detail and enhancing quality. Keep every person, their clothing, all objects and the background exactly as in the input and perfectly aligned. Photorealistic.",
+      "negative": "",
+      "params": {
+        "strength": 1.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "relight_day": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Relight this scene to bright natural daytime with a realistic sky. Keep every object, person, vehicle and sign exactly the same in count, position and appearance; change only the lighting. Photorealistic, natural colors.",
+      "negative": "",
+      "params": {
+        "strength": 1.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "object_insert_fire": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Add one realistic fire that has broken out on a dry, solid surface in the scene, with natural flames, smoke and embers matching the geometry. Keep all water exactly as it is, placing the fire only on dry rock or solid ground; keep all people, objects and the background unchanged. Photorealistic.",
+      "negative": "",
+      "params": {
+        "strength": 1.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "normalize": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Apply a subtle neutral clean-up: balanced exposure, natural white balance and accurate colors. Keep all content, objects, people and the background exactly the same. Photorealistic, like a real lightly-corrected photo.",
+      "negative": "",
+      "params": {
+        "strength": 1.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "change_clothing": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Dress the people already in this photo in a realistic clown costume (polka-dot suit, ruffled collar, big shoes), like a real low-quality surveillance photo with natural muted colors. Keep each person's own face and identity recognizable, the same number of people in the same poses and positions, and the same background and floor. Photorealistic.",
+      "negative": "",
+      "params": {
+        "strength": 1.0,
+        "steps": 28,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    }
+  }
+}

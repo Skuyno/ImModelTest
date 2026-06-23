@@ -1,0 +1,75 @@
+{
+  "model": "firered-image-edit-1.1",
+  "tasks": {
+    "deblur": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to sharpen and upscale this exact photograph, bringing back real fine high-resolution detail so it looks crisp, in focus and high quality. Keep every object, person, text and the background exactly as in the input and in the same place. In foggy or low-visibility areas, sharpen only what is genuinely there and leave those areas as they are. The result must stay a faithful, photorealistic version of the original.",
+      "negative": "still blurry, hallucinated detail, repainted, changed people, changed background",
+      "params": {
+        "strength": 3.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "relight_day": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to relight this scene into clear, bright midday daylight: blue sky, strong natural sunlight and soft natural shadows. It must clearly read as full daytime. You MUST keep every object, person, vehicle, sign and structure exactly where it is, with the same shape, count and position; only the lighting and the sky change. Photorealistic.",
+      "negative": "night, dusk, overexposed, added objects, moved objects, changed scene",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "object_insert_fire": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is to make it look like a fire has just broken out on a dry, solid surface that already exists in the scene (the ground or an object): real flames starting and spreading, with rising smoke and a few embers. You MUST keep the existing terrain, water, people, objects and background exactly as they are, and keep the rest of the scene lit normally. Photorealistic.",
+      "negative": "campfire, stacked logs, fire on water, added ground, changed people",
+      "params": {
+        "strength": 3.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "normalize": {
+      "version": "v5.0",
+      "style": "instruction",
+      "positive": "Your task is a subtle photographic clean-up only: neutral white balance, balanced exposure and natural, accurate colors. You MUST keep the content completely unchanged - the same objects, people, background, composition and type of lighting. The result must look like a real, lightly-corrected photograph.",
+      "negative": "color cast, oversaturated, stylized filter, relit, changed content",
+      "params": {
+        "strength": 4.0,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    },
+    "change_clothing": {
+      "version": "v6.0",
+      "style": "instruction",
+      "positive": "Your task is to dress every person already in this photo in a clown costume - colorful polka-dot suit, ruffled collar, oversized buttons, big floppy shoes and a clown hat - keeping the realistic look of a surveillance-camera photo with natural, true-to-life colors. Dress every single person, including anyone in a uniform. You MUST keep exactly the same number of people, keep each clown the same body size and position as the original person, keep their own bare faces, and keep the same background. Photorealistic.",
+      "negative": "extra clown, oversized clown, desaturated, clown makeup, changed face, changed background",
+      "params": {
+        "strength": 4.5,
+        "steps": 30,
+        "sampler": "euler",
+        "scheduler": "simple"
+      },
+      "notes": "",
+      "results": []
+    }
+  }
+}
