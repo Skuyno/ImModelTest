@@ -5,7 +5,7 @@
       "version": "v6.0",
       "style": "instruction",
       "positive": "Your task is to sharpen and upscale this exact photo, recovering fine high-resolution detail so it looks clear, crisp, in focus and high quality. Keep every object, person and the background exactly as in the input. Photorealistic.",
-      "negative": "low resolution, low detail, blurry, out of focus, soft, hazy, repainted, regenerated, added objects, changed people, distortion, artifacts",
+      "negative": "still blurry, repainted, added objects, changed people",
       "params": {
         "strength": 4.0,
         "steps": 50,
@@ -19,7 +19,7 @@
       "version": "v6.0",
       "style": "instruction",
       "positive": "Your task is to relight this scene into clear, bright midday daylight with a blue sky, natural sunlight and soft shadows. Keep the same camera angle and viewpoint, and keep every object, person and tree exactly where it is; only the lighting and the sky change. Photorealistic.",
-      "negative": "night, dusk, dim, changed angle, changed viewpoint, removed trees, removed objects, added people, unreadable signs, distortion, artifacts",
+      "negative": "night, dusk, changed viewpoint, removed objects, added people",
       "params": {
         "strength": 4.0,
         "steps": 50,
@@ -33,7 +33,7 @@
       "version": "v6.0",
       "style": "instruction",
       "positive": "Your task is to add one realistic fire that has broken out on a dry, solid surface in the scene (the ground or an object), with natural flames, smoke and embers. Keep all water exactly as it is and place the fire only on dry rock or solid ground; keep all people, objects and the background unchanged. Photorealistic.",
-      "negative": "fire on water, drained water, removed water, changed geometry, campfire, full-frame fire, cartoon fire, changed people, distortion, artifacts",
+      "negative": "fire on water, removed water, campfire, full-frame fire, changed people",
       "params": {
         "strength": 4.5,
         "steps": 50,
@@ -47,7 +47,7 @@
       "version": "v6.0",
       "style": "instruction",
       "positive": "Your task is a subtle, neutral photographic clean-up only: balanced exposure, natural white balance and accurate colors. Keep all content, objects, people and the background exactly the same. The result looks like a real, lightly-corrected photograph. Photorealistic.",
-      "negative": "color cast, oversaturated, overexposed, underexposed, stylized filter, changed content, distortion, artifacts",
+      "negative": "color cast, oversaturated, stylized filter, changed content",
       "params": {
         "strength": 4.0,
         "steps": 50,
@@ -61,7 +61,7 @@
       "version": "v6.0",
       "style": "instruction",
       "positive": "Your task is to dress every person already in this photo in a clown costume (colorful polka-dot suit, ruffled collar, big shoes, clown hat), keeping the look of a real low-quality surveillance-camera photo with natural, muted colors. You MUST keep exactly the same number of people, each in their original position and pose, keep their own real bare faces, and keep the same background. Photorealistic.",
-      "negative": "extra clown, crowd of clowns, added people, removed people, scary clown, facing camera, cartoonish, oversaturated, vivid colors, studio clown, clown makeup, face paint, changed pose, changed background, distortion, artifacts",
+      "negative": "extra clown, added people, facing camera, clown makeup, changed pose, changed background",
       "params": {
         "strength": 4.5,
         "steps": 50,
