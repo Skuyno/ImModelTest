@@ -12,7 +12,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Деблюрит и апскейлит очень пассивно — эффект есть, но минимальный на всех кадрах. Зато контент сохраняется практически идеально.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -32,10 +32,10 @@
           "output/6/qwen-image-edit-2511/deblur/deblur_crop_ (9)_2235447311_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 4,
+          "adherence": 3,
+          "preservation": 5
         }
       }
     },
@@ -50,7 +50,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Ночь→день читается, но картинка местами пере-сглажена и выглядит «мультяшной» — ~7/10 формально пригодны, но для аналитики такой вид спорный.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -70,10 +70,10 @@
           "output/6/qwen-image-edit-2511/relight_day/relight_day_crop_ (9)_3674071256_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 4,
+          "adherence": 4,
+          "preservation": 4
         }
       }
     },
@@ -88,7 +88,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Огонь убедительный, выглядит реально горящим, ~8/10 валидны. Хорошо сохраняет окружение.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -108,10 +108,10 @@
           "output/6/qwen-image-edit-2511/object_insert_fire/object_insert_fire_crop_ (9)_2998815211_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 4,
+          "preservation": 5
         }
       }
     },
@@ -126,7 +126,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Время суток НЕ меняет (в отличие от firered/flux2-dev) — задачу понимает правильно, контент полностью сохранён. Лучший normalize в прогоне.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -146,10 +146,10 @@
           "output/6/qwen-image-edit-2511/normalize/normalize_crop_ (9)_2272734098_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 5,
+          "adherence": 4,
+          "preservation": 5
         }
       }
     },
@@ -164,7 +164,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "~7/10 валидны, отражения в порядке. Минусы: на части кадров и на «безлюдных» фото дорисовывает клоунов, на одном полностью сменила позы, на одном слегка сменился ракурс. Лучшая по переодеванию в прогоне.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -184,10 +184,10 @@
           "output/6/qwen-image-edit-2511/change_clothing/change_clothing_crop_ (9)_689394274_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 4,
+          "preservation": 4
         }
       }
     }

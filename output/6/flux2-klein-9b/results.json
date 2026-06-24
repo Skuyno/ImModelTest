@@ -12,7 +12,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Деблюрит неплохо, но ломает идентичность/анатомию: испортило ноги женщине, подменило девочку, местами сменило ракурс, в «лаборатории» поменяло цвет штанов, одного человека не разобрало; на одном фото добавило человека по центру. ~7/10.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -32,10 +32,10 @@
           "output/6/flux2-klein-9b/deblur/deblur_crop_ (9)_2235447311_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 3,
+          "adherence": 3,
+          "preservation": 3
         }
       }
     },
@@ -50,7 +50,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Сильнейшая сторона klein: ночь→день реалистичная и красивая, похоже на настоящие снимки. Минусы: на заднем плане местами попорчены машины, на одном кадре дорисована лишняя машина и сменена одежда человека; возможно поможет больше шагов. ~7-8/10.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -70,10 +70,10 @@
           "output/6/flux2-klein-9b/relight_day/relight_day_crop_ (9)_3674071256_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 4,
+          "preservation": 3
         }
       }
     },
@@ -88,7 +88,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Промпт не понят: вместо возгорания — горящие камни/рандомный огонь. 0/10 валидных.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -108,10 +108,10 @@
           "output/6/flux2-klein-9b/object_insert_fire/object_insert_fire_crop_ (9)_2998815211_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 2,
+          "artifacts": 2,
+          "adherence": 1,
+          "preservation": 2
         }
       }
     },
@@ -126,7 +126,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "В целом неплохо (~8/10), контент держит, но на части кадров сменило ночь на день (не просили).",
       "results": {
         "n_images": 10,
         "avg": {
@@ -146,10 +146,10 @@
           "output/6/flux2-klein-9b/normalize/normalize_crop_ (9)_2272734098_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 3,
+          "preservation": 4
         }
       }
     },
@@ -164,7 +164,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Клоуны в гриме (хотя просили распознаваемое лицо), но позы сохранены на 9/10. На «безлюдных» кадрах добавляет клоунов по центру. В целом аккуратно. ~9/10 по позам.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -184,10 +184,10 @@
           "output/6/flux2-klein-9b/change_clothing/change_clothing_crop_ (9)_689394274_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 3,
+          "preservation": 4
         }
       }
     }

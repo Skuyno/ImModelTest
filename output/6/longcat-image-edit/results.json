@@ -12,7 +12,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Сделала очень мало — эффект деблюра/апскейла почти незаметен; один кадр чуть расширила. Контент при этом не портит.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -32,10 +32,10 @@
           "output/6/longcat-image-edit/deblur/deblur_crop_ (9)_2235447311_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 4,
+          "adherence": 2,
+          "preservation": 5
         }
       }
     },
@@ -50,7 +50,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Слабо: на одном кадре полностью убрала здания, на другом — деревья; ракурс сменила минимум на трёх; геометрию местами не поняла. Удачным вышел только кадр с Кремлём. ~2/10 валидных.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -70,10 +70,10 @@
           "output/6/longcat-image-edit/relight_day/relight_day_crop_ (9)_3674071256_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 3,
+          "adherence": 3,
+          "preservation": 2
         }
       }
     },
@@ -88,7 +88,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Огонь рандомный: на камнях, на соломе, огромная куча дров. Промпт/геометрию не понимает. 0/10 валидных.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -108,10 +108,10 @@
           "output/6/longcat-image-edit/object_insert_fire/object_insert_fire_crop_ (9)_2998815211_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 2,
+          "artifacts": 2,
+          "adherence": 2,
+          "preservation": 2
         }
       }
     },
@@ -126,7 +126,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Практически без изменений — коррекция почти не применяется. Зато контент полностью сохранён.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -146,10 +146,10 @@
           "output/6/longcat-image-edit/normalize/normalize_crop_ (9)_2272734098_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 4,
+          "adherence": 3,
+          "preservation": 5
         }
       }
     },
@@ -164,7 +164,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "~6/10 валидны. На остальных — сломанные ноги или дорисованные по центру клоуны на «безлюдных» кадрах; пожарных нормально переодеть не смогла. Костюмы яркие. В целом терпимо.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -184,10 +184,10 @@
           "output/6/longcat-image-edit/change_clothing/change_clothing_crop_ (9)_689394274_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 3,
+          "adherence": 3,
+          "preservation": 3
         }
       }
     }

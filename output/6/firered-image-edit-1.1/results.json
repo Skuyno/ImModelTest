@@ -12,7 +12,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Деблюр и апскейл очень хорошие: резкость и детализация восстановлены чисто, ~9/10 валидны. Минусы: на «туманном» кадре подменила машины (одну убрала, другую дорисовала), а туман сняла лишь частично (поможет снижение strength); на кадре со школьной доской дорисовала на ней надписи (галлюцинация). В остальном контент сохранён.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -32,10 +32,10 @@
           "output/6/firered-image-edit-1.1/deblur/deblur_crop_ (9)_2235447311_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 4,
+          "preservation": 3
         }
       }
     },
@@ -50,7 +50,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Ночь→день убедительно, лишнего не добавляет — все 10 кадров пригодны. Минусы: иногда убирает мелкие предметы, часть кадров выглядит чуть смазанной.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -70,10 +70,10 @@
           "output/6/firered-image-edit-1.1/relight_day/relight_day_crop_ (9)_3674071256_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 5,
+          "preservation": 4
         }
       }
     },
@@ -88,7 +88,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Огонь реалистичный на всех кадрах. Так как модель img2img (не inpaint), весь кадр заметно перерисовывается/апскейлится. На одном фото убрала человека с фона и сменила ему одежду — лечится снижением strength.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -108,10 +108,10 @@
           "output/6/firered-image-edit-1.1/object_insert_fire/object_insert_fire_crop_ (9)_2998815211_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 5,
+          "artifacts": 4,
+          "adherence": 5,
+          "preservation": 3
         }
       }
     },
@@ -126,7 +126,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Главная проблема: на значимой части кадров самовольно сменила время суток (ночь→день), хотя об этом не просили; где уже был день — вышло хорошо. На одном фото добавила человека. ~7/10 валидны.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -146,10 +146,10 @@
           "output/6/firered-image-edit-1.1/normalize/normalize_crop_ (9)_2272734098_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 3,
+          "preservation": 3
         }
       }
     },
@@ -164,7 +164,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Отражения сохранены, костюмы качественные. Но на кадрах без явных людей (далеко на фоне) дорисовала 4 клоунов и полицейского; на части кадров появились лишние люди на фоне и слегка смещены позы; не всех стабильно переодевает. ~6/10 валидны.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -184,10 +184,10 @@
           "output/6/firered-image-edit-1.1/change_clothing/change_clothing_crop_ (9)_689394274_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 3,
+          "preservation": 3
         }
       }
     }

@@ -12,7 +12,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Деблюр нормальный — возможно, помог SD-токен-стиль. Мелкие надписи стабильно остаются смазанными; на «туманном» кадре туман убран частично, остальное в порядке.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -32,10 +32,10 @@
           "output/6/flux2-dev/deblur/deblur_crop_ (9)_2235447311_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 4,
+          "artifacts": 4,
+          "adherence": 4,
+          "preservation": 4
         }
       }
     },
@@ -50,7 +50,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "~7/10 хоть немного пригодны. Минусы: на части кадров обрезает дальний план и заменяет его синим небом, картинка пере-контрастная/смазанная, часть надписей попорчена (плюс типичный для Q4-кванта пересвет).",
       "results": {
         "n_images": 10,
         "avg": {
@@ -70,10 +70,10 @@
           "output/6/flux2-dev/relight_day/relight_day_crop_ (9)_3674071256_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 3,
+          "adherence": 4,
+          "preservation": 3
         }
       }
     },
@@ -88,7 +88,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Геометрию понимает плохо, вокруг пожара обязательно накидывает солому; на части кадров добавляет людей. Все кадры плохие. SD-токены не спасли.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -108,10 +108,10 @@
           "output/6/flux2-dev/object_insert_fire/object_insert_fire_crop_ (9)_2998815211_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 2,
+          "artifacts": 2,
+          "adherence": 2,
+          "preservation": 1
         }
       }
     },
@@ -126,7 +126,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Как и firered, на части кадров сменил ночь на день (не просили); добавляется пересвет/перенасыщение (Q4-квант). Остальное приемлемо.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -146,10 +146,10 @@
           "output/6/flux2-dev/normalize/normalize_crop_ (9)_2272734098_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 3,
+          "adherence": 3,
+          "preservation": 3
         }
       }
     },
@@ -164,7 +164,7 @@
         "sampler": "euler",
         "scheduler": "simple"
       },
-      "notes": "",
+      "notes": "Очень плохо: всех делает клоунами В ГРИМЕ, почти везде не сохраняет позу либо добавляет лишних клоунов, либо убирает нужных людей и подставляет клоунов. 0/10 валидных. SD-токены задачу не вытянули.",
       "results": {
         "n_images": 10,
         "avg": {
@@ -184,10 +184,10 @@
           "output/6/flux2-dev/change_clothing/change_clothing_crop_ (9)_689394274_0.png"
         ],
         "manual": {
-          "quality": null,
-          "artifacts": null,
-          "adherence": null,
-          "preservation": null
+          "quality": 3,
+          "artifacts": 2,
+          "adherence": 2,
+          "preservation": 1
         }
       }
     }
